@@ -22,6 +22,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Hosts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Hosts"/>
+    
+
+
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#characterIsInvolvedinEvent -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#characterIsInvolvedinEvent">
@@ -295,14 +301,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Accept_Daniel_Portrait">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Accept_e1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Accept_e1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
     </owl:NamedIndividual>
     
 
