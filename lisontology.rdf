@@ -22,6 +22,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#characterIsInvolvedinEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#characterIsInvolvedinEvent">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventInvolvesCharacter"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#choiceLeadsToOutcome -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#choiceLeadsToOutcome">
@@ -61,8 +71,18 @@
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventTakesPlaceInLocation -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventTakesPlaceInLocation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#locationHostsEvent"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#locationHostsEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#locationHostsEvent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
     </owl:ObjectProperty>
     
 
@@ -737,6 +757,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#nathansGun">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
+        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Nathan"/>
     </owl:NamedIndividual>
     
 
