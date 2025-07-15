@@ -405,6 +405,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grants_Petition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grants_Petition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Nathan -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Nathan">
