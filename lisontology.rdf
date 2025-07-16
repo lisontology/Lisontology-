@@ -337,6 +337,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Arcadia_Bay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Arcadia_Bay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Blackwell_Academy -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Blackwell_Academy">
@@ -374,6 +382,14 @@
         <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideAndRevealToDavid_Chloe_Weed"/>
         <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#stayHidden_Chloe_Weed"/>
         <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#takeBlame_Chloe_Weed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloes_Room -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloes_Room">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Place"/>
     </owl:NamedIndividual>
     
 
@@ -523,6 +539,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
         <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Intervened_kateAndDavid_Confrontation"/>
         <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#tookPhoto_kateAndDavid_Confrontation"/>
+        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Blackwell_Academy"/>
     </owl:NamedIndividual>
     
 
@@ -539,6 +556,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#LukeFeelsSatisfied">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Main_Campus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Main_Campus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Place"/>
     </owl:NamedIndividual>
     
 
@@ -560,14 +585,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grants -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grants">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NPC"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#MichelleMentionsMax -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#MichelleMentionsMax">
@@ -580,6 +597,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#MichelleMentionsNot_EnoughPeople">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grants -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grants">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NPC"/>
     </owl:NamedIndividual>
     
 
@@ -628,6 +653,22 @@
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NoPublicAnnouncement -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NoPublicAnnouncement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Parking_Lot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Parking_Lot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Prescott_Dormitory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Prescott_Dormitory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Place"/>
+    </owl:NamedIndividual>
     
 
 
@@ -695,6 +736,14 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
         <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Reorganized_Victoria_Photo"/>
         <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notReorganise_Victoria_Photo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victorias_Room -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victorias_Room">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Place"/>
     </owl:NamedIndividual>
     
 
@@ -855,9 +904,7 @@
 
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Daniel_Da_Costa&apos;s_Social_Media_Page -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Daniel_Da_Costa&apos;s_Social_Media_Page">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Daniel_Da_Costa&apos;s_Social_Media_Page"/>
     
 
 
@@ -873,9 +920,7 @@
 
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grant&apos;s_Classroom -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grant&apos;s_Classroom">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grant&apos;s_Classroom"/>
 </rdf:RDF>
 
 
