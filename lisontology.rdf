@@ -22,131 +22,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#BelongsTo -->
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#choiceLeadsToOutcome -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#BelongsTo">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventBelongsToEpisode"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Contains"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Contains -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Contains">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#EpisodeContainsEvent"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#BelongsTo"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#EpisodeContainsEvent -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#EpisodeContainsEvent">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#BelongsTo"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventBelongsToEpisode"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Hosts -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Hosts">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#locationHostsEvent"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventTakesPlaceInLocation"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#TakesPlaceIn"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#InvolvedIn -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#InvolvedIn">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#characterIsInvolvedinEvent"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#characterIsInvolvedinEvent"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Involves"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Character"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Involves -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Involves">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventInvolvesCharacter"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#characterIsInvolvedinEvent"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Character"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#LeadsTo -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#LeadsTo">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventLeadsToChoice"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventLeadsToChoice"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ResultsIn -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ResultsIn">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#choiceResultsInOutcome"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#choiceResultsInOutcome"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#outcomeIsResultOfChoice"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#TakesPlaceIn -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#TakesPlaceIn">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventTakesPlaceInLocation"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventTakesPlaceInLocation"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#characterIsInvolvedinEvent -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#characterIsInvolvedinEvent">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventInvolvesCharacter"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Character"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#choiceResultsInOutcome -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#choiceResultsInOutcome">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#isResultOf"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#outcomeIsResultOfChoice"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#choiceLeadsToOutcome">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventBelongsToEpisode -->
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventBelongsToChapter -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventBelongsToEpisode">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#BelongsTo"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventBelongsToChapter">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode"/>
     </owl:ObjectProperty>
@@ -156,7 +43,6 @@
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventInvolvesCharacter -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventInvolvesCharacter">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#characterIsInvolvedinEvent"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Character"/>
     </owl:ObjectProperty>
@@ -175,38 +61,8 @@
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventTakesPlaceInLocation -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventTakesPlaceInLocation">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#locationHostsEvent"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#isResultOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#isResultOf">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#outcomeIsResultOfChoice"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#choiceResultsInOutcome"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#locationHostsEvent -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#locationHostsEvent">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventTakesPlaceInLocation"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#outcomeIsResultOfChoice -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#outcomeIsResultOfChoice">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#choiceResultsInOutcome"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice"/>
     </owl:ObjectProperty>
     
 
@@ -311,15 +167,14 @@
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Accept_Daniel_Portrait -->
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Accept_e1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Accept_Daniel_Portrait">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Accept_e1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
     </owl:NamedIndividual>
     
 
 
-<<<<<<< HEAD
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Alyssa_Anderson -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Alyssa_Anderson">
@@ -329,45 +184,47 @@
 
 
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ArcadiaBay -->
-=======
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Blackwell_Academy -->
->>>>>>> 4265b5afeed6632171033cb1dc2dff22bbb32d4f
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Blackwell_Academy">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ArcadiaBay">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
-        <untitled-ontology-11:locationHostsEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#nathansGun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#BlackwellAcademy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#BlackwellAcademy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#BlackwellStaff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#BlackwellStaff"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NPC"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeDisapproves -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeDisapproves"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeDisapproves">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeGladNoReport -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeGladNoReport"/>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_Prices_Weed -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_Prices_Weed">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#blame_Chloe_Weed"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideAndRevealToDavid_Chloe_Weed"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#stayHidden_Chloe_Weed"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#takeBlame_Chloe_Weed"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Comfort_Victoria -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Comfort_Victoria">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeGladNoReport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
     </owl:NamedIndividual>
     
 
@@ -392,16 +249,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Daniel_DaCosta_Portrait">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Accept_Daniel_Portrait"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Decline_Daniel_Portrait"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Decline_Daniel_Portrait -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Decline_Daniel_Portrait">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
     </owl:NamedIndividual>
     
 
@@ -454,7 +301,6 @@
     
 
 
-<<<<<<< HEAD
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Juliet_Watson -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Juliet_Watson">
@@ -464,46 +310,9 @@
 
 
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Kate -->
-=======
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Erase_Insult_Kates_Slate -->
->>>>>>> 4265b5afeed6632171033cb1dc2dff22bbb32d4f
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Erase_Insult_Kates_Slate">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Ignore_Football_Alyssa -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Ignore_Football_Alyssa">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Ignore_Insult_Kates_Slate -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Ignore_Insult_Kates_Slate">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Intervened_kateAndDavid_Confrontation -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Intervened_kateAndDavid_Confrontation">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Kate_Marshs_and_David_Madsens_Confrontation -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Kate_Marshs_and_David_Madsens_Confrontation">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Intervened_kateAndDavid_Confrontation"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#tookPhoto_kateAndDavid_Confrontation"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Kate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NPC"/>
     </owl:NamedIndividual>
     
 
@@ -532,7 +341,6 @@
     
 
 
-<<<<<<< HEAD
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Main_Campus -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Main_Campus">
@@ -542,25 +350,13 @@
 
 
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max -->
-=======
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Make_fun_of_Victoria -->
->>>>>>> 4265b5afeed6632171033cb1dc2dff22bbb32d4f
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Make_fun_of_Victoria">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_Caulfield -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_Caulfield">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Protagonist"/>
     </owl:NamedIndividual>
     
 
 
-<<<<<<< HEAD
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_Room -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_Room">
@@ -570,14 +366,9 @@
 
 
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Nathan -->
-=======
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grants_Petition -->
->>>>>>> 4265b5afeed6632171033cb1dc2dff22bbb32d4f
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grants_Petition">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Sign_Michelle_Petition"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notSign_Michelle_Petition"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Nathan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NPC"/>
     </owl:NamedIndividual>
     
 
@@ -605,18 +396,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Nathan_Prescott -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Nathan_Prescott">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NPC"/>
-        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#nathansGun"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NoPublicAnnouncement -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NoPublicAnnouncement"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NoPublicAnnouncement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
+    </owl:NamedIndividual>
     
 
 
@@ -638,19 +422,12 @@
 
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PrincipalCallsNathan -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PrincipalCallsNathan"/>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#RV_at_the_parking_lot -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#RV_at_the_parking_lot">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PrincipalCallsNathan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
     </owl:NamedIndividual>
     
 
 
-<<<<<<< HEAD
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Principal_Wells -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Principal_Wells">
@@ -669,90 +446,9 @@
 
 
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victoria -->
-=======
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Reorganized_Victoria_Photo -->
->>>>>>> 4265b5afeed6632171033cb1dc2dff22bbb32d4f
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Reorganized_Victoria_Photo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Sign_Michelle_Petition -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Sign_Michelle_Petition">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Touched_Dana_Pregnancy -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Touched_Dana_Pregnancy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victoria_Chase_Outside_the_Dormitory -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victoria_Chase_Outside_the_Dormitory">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Comfort_Victoria"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Make_fun_of_Victoria"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victorias_Photo_Collection -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victorias_Photo_Collection">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Reorganized_Victoria_Photo"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notReorganise_Victoria_Photo"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Warn_Football_Alyssa -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Warn_Football_Alyssa">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Water_Plant_Lisa -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Water_Plant_Lisa">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Watered_lisaPlant"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notWatered_lisaPlant"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Watered_lisaPlant -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Watered_lisaPlant">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#blame_Chloe_Weed -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#blame_Chloe_Weed">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideAndRevealToDavid_Chloe_Weed -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideAndRevealToDavid_Chloe_Weed">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victoria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NPC"/>
     </owl:NamedIndividual>
     
 
@@ -785,54 +481,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#nathansGun">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-<<<<<<< HEAD
         <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#BlackwellAcademy"/>
-=======
-        <untitled-ontology-11:eventBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideTheTruth"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#reportNathan"/>
-        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Blackwell_Academy"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notReorganise_Victoria_Photo -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notReorganise_Victoria_Photo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notSign_Michelle_Petition -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notSign_Michelle_Petition">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notTouch_Dana_Pregnancy -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notTouch_Dana_Pregnancy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notWatered_lisaPlant -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notWatered_lisaPlant">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notWrote_Rv -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notWrote_Rv">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
->>>>>>> 4265b5afeed6632171033cb1dc2dff22bbb32d4f
     </owl:NamedIndividual>
     
 
@@ -841,58 +490,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#reportNathan">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#stayHidden_Chloe_Weed -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#stayHidden_Chloe_Weed">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#takeBlame_Chloe_Weed -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#takeBlame_Chloe_Weed">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#tookPhoto_kateAndDavid_Confrontation -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#tookPhoto_kateAndDavid_Confrontation">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notWrote_Rv"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#wrote_RV"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#touchedAndRewound_Dana_Pregnancy -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#touchedAndRewound_Dana_Pregnancy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#wrote_RV -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#wrote_RV">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Insults_on_Kate_Marsh&apos;s_Slate -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Insults_on_Kate_Marsh&apos;s_Slate">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Erase_Insult_Kates_Slate"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Ignore_Insult_Kates_Slate"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
