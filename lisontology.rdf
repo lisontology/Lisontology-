@@ -286,6 +286,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Place">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Protagonist -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Protagonist">
@@ -697,6 +705,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#nathansGun">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
         <untitled-ontology-11:eventBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
+        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Nathan_Prescott"/>
         <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideTheTruth"/>
         <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#reportNathan"/>
         <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Blackwell_Academy"/>
