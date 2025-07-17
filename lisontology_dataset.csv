@@ -1,0 +1,146 @@
+subject,predicate,object
+# Classes and Types
+lis:ChloePrice rdf:type lis:NPC
+lis:DanielDaCosta rdf:type lis:NPC
+lis:DavidMadsen rdf:type lis:NPC
+lis:KateMarsh rdf:type lis:NPC
+lis:MaxCaulfield rdf:type lis:Protagonist
+lis:MichelleGrant rdf:type lis:NPC
+lis:NathanPrescott rdf:type lis:NPC
+lis:VictoriaChase rdf:type lis:NPC
+
+lis:acceptDanielPortrait rdf:type lis:MinorChoice
+lis:blameChloeWeed rdf:type lis:MajorChoice
+lis:comfortVictoria rdf:type lis:MajorChoice
+lis:declineDanielPortrait rdf:type lis:MinorChoice
+lis:eraseInsultKatesSlate rdf:type lis:MinorChoice
+lis:hideAndRevealToDavidChloeWeed rdf:type lis:MajorChoice
+lis:hideTheTruth rdf:type lis:MajorChoice
+lis:ignoreFootballAlyssa rdf:type lis:MinorChoice
+lis:ignoreInsultKatesSlate rdf:type lis:MinorChoice
+lis:interveneKateDavidConfrontation rdf:type lis:MajorChoice
+lis:makeFunOfVictoria rdf:type lis:MajorChoice
+lis:dontReorganizeVictoriaPhoto rdf:type lis:MinorChoice
+lis:dontSignMichellePetition rdf:type lis:MinorChoice
+lis:dontTouchDanaPregnancy rdf:type lis:MinorChoice
+lis:dontWaterLisaPlant rdf:type lis:MinorChoice
+lis:dontWriteRV rdf:type lis:MinorChoice
+lis:reorganizeVictoriaPhoto rdf:type lis:MinorChoice
+lis:reportNathan rdf:type lis:MajorChoice
+lis:signMichellePetition rdf:type lis:MinorChoice
+lis:stayHiddenChloeWeed rdf:type lis:MajorChoice
+lis:takeBlameChloeWeed rdf:type lis:MajorChoice
+lis:touchDanaPregnancy rdf:type lis:MinorChoice
+lis:touchAndRewindDanaPregnancy rdf:type lis:MinorChoice
+lis:takePhotoKateDavidConfrontation rdf:type lis:MajorChoice
+lis:waterLisaPlant rdf:type lis:MinorChoice
+lis:warnFootballAlyssa rdf:type lis:MinorChoice
+lis:writeRV rdf:type lis:MinorChoice
+
+lis:Episode1 rdf:type lis:Episode
+lis:Episode2 rdf:type lis:Episode
+lis:Episode3 rdf:type lis:Episode
+lis:Episode4 rdf:type lis:Episode
+lis:Episode5 rdf:type lis:Episode
+
+lis:chloesWeed rdf:type lis:Event
+lis:danielDaCostaPortrait rdf:type lis:Event
+lis:insultsOnKateMarshSlate rdf:type lis:Event
+lis:kateMarshDavidMadsenConfrontation rdf:type lis:Event
+lis:michelleGrantPetition rdf:type lis:Event
+lis:nathansGun rdf:type lis:Event
+lis:rvAtParkingLot rdf:type lis:Event
+lis:victoriaChaseOutsideDormitory rdf:type lis:Event
+lis:victoriasPhotoCollection rdf:type lis:Event
+lis:waterLisaPlantEvent rdf:type lis:Event
+
+lis:ArcadiaBay rdf:type lis:Location
+lis:BlackwellAcademy rdf:type lis:Location
+lis:ChloesRoom rdf:type lis:Place
+lis:MainCampus rdf:type lis:Place
+lis:MichelleGrantsClassroom rdf:type lis:Place
+lis:ParkingLot rdf:type lis:Place
+lis:PrescottDormitory rdf:type lis:Place
+lis:VictoriasRoom rdf:type lis:Place
+
+lis:chloeDisapproves rdf:type lis:Outcome
+lis:chloeGladNoReport rdf:type lis:Outcome
+lis:danielPortraitNotPosted rdf:type lis:Outcome
+lis:danielPortraitPosted rdf:type lis:Outcome
+lis:keepLukeRelationship rdf:type lis:Outcome
+lis:lukeFeelsSatisfied rdf:type lis:Outcome
+lis:michelleMentionsMax rdf:type lis:Outcome
+lis:michelleMentionsNotEnoughPeople rdf:type lis:Outcome
+lis:nathanGetsAngry rdf:type lis:Outcome
+lis:nathanIntimidates rdf:type lis:Outcome
+lis:noPublicAnnouncement rdf:type lis:Outcome
+lis:principalCallsNathan rdf:type lis:Outcome
+
+# Relations - Episode 1 example
+
+lis:MaxCaulfield lis:isPlayer true
+
+lis:chloesWeed lis:hasLocation lis:ChloesRoom
+lis:chloesWeed lis:hasCharacter lis:ChloePrice
+lis:chloesWeed lis:containedIn lis:Episode1
+lis:chloesWeed lis:triggers lis:blameChloeWeed
+
+lis:danielDaCostaPortrait lis:hasLocation lis:MainCampus
+lis:danielDaCostaPortrait lis:hasCharacter lis:DanielDaCosta
+lis:danielDaCostaPortrait lis:containedIn lis:Episode1
+lis:danielDaCostaPortrait lis:triggers lis:acceptDanielPortrait
+
+lis:blameChloeWeed lis:leadsTo lis:chloeDisapproves
+lis:acceptDanielPortrait lis:leadsTo lis:danielPortraitPosted
+
+lis:chloeDisapproves lis:elicits lis:emotionalResponseAnxiety
+lis:danielPortraitPosted lis:elicits lis:emotionalResponsePride
+
+lis:emotionalResponseAnxiety lis:isInfluencedBy lis:playerValuesFear
+lis:emotionalResponsePride lis:isInfluencedBy lis:playerValuesConfidence
+
+lis:playerValuesFear rdf:type lis:PlayerValue
+lis:playerValuesConfidence rdf:type lis:PlayerValue
+
+lis:blameChloeWeed lis:isChoiceOf lis:MaxCaulfield
+lis:acceptDanielPortrait lis:isChoiceOf lis:MaxCaulfield
+
+lis:Episode1 lis:hasEvent lis:chloesWeed
+lis:Episode1 lis:hasEvent lis:danielDaCostaPortrait
+
+# Emotional response linked to choices and reflection
+
+lis:blameChloeWeed lis:triggers lis:emotionalResponseAnxiety
+lis:acceptDanielPortrait lis:triggers lis:emotionalResponsePride
+
+# Reflection States (simplified example)
+
+lis:chloeDisapproves lis:leadsTo lis:firstReflectionState1
+lis:firstReflectionState1 lis:accepts lis:blameChloeWeed
+lis:firstReflectionState1 lis:reconsiders lis:stayHiddenChloeWeed
+
+lis:stayHiddenChloeWeed lis:leadsTo lis:finalDecision1
+lis:finalDecision1 lis:resolves lis:Episode1End
+
+lis:Episode1End rdf:type lis:GameEnd
+lis:Episode1End lis:triggers lis:internalizedMeaning1
+
+lis:internalizedMeaning1 lis:elicitedBy lis:emotionalResponseReflection
+
+# Example of Player's internal values influencing choices
+
+lis:MaxCaulfield lis:hasValue lis:playerValuesFear
+lis:MaxCaulfield lis:hasValue lis:playerValuesConfidence
+
+# Linking player to choices and outcomes
+
+lis:MaxCaulfield lis:makesChoice lis:blameChloeWeed
+lis:MaxCaulfield lis:makesChoice lis:acceptDanielPortrait
+
+# Locations related to events
+
+lis:ChloesRoom lis:isPartOf lis:BlackwellAcademy
+lis:MainCampus lis:isPartOf lis:ArcadiaBay
+
+# Add more triples here as needed to cover the whole episode
+
