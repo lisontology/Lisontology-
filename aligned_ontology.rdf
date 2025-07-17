@@ -5,8 +5,11 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10"/>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:creon="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10">
+        <owl:imports rdf:resource="http://example.org/lis-creon-bridge#"/>
+    </owl:Ontology>
     
 
 
@@ -21,10 +24,27 @@
     
 
 
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#produces -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#produces">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#leadsTo"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#triggers -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#triggers">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#triggers"/>
+    </rdf:Description>
+    
+
+
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#culminates -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#culminates">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#End"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#GameEnd"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning"/>
     </owl:ObjectProperty>
     
@@ -37,8 +57,8 @@
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -74,8 +94,8 @@
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Motivation"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Value"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -101,6 +121,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#influences -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#influences">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#involves -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#involves">
@@ -118,6 +154,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isChoiceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isChoiceOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isContainedIn -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isContainedIn">
@@ -131,12 +176,14 @@
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"/>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Motivation"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Value"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -157,6 +204,7 @@
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInfluencedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInfluencedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#reaffirmsChoice"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -179,6 +227,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPartOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Place"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPerformedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPerformedBy">
@@ -193,16 +251,6 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#leadsTo">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#madeBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#madeBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
     </owl:ObjectProperty>
     
 
@@ -225,11 +273,29 @@
     
 
 
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#reaffirmsChoice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#reaffirmsChoice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#rejectsChoice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#rejectsChoice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resets -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resets">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
     </owl:ObjectProperty>
     
 
@@ -238,7 +304,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resolvesTo">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#End"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#GameEnd"/>
     </owl:ObjectProperty>
     
 
@@ -294,11 +360,57 @@
     
 
 
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAct -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAct">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalConstraint -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalConstraint">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#IncubationPhase -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#IncubationPhase">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice"/>
     
 
 
@@ -310,19 +422,15 @@
 
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"/>
-    
-
-
-    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#End -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#End"/>
     
 
 
@@ -344,6 +452,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#GameEnd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#GameEnd"/>
+    
+
+
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning"/>
@@ -359,7 +473,7 @@
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MajorChoice -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MajorChoice">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MinorChoice"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
     </owl:Class>
     
 
@@ -369,12 +483,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MinorChoice">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Motivation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Motivation"/>
     
 
 
@@ -392,9 +500,35 @@
     
 
 
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Place">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue"/>
     
 
 
@@ -408,9 +542,7 @@
 
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice"/>
     
 
 
@@ -423,12 +555,6 @@
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"/>
-    
-
-
-    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Value -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Value"/>
 </rdf:RDF>
 
 
