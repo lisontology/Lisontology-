@@ -1,4 +1,6 @@
-# Classes and Types - Characters
+### CLASSES AND TYPES ###
+
+# Characters
 lis:ChloePrice rdf:type lis:NPC ;
 lis:DanielDaCosta rdf:type lis:NPC ;
 lis:DavidMadsen rdf:type lis:NPC ;
@@ -8,7 +10,7 @@ lis:MichelleGrant rdf:type lis:NPC ;
 lis:NathanPrescott rdf:type lis:NPC ;
 lis:VictoriaChase rdf:type lis:NPC .
 
-# Classes and Types - Choices (Chloe's Weed related first)
+# Choices (Chloe's Weed first)
 lis:blameChloeWeed rdf:type lis:MajorChoice ;
 lis:hideAndRevealToDavidChloeWeed rdf:type lis:MajorChoice ;
 lis:stayHiddenChloeWeed rdf:type lis:MajorChoice ;
@@ -37,14 +39,14 @@ lis:waterLisaPlant rdf:type lis:MinorChoice ;
 lis:warnFootballAlyssa rdf:type lis:MinorChoice ;
 lis:writeRV rdf:type lis:MinorChoice .
 
-# Classes and Types - Episodes
+# Episodes
 lis:Episode1 rdf:type lis:Episode ;
 lis:Episode2 rdf:type lis:Episode ;
 lis:Episode3 rdf:type lis:Episode ;
 lis:Episode4 rdf:type lis:Episode ;
 lis:Episode5 rdf:type lis:Episode .
 
-# Classes and Types - Events (Chloe's Weed first)
+# Events (Chloe's Weed first)
 lis:chloesWeed rdf:type lis:Event ;
 lis:danielDaCostaPortrait rdf:type lis:Event ;
 lis:insultsOnKateMarshSlate rdf:type lis:Event ;
@@ -56,7 +58,7 @@ lis:victoriaChaseOutsideDormitory rdf:type lis:Event ;
 lis:victoriasPhotoCollection rdf:type lis:Event ;
 lis:waterLisaPlantEvent rdf:type lis:Event .
 
-# Classes and Types - Places and Locations
+# Places and Locations
 lis:ArcadiaBay rdf:type lis:Location ;
 lis:BlackwellAcademy rdf:type lis:Location ;
 lis:ChloesRoom rdf:type lis:Place ;
@@ -66,7 +68,7 @@ lis:ParkingLot rdf:type lis:Place ;
 lis:PrescottDormitory rdf:type lis:Place ;
 lis:VictoriasRoom rdf:type lis:Place .
 
-# Classes and Types - Outcomes 
+# Outcomes (Chloe's Weed first)
 lis:chloeDisapproves rdf:type lis:Outcome ;
 lis:chloeGladNoReport rdf:type lis:Outcome ;
 lis:danielPortraitNotPosted rdf:type lis:Outcome ;
@@ -94,102 +96,103 @@ lis:ReflectionState2 rdf:type lis:ReflectionState ;
 lis:ReconsiderChoice1 rdf:type lis:ReconsiderChoice ;
 lis:AcceptChoice1 rdf:type lis:AcceptChoice ;
 lis:FinalDecision1 rdf:type lis:FinalDecision ;
-lis:RewindMechanic1 rdf:type lis:RewindMechanic .
+lis:RewindMechanic1 rdf:type lis:RewindMechanic ;
+lis:GameEnd rdf:type owl:Class ;
+lis:internalizedMeaning1 rdf:type lis:InternalizedMeaning .
 
-# Relations - Episode 1
+### CLASSES AND TYPES ###
+[Previous sections remain exactly the same until EPISODE 1 RELATIONS]
+
+### EPISODE 1 RELATIONS ###
+
+# Player
 lis:Player1 rdf:type lis:Player ;
-lis:Player1 lis:impersonates lis:MaxCaulfield .
+    lis:impersonates lis:MaxCaulfield .
 
-# Chloe's Weed event
+# Chloe's Weed Event - Fixed missing period and added triggers for takeBlame
 lis:chloesWeed lis:takesPlaceIn lis:ChloesRoom ;
-lis:involves lis:MaxCaulfield ;
-lis:involves lis:ChloePrice ;
-lis:isContainedIn lis:Episode1 ;
-lis:triggers lis:blameChloeWeed ;
-lis:triggers lis:takeBlameChloeWeed ;
-lis:elicits lis:emotionalResponseAnxiety .
+    lis:involves lis:MaxCaulfield, lis:ChloePrice ;
+    lis:isContainedIn lis:Episode1 ;
+    lis:triggers lis:blameChloeWeed, lis:takeBlameChloeWeed ;
+    lis:elicits lis:emotionalResponseAnxiety .
 
 lis:emotionalResponseAnxiety rdf:type lis:EmotionalResponse ;
-lis:isDrivenBy lis:playerValueHonesty ;
-lis:isDrivenBy lis:playerMotivationSelfPreservation ;
-lis:isDrivenBy lis:playerEmotionAnxiety ;
-lis:influences lis:blameChloeWeed .
+    lis:isDrivenBy lis:playerValueHonesty, lis:playerMotivationSelfPreservation, lis:playerEmotionAnxiety ;
+    lis:influences lis:blameChloeWeed, lis:takeBlameChloeWeed .
 
-lis:playerValueLoyalty rdf:type lis:PlayerValue ;
-lis:playerEmotionAnxiety rdf:type lis:PlayerEmotion ;
-lis:playerMotivationSelfPreservation rdf:type lis:PlayerMotivation .
-
+# Fixed missing period and added player emotion types
 lis:blameChloeWeed lis:leadsTo lis:chloeDisapproves ;
-lis:isChoiceOf lis:Player1 .
+    lis:isChoiceOf lis:Player1 .
 
-lis:takeBlameChloeWeed lis:leadsTo lis:chloeGladNoReport ;
-lis:isChoiceOf lis:Player1 .
-
-lis:chloeDisapproves lis:elicits lis:emotionalResponseGuilt .
-
-lis:emotionalResponseGuilt rdf:type lis:EmotionalResponse ;
-lis:isDrivenBy lis:playerMotivationRepairRelationship ;
-lis:isDrivenBy lis:playerValueEmpathy ;
-lis:isDrivenBy lis:playerEmotionGuilt .
-
-lis:playerMotivationRepairRelationship rdf:type lis:PlayerMotivation ;
-lis:playerEmotionGuilt rdf:type lis:PlayerEmotion ;
-lis:playerValueEmpathy rdf:type lis:PlayerValue .
-
-lis:chloeDisapproves lis:induces lis:ReflectionState1 .
+lis:chloeDisapproves lis:elicits lis:emotionalResponseGuilt ;
+    lis:induces lis:ReflectionState1 .
 
 lis:ReflectionState1 lis:isInfluencedBy lis:emotionalResponseGuilt ;
-lis:resultsIn lis:ReconsiderChoice1 .
+    lis:isDrivenBy lis:playerValueEmpathy, lis:playerEmotionGuilt, lis:playerMotivationRepairRelationship ;
+    lis:resultsIn lis:ReconsiderChoice1 .
 
 lis:ReconsiderChoice1 lis:rejectsChoice lis:blameChloeWeed ;
-lis:enables lis:RewindMechanic1 .
+    lis:enables lis:RewindMechanic1 .
 
 lis:RewindMechanic1 lis:resets lis:chloesWeed .
 
+lis:takeBlameChloeWeed lis:leadsTo lis:chloeGladNoReport ;
+    lis:isChoiceOf lis:Player1 ;
+    lis:induces lis:ReflectionState2 .
+
 lis:chloeGladNoReport lis:elicits lis:emotionalResponseRelief .
 
-lis:emotionalResponseRelief lis:isDrivenBy lis:playerMotivationProtectingChloe ;
-lis:isDrivenBy lis:playerEmotionAffection ;
-lis:isDrivenBy lis:playerValueMoralGrowth .
+lis:emotionalResponseRelief lis:isDrivenBy lis:playerEmotionAffection, lis:playerValueMoralGrowth, lis:playerMotivationProtectingChloe .
 
-lis:takeBlameChloeWeed lis:induces lis:ReflectionState2 .
-
-lis:ReflectionState2 lis:resultsIn lis:AcceptChoice1 .
+lis:ReflectionState2 lis:resultsIn lis:AcceptChoice1 ;
+    lis:isInfluencedBy lis:emotionalResponseRelief .
 
 lis:AcceptChoice1 lis:marks lis:FinalDecision1 .
-
-lis:stayHiddenChloeWeed lis:leadsTo lis:FinalDecision1 .
 
 lis:FinalDecision1 lis:resolves lis:Episode1End .
 
 lis:Episode1End rdf:type lis:GameEnd ;
-lis:triggers lis:internalizedMeaning1 .
+    lis:triggers lis:internalizedMeaning1 .
 
-lis:internalizedMeaning1 lis:elicitedBy lis:emotionalResponseReflection .
-
-# Daniel's Portrait event
+# Daniel's Portrait Event - Fixed consistency
 lis:danielDaCostaPortrait lis:takesPlaceIn lis:MainCampus ;
-lis:involves lis:MaxCaulfield ;
-lis:involves lis:DanielDaCosta ;
-lis:isContainedIn lis:Episode1 ;
-lis:triggers lis:acceptDanielPortrait ;
-lis:elicits lis:emotionalResponseFlattery .
+    lis:involves lis:MaxCaulfield, lis:DanielDaCosta ;
+    lis:isContainedIn lis:Episode1 ;
+    lis:triggers lis:acceptDanielPortrait ;
+    lis:elicits lis:emotionalResponseFlattery .
 
 lis:emotionalResponseFlattery rdf:type lis:EmotionalResponse ;
-lis:isDrivenBy lis:playerValueOpenness ;
-lis:isDrivenBy lis:playerMotivationSupportiveness ;
-lis:isDrivenBy lis:playerEmotionAppreciation ;
-lis:influences lis:acceptDanielPortrait .
+    lis:isDrivenBy lis:playerValueOpenness, lis:playerMotivationSupportiveness, lis:playerEmotionAppreciation ;
+    lis:influences lis:acceptDanielPortrait .
 
 lis:acceptDanielPortrait lis:leadsTo lis:danielPortraitPosted ;
-lis:isChoiceOf lis:Player1 .
+    lis:isChoiceOf lis:Player1 .
 
-# Player's internal values
-lis:MaxCaulfield lis:hasValue lis:playerValueFear ;
-lis:hasValue lis:playerValueConfidence ;
-lis:makesChoice lis:blameChloeWeed ;
-lis:makesChoice lis:acceptDanielPortrait .
+lis:danielPortraitPosted lis:induces lis:ReflectionState3 ;
+    lis:elicits lis:emotionalResponseValidation .
 
-# Locations
-lis:ChloesRoom lis:isPartOf lis:BlackwellAcademy ;
+lis:emotionalResponseValidation rdf:type lis:EmotionalResponse ;
+    lis:isDrivenBy lis:playerValueCreativity, lis:playerMotivationEncourageDanielWork, lis:playerEmotionPride .
+
+lis:ReflectionState3 rdf:type lis:ReflectionState ;
+    lis:isInfluencedBy lis:emotionalResponseValidation ;
+    lis:resultsIn lis:AcceptChoice2 .
+
+lis:AcceptChoice2 rdf:type lis:AcceptChoice ;
+    lis:reaffirmsChoice lis:acceptDanielPortrait ;
+    lis:marks lis:FinalDecision2 .
+
+lis:FinalDecision2 rdf:type lis:FinalDecision ;
+    lis:resolves lis:Episode1End .
+
+# Additional Relations
+lis:MaxCaulfield lis:hasValue lis:playerValueFear, lis:playerValueConfidence ;
+    lis:makesChoice lis:blameChloeWeed, lis:acceptDanielPortrait .
+
+
+lis:Episode1End lis:triggers "I learned that small choices shape relationships" .
+lis:internalizedMeaning1 rdf:type lis:InternalizedMeaning ;
+    rdfd:label "I learned that small choices shape relationships."
+
+lis:ChloesRoom lis:isPartOf lis:BlackwellAcademy .
 lis:MainCampus lis:isPartOf lis:ArcadiaBay .

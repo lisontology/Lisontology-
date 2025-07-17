@@ -44,7 +44,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#culminates">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#GameEnd"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning"/>
     </owl:ObjectProperty>
     
@@ -304,7 +304,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resolvesTo">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#GameEnd"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd"/>
     </owl:ObjectProperty>
     
 
@@ -440,6 +440,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd"/>
+    
+
+
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
@@ -449,12 +455,6 @@
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision"/>
-    
-
-
-    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#GameEnd -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#GameEnd"/>
     
 
 
