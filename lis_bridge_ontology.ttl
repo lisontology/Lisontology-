@@ -10,7 +10,7 @@
    rdfs:label "Lis-Creon Bridge"@en .
 
 ### CLASSI PRINCIPALI ###
-creon:NaturalPerson a owl:Class ;
+creon:CreativeAgent a owl:Class ;
    rdfs:comment "Agente creativo (mappare a lis:Player)"@it ;
    rdfs:label "Creative Agent"@en .
 

@@ -368,18 +368,20 @@
     
 
 
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAgent -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAgent">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
+    </rdf:Description>
+    
+
+
     <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait -->
 
     <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue"/>
     </rdf:Description>
     
 
@@ -400,11 +402,11 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson -->
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#InterpretativeArtwork -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
-    </owl:Class>
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#InterpretativeArtwork">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning"/>
+    </rdf:Description>
     
 
 
@@ -422,9 +424,7 @@
 
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
     
 
 
