@@ -1,0 +1,277 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10/"
+     xml:base="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#culminates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#culminates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#End"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#elicits -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#elicits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#enables -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#enables">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FirstReflection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#induces -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#induces">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#involves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#involves">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isContainedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isContainedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Episode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInfluencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInfluencedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionEvent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInvolvedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInvolvedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPerformedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPerformedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionEvent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#leadsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#leadsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#marks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#marks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalReflection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resets -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resets">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resultsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resultsIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#End"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#takesPlaceIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#takesPlaceIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#triggers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#triggers">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#equivalentClass -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#End -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#End"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Episode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Episode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalReflection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalReflection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FirstReflection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FirstReflection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionEvent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
