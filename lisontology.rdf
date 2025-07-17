@@ -363,9 +363,39 @@
     
 
 
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeFeelsVictorious -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeFeelsVictorious"/>
+    
+
+
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeGladNoReport -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeGladNoReport"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeHidesGun_WaitsToLeave -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeHidesGun_WaitsToLeave">
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#stayHidden_Chloe_Weed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeShowsGun_WaitsToLeave -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeShowsGun_WaitsToLeave">
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideAndRevealToDavid_Chloe_Weed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeUpsetRetainsPhone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeUpsetRetainsPhone">
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#blame_Chloe_Weed"/>
+    </owl:NamedIndividual>
     
 
 
@@ -392,6 +422,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_will_feel_she_has_won_a_victory_against_David -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_will_feel_she_has_won_a_victory_against_David">
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#takeBlame_Chloe_Weed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_will_show_Max_the_gun_and_wait_for_Max_to_leave_the_room_with_her -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_will_show_Max_the_gun_and_wait_for_Max_to_leave_the_room_with_her"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_will_wait_for_Max_to_leave_the_room_with_her_and_will_not_show_Max_the_gun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_will_wait_for_Max_to_leave_the_room_with_her_and_will_not_show_Max_the_gun"/>
+    
+
+
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloes_Room -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloes_Room">
@@ -405,6 +455,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Comfort_Victoria">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#VictoriaDeletesPhoto_PostsCampus"/>
     </owl:NamedIndividual>
     
 
@@ -509,6 +560,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Erase_Insult_Kates_Slate">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#KateSlateVandalizedAgain"/>
     </owl:NamedIndividual>
     
 
@@ -525,6 +577,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Ignore_Insult_Kates_Slate">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#KateSlateUnchanged"/>
     </owl:NamedIndividual>
     
 
@@ -543,6 +596,23 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Intervened_kateAndDavid_Confrontation">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_is_glad_that_she_intervened_for_Kate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#KateSlateUnchanged -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#KateSlateUnchanged">
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Ignore_Insult_Kates_Slate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#KateSlateVandalizedAgain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#KateSlateVandalizedAgain">
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Erase_Insult_Kates_Slate"/>
     </owl:NamedIndividual>
     
 
@@ -570,10 +640,44 @@
     
 
 
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Kates_slate_will_retain_the_original_message -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Kates_slate_will_retain_the_original_message"/>
+    
+
+
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#KeepLukeRelationship -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#KeepLukeRelationship">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#LisaHealthy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#LisaHealthy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#LisaWilted -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#LisaWilted"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Lisa_will_look_healthy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Lisa_will_look_healthy">
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Watered_lisaPlant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Lisa_will_look_wilted -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Lisa_will_look_wilted">
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notWatered_lisaPlant"/>
     </owl:NamedIndividual>
     
 
@@ -599,7 +703,20 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Make_fun_of_Victoria">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#VictoriaPostsPhotoOfMax"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#MaxGladHelpedKate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#MaxGladHelpedKate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#MaxRegretsNotHelpingKate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#MaxRegretsNotHelpingKate"/>
     
 
 
@@ -608,6 +725,46 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_Caulfield">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Protagonist"/>
         <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#nathansGun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_can_take_an_optional_photo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_can_take_an_optional_photo">
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Reorganized_Victoria_Photo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_can_take_an_optional_photo_provided_she_reorganizes_the_photo_collection_and_decides_to_rewind_after_taking_the_photo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_can_take_an_optional_photo_provided_she_reorganizes_the_photo_collection_and_decides_to_rewind_after_taking_the_photo">
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notReorganise_Victoria_Photo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_cannot_take_an_optional_photo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_cannot_take_an_optional_photo">
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notWrote_Rv"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_is_glad_that_she_intervened_for_Kate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_is_glad_that_she_intervened_for_Kate">
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Intervened_kateAndDavid_Confrontation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_will_regret_not_intervening_for_Kate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_will_regret_not_intervening_for_Kate">
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#tookPhoto_kateAndDavid_Confrontation"/>
     </owl:NamedIndividual>
     
 
@@ -657,6 +814,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NathanGetsAngry">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#reportNathan"/>
     </owl:NamedIndividual>
     
 
@@ -665,6 +823,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NathanIntimidates">
         <owl:sameAs rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NoPublicAnnouncement"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideTheTruth"/>
     </owl:NamedIndividual>
     
 
@@ -686,7 +845,9 @@
 
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NoPublicAnnouncement -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NoPublicAnnouncement"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NoPublicAnnouncement">
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideTheTruth"/>
+    </owl:NamedIndividual>
     
 
 
@@ -696,6 +857,24 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Place"/>
         <untitled-ontology-11:locationHostsEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#RV_at_the_parking_lot"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PhotoAvailableIfReorganizedAndRewound -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PhotoAvailableIfReorganizedAndRewound"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PhotoEnabled -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PhotoEnabled"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PhotoUnavailable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PhotoUnavailable"/>
     
 
 
@@ -712,6 +891,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PrincipalCallsNathan">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#reportNathan"/>
     </owl:NamedIndividual>
     
 
@@ -730,6 +910,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Reorganized_Victoria_Photo">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_can_take_an_optional_photo"/>
     </owl:NamedIndividual>
     
 
@@ -742,10 +923,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#This_will_enable_Max_to_take_an_optional_photo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#This_will_enable_Max_to_take_an_optional_photo">
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#wrote_RV"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Touched_Dana_Pregnancy -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Touched_Dana_Pregnancy">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#VictoriaDeletesPhoto_PostsCampus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#VictoriaDeletesPhoto_PostsCampus">
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Comfort_Victoria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#VictoriaPostsPhotoOfMax -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#VictoriaPostsPhotoOfMax">
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Make_fun_of_Victoria"/>
     </owl:NamedIndividual>
     
 
@@ -817,6 +1022,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Watered_lisaPlant">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Lisa_will_look_healthy"/>
     </owl:NamedIndividual>
     
 
@@ -825,6 +1031,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#blame_Chloe_Weed">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeUpsetRetainsPhone"/>
     </owl:NamedIndividual>
     
 
@@ -833,6 +1040,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideAndRevealToDavid_Chloe_Weed">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeShowsGun_WaitsToLeave"/>
     </owl:NamedIndividual>
     
 
@@ -841,6 +1049,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideTheTruth">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NathanIntimidates"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NoPublicAnnouncement"/>
     </owl:NamedIndividual>
     
 
@@ -863,6 +1073,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notReorganise_Victoria_Photo">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_can_take_an_optional_photo_provided_she_reorganizes_the_photo_collection_and_decides_to_rewind_after_taking_the_photo"/>
     </owl:NamedIndividual>
     
 
@@ -887,6 +1098,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notWatered_lisaPlant">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Lisa_will_look_wilted"/>
     </owl:NamedIndividual>
     
 
@@ -895,6 +1107,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notWrote_Rv">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_cannot_take_an_optional_photo"/>
     </owl:NamedIndividual>
     
 
@@ -903,6 +1116,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#reportNathan">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NathanGetsAngry"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PrincipalCallsNathan"/>
     </owl:NamedIndividual>
     
 
@@ -911,6 +1126,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#stayHidden_Chloe_Weed">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeHidesGun_WaitsToLeave"/>
     </owl:NamedIndividual>
     
 
@@ -919,6 +1135,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#takeBlame_Chloe_Weed">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_will_feel_she_has_won_a_victory_against_David"/>
     </owl:NamedIndividual>
     
 
@@ -927,6 +1144,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#tookPhoto_kateAndDavid_Confrontation">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_will_regret_not_intervening_for_Kate"/>
         <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notWrote_Rv"/>
         <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#wrote_RV"/>
     </owl:NamedIndividual>
@@ -945,7 +1163,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#wrote_RV">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#This_will_enable_Max_to_take_an_optional_photo"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_will_be_very_upset_with_Max,_and_this_will_cause_Chloe_to_retain_her_mobile_phone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_will_be_very_upset_with_Max,_and_this_will_cause_Chloe_to_retain_her_mobile_phone"/>
     
 
 
@@ -955,9 +1180,27 @@
     
 
 
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Kates_slate_will_be_vandalized_again&apos; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Kates_slate_will_be_vandalized_again&apos;"/>
+    
+
+
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grant&apos;s_Classroom -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grant&apos;s_Classroom"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victoria_will_delete_the_photo_of_Max_on_her_mobile_phone_and_put_up_a_photo_of_Blackwell&apos;s_main_campus_instead -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victoria_will_delete_the_photo_of_Max_on_her_mobile_phone_and_put_up_a_photo_of_Blackwell&apos;s_main_campus_instead"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victoria_will_leave_her_photo_of_Max_in_Max&apos;s_social_media_page -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victoria_will_leave_her_photo_of_Max_in_Max&apos;s_social_media_page"/>
 </rdf:RDF>
 
 
