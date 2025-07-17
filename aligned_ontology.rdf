@@ -39,7 +39,6 @@
                     <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -354,6 +353,22 @@
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MajorChoice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MajorChoice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MinorChoice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MinorChoice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MinorChoice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+    </owl:Class>
     
 
 
