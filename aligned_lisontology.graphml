@@ -1,0 +1,889 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d0" for="edge" attr.name="label" attr.type="string"/>
+<graph edgedefault="directed"><node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#takesPlaceIn"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb26"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb21"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb1"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInvolvedIn"/>
+<node id="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation"/>
+<node id="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#IncubationPhase"/>
+<node id="http://www.w3.org/2002/07/owl#Class"/>
+<node id="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isExperiencedBy"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#induces"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb7"/>
+<node id="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb9"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision"/>
+<node id="http://www.w3.org/2002/07/owl#Thing"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb10"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character"/>
+<node id="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#InterpretativeArtwork"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resultsIn"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#reaffirmsChoice"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#influences"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb8"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#impersonates"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPartOf"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb16"/>
+<node id="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isContainedIn"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#marks"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb17"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb14"/>
+<node id="http://www.semanticweb.org/ontologies/2025/6/lisontology"/>
+<node id="http://www.w3.org/2002/07/owl#Ontology"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MinorChoice"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resets"/>
+<node id="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAct"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#has"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#enables"/>
+<node id="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MajorChoice"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#prompts"/>
+<node id="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalConstraint"/>
+<node id="http://www.w3.org/2002/07/owl#equivalentClass"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Protagonist"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resolvesTo"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb25"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#leadsTo"/>
+<node id="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAgent"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Episode"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb22"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb11"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb20"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#triggers"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb27"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isChoiceOf"/>
+<node id="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#culminates"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#NPCs"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb4"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb13"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInfluencedBy"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#rejectsChoice"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb24"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#elicits"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#enteredBy"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPerformedBy"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb23"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb12"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb19"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb2"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb15"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb3"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#involves"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb6"/>
+<node id="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Place"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb18"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb28"/>
+<node id="n2ce67d0f4473481f92b0c763be5a8b1fb5"/>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#takesPlaceIn" target="n2ce67d0f4473481f92b0c763be5a8b1fb26">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#takesPlaceIn" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#takesPlaceIn" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb26" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb21" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy" target="http://www.w3.org/2002/07/owl#SymmetricProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy" target="http://www.w3.org/2002/07/owl#ReflexiveProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy" target="http://www.w3.org/2002/07/owl#topObjectProperty">
+  <data key="d0">http://www.w3.org/2002/07/owl#equivalentProperty</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy" target="http://www.w3.org/2002/07/owl#TransitiveProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2002/07/owl#equivalentClass</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb1" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInvolvedIn" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInvolvedIn" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInvolvedIn" target="n2ce67d0f4473481f92b0c763be5a8b1fb15">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue" target="http://www.w3.org/2002/07/owl#Thing">
+  <data key="d0">http://www.w3.org/2002/07/owl#equivalentClass</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2002/07/owl#equivalentClass</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#IncubationPhase" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#IncubationPhase" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#IncubationPhase" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState">
+  <data key="d0">http://www.w3.org/2002/07/owl#equivalentClass</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#IncubationPhase" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#IncubationPhase" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#IncubationPhase" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#IncubationPhase" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2002/07/owl#equivalentClass</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isExperiencedBy" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isExperiencedBy" target="n2ce67d0f4473481f92b0c763be5a8b1fb13">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isExperiencedBy" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#induces" target="n2ce67d0f4473481f92b0c763be5a8b1fb7">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#induces" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#induces" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb7" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb9" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb10" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#InterpretativeArtwork" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#InterpretativeArtwork" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#InterpretativeArtwork" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#InterpretativeArtwork" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning">
+  <data key="d0">http://www.w3.org/2002/07/owl#equivalentClass</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#InterpretativeArtwork" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#InterpretativeArtwork" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#InterpretativeArtwork" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2002/07/owl#equivalentClass</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resultsIn" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resultsIn" target="n2ce67d0f4473481f92b0c763be5a8b1fb25">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resultsIn" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#reaffirmsChoice" target="n2ce67d0f4473481f92b0c763be5a8b1fb21">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#reaffirmsChoice" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#reaffirmsChoice" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#influences" target="n2ce67d0f4473481f92b0c763be5a8b1fb8">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#influences" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#influences" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb8" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#impersonates" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#impersonates" target="n2ce67d0f4473481f92b0c763be5a8b1fb6">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#impersonates" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPartOf" target="n2ce67d0f4473481f92b0c763be5a8b1fb16">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPartOf" target="http://www.w3.org/2002/07/owl#TransitiveProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPartOf" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPartOf" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb16" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isContainedIn" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isContainedIn" target="n2ce67d0f4473481f92b0c763be5a8b1fb11">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isContainedIn" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#marks" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#marks" target="n2ce67d0f4473481f92b0c763be5a8b1fb19">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#marks" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb17" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb14" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/ontologies/2025/6/lisontology" target="http://www.w3.org/2002/07/owl#Ontology">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MinorChoice" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MinorChoice" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MinorChoice" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAct">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resets" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resets" target="n2ce67d0f4473481f92b0c763be5a8b1fb23">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resets" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAct" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAct" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAct" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAct" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAct" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAct" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAct" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice">
+  <data key="d0">http://www.w3.org/2002/07/owl#equivalentClass</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#has" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#has" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#has" target="n2ce67d0f4473481f92b0c763be5a8b1fb5">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#enables" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#enables" target="n2ce67d0f4473481f92b0c763be5a8b1fb3">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#enables" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MajorChoice" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MajorChoice" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MajorChoice" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAct">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#prompts" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#prompts" target="n2ce67d0f4473481f92b0c763be5a8b1fb20">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#prompts" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalConstraint" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalConstraint" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalConstraint" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalConstraint" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalConstraint" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalConstraint" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalConstraint" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic">
+  <data key="d0">http://www.w3.org/2002/07/owl#equivalentClass</data>
+</edge>
+<edge source="http://www.w3.org/2002/07/owl#equivalentClass" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.w3.org/2002/07/owl#equivalentClass" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.w3.org/2002/07/owl#equivalentClass" target="n2ce67d0f4473481f92b0c763be5a8b1fb28">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Protagonist" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Protagonist" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resolvesTo" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resolvesTo" target="n2ce67d0f4473481f92b0c763be5a8b1fb24">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resolvesTo" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb25" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#leadsTo" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#leadsTo" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#leadsTo" target="n2ce67d0f4473481f92b0c763be5a8b1fb18">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAgent" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAgent" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAgent" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAgent" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAgent" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player">
+  <data key="d0">http://www.w3.org/2002/07/owl#equivalentClass</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAgent" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAgent" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Episode" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Episode" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Episode" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Episode" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Episode" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Episode" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb22" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb11" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb20" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#triggers" target="n2ce67d0f4473481f92b0c763be5a8b1fb27">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#triggers" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#triggers" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb27" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isChoiceOf" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isChoiceOf" target="n2ce67d0f4473481f92b0c763be5a8b1fb10">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isChoiceOf" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.w3.org/2002/07/owl#topObjectProperty" target="http://www.w3.org/2002/07/owl#TransitiveProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.w3.org/2002/07/owl#topObjectProperty" target="http://www.w3.org/2002/07/owl#ReflexiveProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.w3.org/2002/07/owl#topObjectProperty" target="http://www.w3.org/2002/07/owl#topObjectProperty">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="http://www.w3.org/2002/07/owl#topObjectProperty" target="n2ce67d0f4473481f92b0c763be5a8b1fb12">
+  <data key="d0">http://www.w3.org/2002/07/owl#equivalentProperty</data>
+</edge>
+<edge source="http://www.w3.org/2002/07/owl#topObjectProperty" target="http://www.w3.org/2002/07/owl#SymmetricProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#culminates" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#culminates" target="n2ce67d0f4473481f92b0c763be5a8b1fb1">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#culminates" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#NPCs" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#NPCs" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb4" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb13" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInfluencedBy" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#reaffirmsChoice">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInfluencedBy" target="n2ce67d0f4473481f92b0c763be5a8b1fb14">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInfluencedBy" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInfluencedBy" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#rejectsChoice" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#rejectsChoice" target="n2ce67d0f4473481f92b0c763be5a8b1fb22">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#rejectsChoice" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb24" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#elicits" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#elicits" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#elicits" target="n2ce67d0f4473481f92b0c763be5a8b1fb2">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome" target="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#enteredBy" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#enteredBy" target="n2ce67d0f4473481f92b0c763be5a8b1fb4">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#enteredBy" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPerformedBy" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPerformedBy" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPerformedBy" target="n2ce67d0f4473481f92b0c763be5a8b1fb17">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb23" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb12" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb19" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb2" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb15" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb3" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#involves" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#involves" target="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#involves" target="n2ce67d0f4473481f92b0c763be5a8b1fb9">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subPropertyOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb6" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Place" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location">
+  <data key="d0">http://www.w3.org/2000/01/rdf-schema#subClassOf</data>
+</edge>
+<edge source="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Place" target="http://www.w3.org/2002/07/owl#Class">
+  <data key="d0">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb18" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb28" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+<edge source="n2ce67d0f4473481f92b0c763be5a8b1fb5" target="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+  <data key="d0">http://www.w3.org/2002/07/owl#inverseOf</data>
+</edge>
+</graph></graphml>
