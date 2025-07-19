@@ -1,0 +1,1354 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"
+    }, {
+      "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome"
+    }, {
+      "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character"
+    }, {
+      "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#NPCs"
+    }, {
+      "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Protagonist"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion"
+    }, {
+      "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation"
+    }, {
+      "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"
+    }, {
+      "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice"
+    }, {
+      "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation"
+    }, {
+      "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"
+    }, {
+      "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"
+    } ]
+  } ]
+}, {
+  "@id" : "http://example.org/lis#AcceptChoice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.org/lis#AcceptChoice1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#marks" : [ {
+    "@id" : "http://example.org/lis#FinalDecision1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#AcceptChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#AcceptChoice2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#marks" : [ {
+    "@id" : "http://example.org/lis#FinalDecision2"
+  } ],
+  "http://example.org/lis#reaffirmsChoice" : [ {
+    "@id" : "http://example.org/lis#acceptDanielPortrait"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#AcceptChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#ArcadiaBay",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Location"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#BlackwellAcademy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Location"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#ChloePrice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#NPC"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#ChloesRoom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#isPartOf" : [ {
+    "@id" : "http://example.org/lis#BlackwellAcademy"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Place"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#DanielDaCosta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#NPC"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#DavidMadsen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#NPC"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#EmotionalResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.org/lis#Episode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.org/lis#Episode1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Episode"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#Episode1End",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#triggers" : [ {
+    "@id" : "http://example.org/lis#internalizedMeaning1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#GameEnd"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#Episode2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Episode"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#Episode3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Episode"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#Episode4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Episode"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#Episode5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Episode"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.org/lis#FinalDecision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.org/lis#FinalDecision1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#resolves" : [ {
+    "@id" : "http://example.org/lis#Episode1End"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#FinalDecision"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#FinalDecision2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#resolves" : [ {
+    "@id" : "http://example.org/lis#Episode1End"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#FinalDecision"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#GameEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.org/lis#InternalizedMeaning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.org/lis#KateMarsh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#NPC"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.org/lis#MainCampus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#isPartOf" : [ {
+    "@id" : "http://example.org/lis#ArcadiaBay"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Place"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#MajorChoice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.org/lis#MaxCaulfield",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#hasValue" : [ {
+    "@id" : "http://example.org/lis#playerValueConfidence"
+  }, {
+    "@id" : "http://example.org/lis#playerValueFear"
+  } ],
+  "http://example.org/lis#makesChoice" : [ {
+    "@id" : "http://example.org/lis#acceptDanielPortrait"
+  }, {
+    "@id" : "http://example.org/lis#blameChloeWeed"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Protagonist"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#MichelleGrant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#NPC"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#MichelleGrantsClassroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Place"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#MinorChoice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://example.org/lis#Place"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#NPC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.org/lis#NathanPrescott",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#NPC"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#Outcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.org/lis#ParkingLot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Place"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.org/lis#Player",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.org/lis#Player1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#impersonates" : [ {
+    "@id" : "http://example.org/lis#MaxCaulfield"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Player"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#PlayerEmotion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.org/lis#PlayerValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.org/lis#PrescottDormitory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Place"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#Protagonist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.org/lis#ReconsiderChoice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.org/lis#ReconsiderChoice1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#enables" : [ {
+    "@id" : "http://example.org/lis#RewindMechanic1"
+  } ],
+  "http://example.org/lis#rejectsChoice" : [ {
+    "@id" : "http://example.org/lis#blameChloeWeed"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#ReconsiderChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#ReflectionState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.org/lis#ReflectionState1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#isDrivenBy" : [ {
+    "@id" : "http://example.org/lis#playerEmotionGuilt"
+  }, {
+    "@id" : "http://example.org/lis#playerMotivationRepairRelationship"
+  }, {
+    "@id" : "http://example.org/lis#playerValueEmpathy"
+  } ],
+  "http://example.org/lis#isInfluencedBy" : [ {
+    "@id" : "http://example.org/lis#emotionalResponseGuilt"
+  } ],
+  "http://example.org/lis#resultsIn" : [ {
+    "@id" : "http://example.org/lis#ReconsiderChoice1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#ReflectionState"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#ReflectionState2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#isInfluencedBy" : [ {
+    "@id" : "http://example.org/lis#emotionalResponseRelief"
+  } ],
+  "http://example.org/lis#resultsIn" : [ {
+    "@id" : "http://example.org/lis#AcceptChoice1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#ReflectionState"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#ReflectionState3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#isInfluencedBy" : [ {
+    "@id" : "http://example.org/lis#emotionalResponseValidation"
+  } ],
+  "http://example.org/lis#resultsIn" : [ {
+    "@id" : "http://example.org/lis#AcceptChoice2"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#ReflectionState"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#RewindMechanic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://example.org/lis#RewindMechanic1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#resets" : [ {
+    "@id" : "http://example.org/lis#chloesWeed"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#RewindMechanic"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#VictoriaChase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#NPC"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#VictoriasRoom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Place"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#acceptDanielPortrait",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#isChoiceOf" : [ {
+    "@id" : "http://example.org/lis#Player1"
+  } ],
+  "http://example.org/lis#leadsTo" : [ {
+    "@id" : "http://example.org/lis#danielPortraitPosted"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MinorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#blameChloeWeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#isChoiceOf" : [ {
+    "@id" : "http://example.org/lis#Player1"
+  } ],
+  "http://example.org/lis#leadsTo" : [ {
+    "@id" : "http://example.org/lis#chloeDisapproves"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MajorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#chloeDisapproves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#elicits" : [ {
+    "@id" : "http://example.org/lis#emotionalResponseGuilt"
+  } ],
+  "http://example.org/lis#induces" : [ {
+    "@id" : "http://example.org/lis#ReflectionState1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Outcome"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#chloeGladNoReport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#elicits" : [ {
+    "@id" : "http://example.org/lis#emotionalResponseRelief"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Outcome"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#chloesWeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#elicits" : [ {
+    "@id" : "http://example.org/lis#emotionalResponseAnxiety"
+  } ],
+  "http://example.org/lis#involves" : [ {
+    "@id" : "http://example.org/lis#ChloePrice"
+  }, {
+    "@id" : "http://example.org/lis#MaxCaulfield"
+  } ],
+  "http://example.org/lis#isContainedIn" : [ {
+    "@id" : "http://example.org/lis#Episode1"
+  } ],
+  "http://example.org/lis#takesPlaceIn" : [ {
+    "@id" : "http://example.org/lis#ChloesRoom"
+  } ],
+  "http://example.org/lis#triggers" : [ {
+    "@id" : "http://example.org/lis#blameChloeWeed"
+  }, {
+    "@id" : "http://example.org/lis#takeBlameChloeWeed"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Event"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#comfortVictoria",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MajorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#danielDaCostaPortrait",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#elicits" : [ {
+    "@id" : "http://example.org/lis#emotionalResponseFlattery"
+  } ],
+  "http://example.org/lis#involves" : [ {
+    "@id" : "http://example.org/lis#DanielDaCosta"
+  }, {
+    "@id" : "http://example.org/lis#MaxCaulfield"
+  } ],
+  "http://example.org/lis#isContainedIn" : [ {
+    "@id" : "http://example.org/lis#Episode1"
+  } ],
+  "http://example.org/lis#takesPlaceIn" : [ {
+    "@id" : "http://example.org/lis#MainCampus"
+  } ],
+  "http://example.org/lis#triggers" : [ {
+    "@id" : "http://example.org/lis#acceptDanielPortrait"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Event"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#danielPortraitNotPosted",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Outcome"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#danielPortraitPosted",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#elicits" : [ {
+    "@id" : "http://example.org/lis#emotionalResponseValidation"
+  } ],
+  "http://example.org/lis#induces" : [ {
+    "@id" : "http://example.org/lis#ReflectionState3"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Outcome"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#declineDanielPortrait",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MinorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#dontReorganizeVictoriaPhoto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MinorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#dontSignMichellePetition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MinorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#dontTouchDanaPregnancy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MinorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#dontWaterLisaPlant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MinorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#dontWriteRV",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MinorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#elicits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#emotionalResponseAnxiety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#influences" : [ {
+    "@id" : "http://example.org/lis#blameChloeWeed"
+  }, {
+    "@id" : "http://example.org/lis#takeBlameChloeWeed"
+  } ],
+  "http://example.org/lis#isDrivenBy" : [ {
+    "@id" : "http://example.org/lis#playerEmotionAnxiety"
+  }, {
+    "@id" : "http://example.org/lis#playerMotivationSelfPreservation"
+  }, {
+    "@id" : "http://example.org/lis#playerValueHonesty"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#EmotionalResponse"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#emotionalResponseFlattery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#influences" : [ {
+    "@id" : "http://example.org/lis#acceptDanielPortrait"
+  } ],
+  "http://example.org/lis#isDrivenBy" : [ {
+    "@id" : "http://example.org/lis#playerEmotionAppreciation"
+  }, {
+    "@id" : "http://example.org/lis#playerMotivationSupportiveness"
+  }, {
+    "@id" : "http://example.org/lis#playerValueOpenness"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#EmotionalResponse"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#emotionalResponseGuilt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#isDrivenBy" : [ {
+    "@id" : "http://example.org/lis#playerEmotionGuilt"
+  }, {
+    "@id" : "http://example.org/lis#playerMotivationRepairRelationship"
+  }, {
+    "@id" : "http://example.org/lis#playerValueEmpathy"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#EmotionalResponse"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#emotionalResponseReflection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#EmotionalResponse"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#emotionalResponseRelief",
+  "http://example.org/lis#isDrivenBy" : [ {
+    "@id" : "http://example.org/lis#playerEmotionAffection"
+  }, {
+    "@id" : "http://example.org/lis#playerMotivationProtectingChloe"
+  }, {
+    "@id" : "http://example.org/lis#playerValueMoralGrowth"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#emotionalResponseValidation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#isDrivenBy" : [ {
+    "@id" : "http://example.org/lis#playerEmotionPride"
+  }, {
+    "@id" : "http://example.org/lis#playerMotivationEncourageDanielWork"
+  }, {
+    "@id" : "http://example.org/lis#playerValueCreativity"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#EmotionalResponse"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#enables",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#eraseInsultKatesSlate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MinorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#hideAndRevealToDavidChloeWeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MajorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#hideTheTruth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MajorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#ignoreFootballAlyssa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MinorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#ignoreInsultKatesSlate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MinorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#impersonates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#induces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#influences",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#insultsOnKateMarshSlate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Event"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#internalizedMeaning1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#InternalizedMeaning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "I learned that small choices shape relationships."
+  } ]
+}, {
+  "@id" : "http://example.org/lis#interveneKateDavidConfrontation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MajorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#involves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#isChoiceOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#isContainedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#isDrivenBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#isInfluencedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#kateMarshDavidMadsenConfrontation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Event"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#keepLukeRelationship",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Outcome"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#leadsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#lukeFeelsSatisfied",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Outcome"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#makeFunOfVictoria",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MajorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#makesChoice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#marks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#michelleGrantPetition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Event"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#michelleMentionsMax",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Outcome"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#michelleMentionsNotEnoughPeople",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Outcome"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#nathanGetsAngry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Outcome"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#nathanIntimidates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Outcome"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#nathansGun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Event"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#noPublicAnnouncement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Outcome"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#playerEmotionAffection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#PlayerEmotion"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#playerEmotionRelief",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#PlayerEmotion"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#playerValueConfidence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#PlayerValue"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#playerValueFear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#PlayerValue"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#playerValueHonesty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#PlayerValue"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#playerValueMoralGrowth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#PlayerValue"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#playerValueOpenness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#PlayerValue"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#principalCallsNathan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Outcome"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#reaffirmsChoice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#rejectsChoice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#reorganizeVictoriaPhoto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MinorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#reportNathan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MajorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#resets",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#resolves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#resultsIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#rvAtParkingLot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Event"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#signMichellePetition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MinorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#stayHiddenChloeWeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MajorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#takeBlameChloeWeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://example.org/lis#induces" : [ {
+    "@id" : "http://example.org/lis#ReflectionState2"
+  } ],
+  "http://example.org/lis#isChoiceOf" : [ {
+    "@id" : "http://example.org/lis#Player1"
+  } ],
+  "http://example.org/lis#leadsTo" : [ {
+    "@id" : "http://example.org/lis#chloeGladNoReport"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MajorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#takePhotoKateDavidConfrontation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MajorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#takesPlaceIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#touchAndRewindDanaPregnancy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MinorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#touchDanaPregnancy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MinorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#triggers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://example.org/lis#victoriaChaseOutsideDormitory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Event"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#victoriasPhotoCollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Event"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#warnFootballAlyssa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MinorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#waterLisaPlant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MinorChoice"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#waterLisaPlantEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#Event"
+  } ]
+}, {
+  "@id" : "http://example.org/lis#writeRV",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://example.org/lis#MinorChoice"
+  } ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#produces",
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#leadsTo"
+  } ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#triggers",
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#triggers"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://example.org/lis-creon-bridge#"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAct"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Episode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#InterpretativeArtwork"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MajorChoice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MinorChoice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#NPCs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAgent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Protagonist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#IncubationPhase"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalConstraint"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#culminates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice"
+  }, {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#elicits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#enables",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#enteredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#has",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#impersonates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Protagonist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#induces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#influences",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#involves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isChoiceOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isContainedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid15"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isExperiencedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInfluencedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid19"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#reaffirmsChoice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInvolvedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPerformedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#leadsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#marks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#prompts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#reaffirmsChoice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#rejectsChoice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resets",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resolvesTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resultsIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#takesPlaceIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#triggers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#equivalentClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+} ]

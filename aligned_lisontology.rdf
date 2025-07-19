@@ -360,56 +360,6 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAct -->
-
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAct">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAgent -->
-
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAgent">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait -->
-
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion"/>
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation"/>
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalConstraint -->
-
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalConstraint">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#IncubationPhase -->
-
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#IncubationPhase">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#InterpretativeArtwork -->
-
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#InterpretativeArtwork">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning"/>
-    </rdf:Description>
-    
-
-
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice"/>
@@ -424,13 +374,17 @@
 
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAct"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait"/>
+    </owl:Class>
     
 
 
@@ -460,7 +414,9 @@
 
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#InterpretativeArtwork"/>
+    </owl:Class>
     
 
 
@@ -510,25 +466,33 @@
 
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAgent"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait"/>
+    </owl:Class>
     
 
 
@@ -548,13 +512,17 @@
 
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#IncubationPhase"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalConstraint"/>
+    </owl:Class>
 </rdf:RDF>
 
 

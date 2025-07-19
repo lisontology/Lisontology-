@@ -1,0 +1,524 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10">
+    <Prefix name="" IRI="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="creon" IRI="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#"/>
+    <Import>http://example.org/lis-creon-bridge#</Import>
+    <Declaration>
+        <Class IRI="#AcceptChoice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Character"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Choice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmotionalResponse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Episode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EpisodeEnd"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FinalDecision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternalizedMeaning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MajorChoice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinorChoice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NPCs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Outcome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Player"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlayerEmotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlayerMotivation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlayerValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Protagonist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReconsiderChoice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReflectionState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RewindMechanic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#culminates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#elicits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#enables"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#enteredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#impersonates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#induces"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#influences"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isChoiceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isContainedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDrivenBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExperiencedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInfluencedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPerformedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#leadsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#marks"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#prompts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#reaffirmsChoice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#rejectsChoice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#resets"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#resolvesTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#resultsIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#takesPlaceIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#triggers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:equivalentClass"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Choice"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#leadsTo"/>
+            <Class IRI="#Outcome"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Event"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="#triggers"/>
+            <Class IRI="#Choice"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Choice"/>
+        <Class abbreviatedIRI="creon:CreativeAct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmotionalResponse"/>
+        <Class abbreviatedIRI="creon:CreativeTrait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternalizedMeaning"/>
+        <Class abbreviatedIRI="creon:InterpretativeArtwork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MajorChoice"/>
+        <Class IRI="#Choice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinorChoice"/>
+        <Class IRI="#Choice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NPCs"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Place"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Player"/>
+        <Class abbreviatedIRI="creon:CreativeAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlayerEmotion"/>
+        <Class abbreviatedIRI="creon:CreativeTrait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlayerMotivation"/>
+        <Class abbreviatedIRI="creon:CreativeTrait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlayerValue"/>
+        <Class abbreviatedIRI="creon:CreativeTrait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Protagonist"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReflectionState"/>
+        <Class abbreviatedIRI="creon:IncubationPhase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RewindMechanic"/>
+        <Class abbreviatedIRI="creon:EnvironmentalConstraint"/>
+    </SubClassOf>
+    <EquivalentObjectProperties>
+        <ObjectProperty abbreviatedIRI="creon:produces"/>
+        <ObjectProperty IRI="#leadsTo"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty abbreviatedIRI="creon:triggers"/>
+        <ObjectProperty IRI="#triggers"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#isDrivenBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#enteredBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isExperiencedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isInfluencedBy"/>
+        <ObjectProperty IRI="#reaffirmsChoice"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isPartOf"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#culminates"/>
+        <Class IRI="#AcceptChoice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#culminates"/>
+        <Class IRI="#EpisodeEnd"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#elicits"/>
+        <ObjectUnionOf>
+            <Class IRI="#Event"/>
+            <Class IRI="#Outcome"/>
+            <Class IRI="#RewindMechanic"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#enables"/>
+        <Class IRI="#ReconsiderChoice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#enteredBy"/>
+        <Class IRI="#ReflectionState"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#impersonates"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#induces"/>
+        <Class IRI="#Outcome"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#influences"/>
+        <Class IRI="#EmotionalResponse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involves"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isChoiceOf"/>
+        <Class IRI="#Choice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDrivenBy"/>
+        <Class IRI="#EmotionalResponse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isExperiencedBy"/>
+        <Class IRI="#EmotionalResponse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInfluencedBy"/>
+        <ObjectUnionOf>
+            <Class IRI="#Choice"/>
+            <Class IRI="#ReflectionState"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOf"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPerformedBy"/>
+        <Class IRI="#ReflectionState"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#leadsTo"/>
+        <Class IRI="#Choice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#marks"/>
+        <Class IRI="#AcceptChoice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#prompts"/>
+        <Class IRI="#Outcome"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#reaffirmsChoice"/>
+        <Class IRI="#AcceptChoice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#rejectsChoice"/>
+        <Class IRI="#ReconsiderChoice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#resets"/>
+        <Class IRI="#RewindMechanic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#resolvesTo"/>
+        <Class IRI="#FinalDecision"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#resultsIn"/>
+        <Class IRI="#ReflectionState"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#takesPlaceIn"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#triggers"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#culminates"/>
+        <Class IRI="#InternalizedMeaning"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#elicits"/>
+        <Class IRI="#EmotionalResponse"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#enables"/>
+        <Class IRI="#RewindMechanic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#enteredBy"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has"/>
+        <ObjectUnionOf>
+            <Class IRI="#PlayerMotivation"/>
+            <Class IRI="#PlayerValue"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#impersonates"/>
+        <Class IRI="#Protagonist"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#induces"/>
+        <Class IRI="#ReflectionState"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#influences"/>
+        <ObjectUnionOf>
+            <Class IRI="#Choice"/>
+            <Class IRI="#ReflectionState"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involves"/>
+        <ObjectUnionOf>
+            <Class IRI="#Character"/>
+            <Class IRI="#NPCs"/>
+            <Class IRI="#Protagonist"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isChoiceOf"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <Class IRI="#Episode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDrivenBy"/>
+        <ObjectUnionOf>
+            <Class IRI="#PlayerEmotion"/>
+            <Class IRI="#PlayerMotivation"/>
+            <Class IRI="#PlayerValue"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isExperiencedBy"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInfluencedBy"/>
+        <Class IRI="#EmotionalResponse"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOf"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPerformedBy"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#leadsTo"/>
+        <Class IRI="#Outcome"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#marks"/>
+        <Class IRI="#FinalDecision"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#prompts"/>
+        <Class IRI="#ReflectionState"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#reaffirmsChoice"/>
+        <Class IRI="#Choice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#rejectsChoice"/>
+        <Class IRI="#Choice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#resets"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#resolvesTo"/>
+        <Class IRI="#EpisodeEnd"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#resultsIn"/>
+        <ObjectUnionOf>
+            <Class IRI="#AcceptChoice"/>
+            <Class IRI="#ReconsiderChoice"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#takesPlaceIn"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#triggers"/>
+        <Class IRI="#Choice"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

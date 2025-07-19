@@ -1,0 +1,1137 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:lis="http://example.org/lis#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/lis#elicits -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#elicits"/>
+    
+
+
+    <!-- http://example.org/lis#enables -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#enables"/>
+    
+
+
+    <!-- http://example.org/lis#hasValue -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#hasValue"/>
+    
+
+
+    <!-- http://example.org/lis#impersonates -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#impersonates"/>
+    
+
+
+    <!-- http://example.org/lis#induces -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#induces"/>
+    
+
+
+    <!-- http://example.org/lis#influences -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#influences"/>
+    
+
+
+    <!-- http://example.org/lis#involves -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#involves"/>
+    
+
+
+    <!-- http://example.org/lis#isChoiceOf -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#isChoiceOf"/>
+    
+
+
+    <!-- http://example.org/lis#isContainedIn -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#isContainedIn"/>
+    
+
+
+    <!-- http://example.org/lis#isDrivenBy -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#isDrivenBy"/>
+    
+
+
+    <!-- http://example.org/lis#isInfluencedBy -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#isInfluencedBy"/>
+    
+
+
+    <!-- http://example.org/lis#isPartOf -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#isPartOf"/>
+    
+
+
+    <!-- http://example.org/lis#leadsTo -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#leadsTo"/>
+    
+
+
+    <!-- http://example.org/lis#makesChoice -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#makesChoice"/>
+    
+
+
+    <!-- http://example.org/lis#marks -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#marks"/>
+    
+
+
+    <!-- http://example.org/lis#reaffirmsChoice -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#reaffirmsChoice"/>
+    
+
+
+    <!-- http://example.org/lis#rejectsChoice -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#rejectsChoice"/>
+    
+
+
+    <!-- http://example.org/lis#resets -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#resets"/>
+    
+
+
+    <!-- http://example.org/lis#resolves -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#resolves"/>
+    
+
+
+    <!-- http://example.org/lis#resultsIn -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#resultsIn"/>
+    
+
+
+    <!-- http://example.org/lis#takesPlaceIn -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#takesPlaceIn"/>
+    
+
+
+    <!-- http://example.org/lis#triggers -->
+
+    <AnnotationProperty rdf:about="http://example.org/lis#triggers"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/lis#AcceptChoice -->
+
+    <Class rdf:about="http://example.org/lis#AcceptChoice"/>
+    
+
+
+    <!-- http://example.org/lis#EmotionalResponse -->
+
+    <Class rdf:about="http://example.org/lis#EmotionalResponse"/>
+    
+
+
+    <!-- http://example.org/lis#Episode -->
+
+    <Class rdf:about="http://example.org/lis#Episode"/>
+    
+
+
+    <!-- http://example.org/lis#Event -->
+
+    <Class rdf:about="http://example.org/lis#Event"/>
+    
+
+
+    <!-- http://example.org/lis#FinalDecision -->
+
+    <Class rdf:about="http://example.org/lis#FinalDecision"/>
+    
+
+
+    <!-- http://example.org/lis#GameEnd -->
+
+    <Class rdf:about="http://example.org/lis#GameEnd"/>
+    
+
+
+    <!-- http://example.org/lis#InternalizedMeaning -->
+
+    <Class rdf:about="http://example.org/lis#InternalizedMeaning"/>
+    
+
+
+    <!-- http://example.org/lis#Location -->
+
+    <Class rdf:about="http://example.org/lis#Location"/>
+    
+
+
+    <!-- http://example.org/lis#MajorChoice -->
+
+    <Class rdf:about="http://example.org/lis#MajorChoice"/>
+    
+
+
+    <!-- http://example.org/lis#MinorChoice -->
+
+    <Class rdf:about="http://example.org/lis#MinorChoice">
+        <rdfs:subClassOf rdf:resource="http://example.org/lis#Place"/>
+    </Class>
+    
+
+
+    <!-- http://example.org/lis#NPC -->
+
+    <Class rdf:about="http://example.org/lis#NPC"/>
+    
+
+
+    <!-- http://example.org/lis#Outcome -->
+
+    <Class rdf:about="http://example.org/lis#Outcome"/>
+    
+
+
+    <!-- http://example.org/lis#Place -->
+
+    <Class rdf:about="http://example.org/lis#Place"/>
+    
+
+
+    <!-- http://example.org/lis#Player -->
+
+    <Class rdf:about="http://example.org/lis#Player"/>
+    
+
+
+    <!-- http://example.org/lis#PlayerEmotion -->
+
+    <Class rdf:about="http://example.org/lis#PlayerEmotion"/>
+    
+
+
+    <!-- http://example.org/lis#PlayerValue -->
+
+    <Class rdf:about="http://example.org/lis#PlayerValue"/>
+    
+
+
+    <!-- http://example.org/lis#Protagonist -->
+
+    <Class rdf:about="http://example.org/lis#Protagonist"/>
+    
+
+
+    <!-- http://example.org/lis#ReconsiderChoice -->
+
+    <Class rdf:about="http://example.org/lis#ReconsiderChoice"/>
+    
+
+
+    <!-- http://example.org/lis#ReflectionState -->
+
+    <Class rdf:about="http://example.org/lis#ReflectionState"/>
+    
+
+
+    <!-- http://example.org/lis#RewindMechanic -->
+
+    <Class rdf:about="http://example.org/lis#RewindMechanic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/lis#AcceptChoice1 -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#AcceptChoice1">
+        <rdf:type rdf:resource="http://example.org/lis#AcceptChoice"/>
+        <lis:marks rdf:resource="http://example.org/lis#FinalDecision1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#AcceptChoice2 -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#AcceptChoice2">
+        <rdf:type rdf:resource="http://example.org/lis#AcceptChoice"/>
+        <lis:marks rdf:resource="http://example.org/lis#FinalDecision2"/>
+        <lis:reaffirmsChoice rdf:resource="http://example.org/lis#acceptDanielPortrait"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#ArcadiaBay -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#ArcadiaBay">
+        <rdf:type rdf:resource="http://example.org/lis#Location"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#BlackwellAcademy -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#BlackwellAcademy">
+        <rdf:type rdf:resource="http://example.org/lis#Location"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#ChloePrice -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#ChloePrice">
+        <rdf:type rdf:resource="http://example.org/lis#NPC"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#ChloesRoom -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#ChloesRoom">
+        <rdf:type rdf:resource="http://example.org/lis#Place"/>
+        <lis:isPartOf rdf:resource="http://example.org/lis#BlackwellAcademy"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#DanielDaCosta -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#DanielDaCosta">
+        <rdf:type rdf:resource="http://example.org/lis#NPC"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#DavidMadsen -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#DavidMadsen">
+        <rdf:type rdf:resource="http://example.org/lis#NPC"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#Episode1 -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#Episode1">
+        <rdf:type rdf:resource="http://example.org/lis#Episode"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#Episode1End -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#Episode1End">
+        <rdf:type rdf:resource="http://example.org/lis#GameEnd"/>
+        <lis:triggers rdf:resource="http://example.org/lis#internalizedMeaning1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#Episode2 -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#Episode2">
+        <rdf:type rdf:resource="http://example.org/lis#Episode"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#Episode3 -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#Episode3">
+        <rdf:type rdf:resource="http://example.org/lis#Episode"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#Episode4 -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#Episode4">
+        <rdf:type rdf:resource="http://example.org/lis#Episode"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#Episode5 -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#Episode5">
+        <rdf:type rdf:resource="http://example.org/lis#Episode"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#FinalDecision1 -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#FinalDecision1">
+        <rdf:type rdf:resource="http://example.org/lis#FinalDecision"/>
+        <lis:resolves rdf:resource="http://example.org/lis#Episode1End"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#FinalDecision2 -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#FinalDecision2">
+        <rdf:type rdf:resource="http://example.org/lis#FinalDecision"/>
+        <lis:resolves rdf:resource="http://example.org/lis#Episode1End"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#KateMarsh -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#KateMarsh">
+        <rdf:type rdf:resource="http://example.org/lis#NPC"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#MainCampus -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#MainCampus">
+        <rdf:type rdf:resource="http://example.org/lis#Place"/>
+        <lis:isPartOf rdf:resource="http://example.org/lis#ArcadiaBay"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#MaxCaulfield -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#MaxCaulfield">
+        <rdf:type rdf:resource="http://example.org/lis#Protagonist"/>
+        <lis:hasValue rdf:resource="http://example.org/lis#playerValueConfidence"/>
+        <lis:hasValue rdf:resource="http://example.org/lis#playerValueFear"/>
+        <lis:makesChoice rdf:resource="http://example.org/lis#acceptDanielPortrait"/>
+        <lis:makesChoice rdf:resource="http://example.org/lis#blameChloeWeed"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#MichelleGrant -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#MichelleGrant">
+        <rdf:type rdf:resource="http://example.org/lis#NPC"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#MichelleGrantsClassroom -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#MichelleGrantsClassroom">
+        <rdf:type rdf:resource="http://example.org/lis#Place"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#NathanPrescott -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#NathanPrescott">
+        <rdf:type rdf:resource="http://example.org/lis#NPC"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#ParkingLot -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#ParkingLot">
+        <rdf:type rdf:resource="http://example.org/lis#Place"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#Player1 -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#Player1">
+        <rdf:type rdf:resource="http://example.org/lis#Player"/>
+        <lis:impersonates rdf:resource="http://example.org/lis#MaxCaulfield"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#PrescottDormitory -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#PrescottDormitory">
+        <rdf:type rdf:resource="http://example.org/lis#Place"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#ReconsiderChoice1 -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#ReconsiderChoice1">
+        <rdf:type rdf:resource="http://example.org/lis#ReconsiderChoice"/>
+        <lis:enables rdf:resource="http://example.org/lis#RewindMechanic1"/>
+        <lis:rejectsChoice rdf:resource="http://example.org/lis#blameChloeWeed"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#ReflectionState1 -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#ReflectionState1">
+        <rdf:type rdf:resource="http://example.org/lis#ReflectionState"/>
+        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerEmotionGuilt"/>
+        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerMotivationRepairRelationship"/>
+        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerValueEmpathy"/>
+        <lis:isInfluencedBy rdf:resource="http://example.org/lis#emotionalResponseGuilt"/>
+        <lis:resultsIn rdf:resource="http://example.org/lis#ReconsiderChoice1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#ReflectionState2 -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#ReflectionState2">
+        <rdf:type rdf:resource="http://example.org/lis#ReflectionState"/>
+        <lis:isInfluencedBy rdf:resource="http://example.org/lis#emotionalResponseRelief"/>
+        <lis:resultsIn rdf:resource="http://example.org/lis#AcceptChoice1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#ReflectionState3 -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#ReflectionState3">
+        <rdf:type rdf:resource="http://example.org/lis#ReflectionState"/>
+        <lis:isInfluencedBy rdf:resource="http://example.org/lis#emotionalResponseValidation"/>
+        <lis:resultsIn rdf:resource="http://example.org/lis#AcceptChoice2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#RewindMechanic1 -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#RewindMechanic1">
+        <rdf:type rdf:resource="http://example.org/lis#RewindMechanic"/>
+        <lis:resets rdf:resource="http://example.org/lis#chloesWeed"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#VictoriaChase -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#VictoriaChase">
+        <rdf:type rdf:resource="http://example.org/lis#NPC"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#VictoriasRoom -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#VictoriasRoom">
+        <rdf:type rdf:resource="http://example.org/lis#Place"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#acceptDanielPortrait -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#acceptDanielPortrait">
+        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
+        <lis:isChoiceOf rdf:resource="http://example.org/lis#Player1"/>
+        <lis:leadsTo rdf:resource="http://example.org/lis#danielPortraitPosted"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#blameChloeWeed -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#blameChloeWeed">
+        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
+        <lis:isChoiceOf rdf:resource="http://example.org/lis#Player1"/>
+        <lis:leadsTo rdf:resource="http://example.org/lis#chloeDisapproves"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#chloeDisapproves -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#chloeDisapproves">
+        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
+        <lis:elicits rdf:resource="http://example.org/lis#emotionalResponseGuilt"/>
+        <lis:induces rdf:resource="http://example.org/lis#ReflectionState1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#chloeGladNoReport -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#chloeGladNoReport">
+        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
+        <lis:elicits rdf:resource="http://example.org/lis#emotionalResponseRelief"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#chloesWeed -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#chloesWeed">
+        <rdf:type rdf:resource="http://example.org/lis#Event"/>
+        <lis:elicits rdf:resource="http://example.org/lis#emotionalResponseAnxiety"/>
+        <lis:involves rdf:resource="http://example.org/lis#ChloePrice"/>
+        <lis:involves rdf:resource="http://example.org/lis#MaxCaulfield"/>
+        <lis:isContainedIn rdf:resource="http://example.org/lis#Episode1"/>
+        <lis:takesPlaceIn rdf:resource="http://example.org/lis#ChloesRoom"/>
+        <lis:triggers rdf:resource="http://example.org/lis#blameChloeWeed"/>
+        <lis:triggers rdf:resource="http://example.org/lis#takeBlameChloeWeed"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#comfortVictoria -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#comfortVictoria">
+        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#danielDaCostaPortrait -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#danielDaCostaPortrait">
+        <rdf:type rdf:resource="http://example.org/lis#Event"/>
+        <lis:elicits rdf:resource="http://example.org/lis#emotionalResponseFlattery"/>
+        <lis:involves rdf:resource="http://example.org/lis#DanielDaCosta"/>
+        <lis:involves rdf:resource="http://example.org/lis#MaxCaulfield"/>
+        <lis:isContainedIn rdf:resource="http://example.org/lis#Episode1"/>
+        <lis:takesPlaceIn rdf:resource="http://example.org/lis#MainCampus"/>
+        <lis:triggers rdf:resource="http://example.org/lis#acceptDanielPortrait"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#danielPortraitNotPosted -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#danielPortraitNotPosted">
+        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#danielPortraitPosted -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#danielPortraitPosted">
+        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
+        <lis:elicits rdf:resource="http://example.org/lis#emotionalResponseValidation"/>
+        <lis:induces rdf:resource="http://example.org/lis#ReflectionState3"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#declineDanielPortrait -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#declineDanielPortrait">
+        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#dontReorganizeVictoriaPhoto -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#dontReorganizeVictoriaPhoto">
+        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#dontSignMichellePetition -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#dontSignMichellePetition">
+        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#dontTouchDanaPregnancy -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#dontTouchDanaPregnancy">
+        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#dontWaterLisaPlant -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#dontWaterLisaPlant">
+        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#dontWriteRV -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#dontWriteRV">
+        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#emotionalResponseAnxiety -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#emotionalResponseAnxiety">
+        <rdf:type rdf:resource="http://example.org/lis#EmotionalResponse"/>
+        <lis:influences rdf:resource="http://example.org/lis#blameChloeWeed"/>
+        <lis:influences rdf:resource="http://example.org/lis#takeBlameChloeWeed"/>
+        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerEmotionAnxiety"/>
+        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerMotivationSelfPreservation"/>
+        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerValueHonesty"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#emotionalResponseFlattery -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#emotionalResponseFlattery">
+        <rdf:type rdf:resource="http://example.org/lis#EmotionalResponse"/>
+        <lis:influences rdf:resource="http://example.org/lis#acceptDanielPortrait"/>
+        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerEmotionAppreciation"/>
+        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerMotivationSupportiveness"/>
+        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerValueOpenness"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#emotionalResponseGuilt -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#emotionalResponseGuilt">
+        <rdf:type rdf:resource="http://example.org/lis#EmotionalResponse"/>
+        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerEmotionGuilt"/>
+        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerMotivationRepairRelationship"/>
+        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerValueEmpathy"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#emotionalResponseReflection -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#emotionalResponseReflection">
+        <rdf:type rdf:resource="http://example.org/lis#EmotionalResponse"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#emotionalResponseValidation -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#emotionalResponseValidation">
+        <rdf:type rdf:resource="http://example.org/lis#EmotionalResponse"/>
+        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerEmotionPride"/>
+        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerMotivationEncourageDanielWork"/>
+        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerValueCreativity"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#eraseInsultKatesSlate -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#eraseInsultKatesSlate">
+        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#hideAndRevealToDavidChloeWeed -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#hideAndRevealToDavidChloeWeed">
+        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#hideTheTruth -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#hideTheTruth">
+        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#ignoreFootballAlyssa -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#ignoreFootballAlyssa">
+        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#ignoreInsultKatesSlate -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#ignoreInsultKatesSlate">
+        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#insultsOnKateMarshSlate -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#insultsOnKateMarshSlate">
+        <rdf:type rdf:resource="http://example.org/lis#Event"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#internalizedMeaning1 -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#internalizedMeaning1">
+        <rdf:type rdf:resource="http://example.org/lis#InternalizedMeaning"/>
+        <rdfs:label>I learned that small choices shape relationships.</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#interveneKateDavidConfrontation -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#interveneKateDavidConfrontation">
+        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#kateMarshDavidMadsenConfrontation -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#kateMarshDavidMadsenConfrontation">
+        <rdf:type rdf:resource="http://example.org/lis#Event"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#keepLukeRelationship -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#keepLukeRelationship">
+        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#lukeFeelsSatisfied -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#lukeFeelsSatisfied">
+        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#makeFunOfVictoria -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#makeFunOfVictoria">
+        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#michelleGrantPetition -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#michelleGrantPetition">
+        <rdf:type rdf:resource="http://example.org/lis#Event"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#michelleMentionsMax -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#michelleMentionsMax">
+        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#michelleMentionsNotEnoughPeople -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#michelleMentionsNotEnoughPeople">
+        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#nathanGetsAngry -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#nathanGetsAngry">
+        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#nathanIntimidates -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#nathanIntimidates">
+        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#nathansGun -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#nathansGun">
+        <rdf:type rdf:resource="http://example.org/lis#Event"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#noPublicAnnouncement -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#noPublicAnnouncement">
+        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#playerEmotionAffection -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#playerEmotionAffection">
+        <rdf:type rdf:resource="http://example.org/lis#PlayerEmotion"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#playerEmotionRelief -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#playerEmotionRelief">
+        <rdf:type rdf:resource="http://example.org/lis#PlayerEmotion"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#playerValueConfidence -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#playerValueConfidence">
+        <rdf:type rdf:resource="http://example.org/lis#PlayerValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#playerValueFear -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#playerValueFear">
+        <rdf:type rdf:resource="http://example.org/lis#PlayerValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#playerValueHonesty -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#playerValueHonesty">
+        <rdf:type rdf:resource="http://example.org/lis#PlayerValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#playerValueMoralGrowth -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#playerValueMoralGrowth">
+        <rdf:type rdf:resource="http://example.org/lis#PlayerValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#playerValueOpenness -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#playerValueOpenness">
+        <rdf:type rdf:resource="http://example.org/lis#PlayerValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#principalCallsNathan -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#principalCallsNathan">
+        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#reorganizeVictoriaPhoto -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#reorganizeVictoriaPhoto">
+        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#reportNathan -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#reportNathan">
+        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#rvAtParkingLot -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#rvAtParkingLot">
+        <rdf:type rdf:resource="http://example.org/lis#Event"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#signMichellePetition -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#signMichellePetition">
+        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#stayHiddenChloeWeed -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#stayHiddenChloeWeed">
+        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#takeBlameChloeWeed -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#takeBlameChloeWeed">
+        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
+        <lis:induces rdf:resource="http://example.org/lis#ReflectionState2"/>
+        <lis:isChoiceOf rdf:resource="http://example.org/lis#Player1"/>
+        <lis:leadsTo rdf:resource="http://example.org/lis#chloeGladNoReport"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#takePhotoKateDavidConfrontation -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#takePhotoKateDavidConfrontation">
+        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#touchAndRewindDanaPregnancy -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#touchAndRewindDanaPregnancy">
+        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#touchDanaPregnancy -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#touchDanaPregnancy">
+        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#victoriaChaseOutsideDormitory -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#victoriaChaseOutsideDormitory">
+        <rdf:type rdf:resource="http://example.org/lis#Event"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#victoriasPhotoCollection -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#victoriasPhotoCollection">
+        <rdf:type rdf:resource="http://example.org/lis#Event"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#warnFootballAlyssa -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#warnFootballAlyssa">
+        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#waterLisaPlant -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#waterLisaPlant">
+        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#waterLisaPlantEvent -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#waterLisaPlantEvent">
+        <rdf:type rdf:resource="http://example.org/lis#Event"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.org/lis#writeRV -->
+
+    <NamedIndividual rdf:about="http://example.org/lis#writeRV">
+        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://example.org/lis#emotionalResponseRelief">
+        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerEmotionAffection"/>
+        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerMotivationProtectingChloe"/>
+        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerValueMoralGrowth"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
