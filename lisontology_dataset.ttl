@@ -1,9 +1,121 @@
+@prefix : <http://example.org/lisabox#> .
 @prefix lis: <http://example.org/lis#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://example.org/lisabox>
+    a owl:Ontology ;
+    owl:imports <https://raw.githubusercontent.com/lisontology/Lisontology-/main/aligned_lisontology.rdf> .
+
 
 ### CLASSES AND TYPES ###
+# Definizione proprietà oggetto
+lis:impersonates rdf:type owl:ObjectProperty .
+lis:takesPlaceIn rdf:type owl:ObjectProperty .
+lis:isContainedIn rdf:type owl:ObjectProperty .
+lis:involves rdf:type owl:ObjectProperty .
+lis:triggers rdf:type owl:ObjectProperty .
+lis:elicits rdf:type owl:ObjectProperty .
+lis:isDrivenBy rdf:type owl:ObjectProperty .
+lis:influences rdf:type owl:ObjectProperty .
+lis:isChoiceOf rdf:type owl:ObjectProperty .
+lis:leadsTo rdf:type owl:ObjectProperty .
+lis:induces rdf:type owl:ObjectProperty .
+lis:resultsIn rdf:type owl:ObjectProperty .
+lis:marks rdf:type owl:ObjectProperty .
+lis:rejectsChoice rdf:type owl:ObjectProperty .
+lis:enables rdf:type owl:ObjectProperty .
+lis:resets rdf:type owl:ObjectProperty .
+lis:isPartOf rdf:type owl:ObjectProperty .
+lis:reaffirmsChoice rdf:type owl:ObjectProperty .
+lis:makesChoice rdf:type owl:ObjectProperty .
+lis:has rdf:type owl:ObjectProperty .
+
+
+### CLASSI DI VALORI, EMOZIONI, MOTIVAZIONI, MECCANICHE, SCELTE, STATI ###
+
+lis:PlayerValue rdf:type owl:Class .
+lis:PlayerEmotion rdf:type owl:Class .
+lis:PlayerMotivation rdf:type owl:Class .
+lis:Player rdf:type owl:Class .
+
+lis:NPC rdf:type owl:Class .
+lis:Protagonist rdf:type owl:Class .
+lis:MajorChoice rdf:type owl:Class .
+lis:MinorChoice rdf:type owl:Class .
+lis:Episode rdf:type owl:Class .
+lis:Event rdf:type owl:Class .
+lis:Location rdf:type owl:Class .
+lis:Place rdf:type owl:Class .
+lis:Outcome rdf:type owl:Class .
+
+
+
+lis:EmotionalResponse rdf:type owl:Class .
+lis:ReflectionState rdf:type owl:Class .
+lis:ReconsiderChoice rdf:type owl:Class .
+lis:AcceptChoice rdf:type owl:Class .
+lis:FinalDecision rdf:type owl:Class .
+lis:RewindMechanic rdf:type owl:Class .
+lis:InternalizedMeaning rdf:type owl:Class .
+lis:GameEnd rdf:type owl:Class .
+
+
+# Player Values
+lis:playerValueSelfPreservation rdf:type lis:PlayerValue .
+lis:playerValueResponsibility rdf:type lis:PlayerValue .
+lis:playerValueJustice rdf:type lis:PlayerValue .
+lis:playerValueAltruism rdf:type lis:PlayerValue .
+lis:playerValueIntegrity rdf:type lis:PlayerValue .
+lis:playerValueRespect rdf:type lis:PlayerValue .
+lis:playerValueTrust rdf:type lis:PlayerValue .
+lis:playerValueEmpathy rdf:type lis:PlayerValue .
+lis:playerValueLoyalty rdf:type lis:PlayerValue .
+lis:playerValueCare rdf:type lis:PlayerValue .
+lis:playerValueCreativity rdf:type lis:PlayerValue .
+lis:playerValueMoralGrowth rdf:type lis:PlayerValue .
+lis:playerValueHonesty rdf:type lis:PlayerValue .
+lis:playerValueOpenness rdf:type lis:PlayerValue .
+
+# Player Emotions
+lis:playerEmotionAnxiety rdf:type lis:PlayerEmotion .
+lis:playerEmotionConcern rdf:type lis:PlayerEmotion .
+lis:playerEmotionUncertainty rdf:type lis:PlayerEmotion .
+lis:playerEmotionGratitude rdf:type lis:PlayerEmotion .
+lis:playerEmotionSatisfaction rdf:type lis:PlayerEmotion .
+lis:playerEmotionAppreciation rdf:type lis:PlayerEmotion .
+lis:playerEmotionDetermination rdf:type lis:PlayerEmotion .
+lis:playerEmotionSadness rdf:type lis:PlayerEmotion .
+lis:playerEmotionResignation rdf:type lis:PlayerEmotion .
+lis:playerEmotionGuilt rdf:type lis:PlayerEmotion .
+lis:playerEmotionEmpathy rdf:type lis:PlayerEmotion .
+lis:playerEmotionThoughtfulness rdf:type lis:PlayerEmotion .
+lis:playerEmotionPride rdf:type lis:PlayerEmotion .
+lis:playerEmotionRelief rdf:type lis:PlayerEmotion .
+
+# Player Motivations
+lis:playerMotivationAvoidDanger rdf:type lis:PlayerMotivation .
+lis:playerMotivationProtectOthers rdf:type lis:PlayerMotivation .
+lis:playerMotivationRepairRelationship rdf:type lis:PlayerMotivation .
+lis:playerMotivationSupportingKate rdf:type lis:PlayerMotivation .
+lis:playerMotivationSocialResponsibility rdf:type lis:PlayerMotivation .
+lis:playerMotivationSupportCommunity rdf:type lis:PlayerMotivation .
+lis:playerMotivationChallengeAuthority rdf:type lis:PlayerMotivation .
+lis:playerMotivationStandingUpForBeliefs rdf:type lis:PlayerMotivation .
+lis:playerMotivationMaintainRelationships rdf:type lis:PlayerMotivation .
+lis:playerMotivationNurtureOthers rdf:type lis:PlayerMotivation .
+lis:playerMotivationSelfPreservation rdf:type lis:PlayerMotivation .
+lis:playerMotivationAvoidConflict rdf:type lis:PlayerMotivation .
+lis:playerMotivationPositiveImpact rdf:type lis:PlayerMotivation .
+lis:playerMotivationEncourageDanielWork rdf:type lis:PlayerMotivation .
+lis:playerMotivationProtectTheVulnerable rdf:type lis:PlayerMotivation .
+lis:playerMotivationProtectKate rdf:type lis:PlayerMotivation .
+lis:playerMotivationSelectiveCare rdf:type lis:PlayerMotivation .
+lis:playerMotivationConflictAvoidance rdf:type lis:PlayerMotivation .
+lis:playerMotivationSupportiveness rdf:type lis:PlayerMotivation .
+lis:playerMotivationRepairRelationship rdf:type lis:PlayerMotivation .
+lis:playerMotivationProtectingChloe rdf:type lis:PlayerMotivation .
 
 # Characters
 lis:ChloePrice rdf:type lis:NPC .
@@ -104,6 +216,10 @@ lis:ReflectionState5 rdf:type lis:ReflectionState .
 lis:ReflectionState6 rdf:type lis:ReflectionState .
 lis:ReflectionState7 rdf:type lis:ReflectionState .
 lis:ReflectionState8 rdf:type lis:ReflectionState .
+lis:ReflectionState9 rdf:type lis:ReflectionState .
+lis:ReflectionState10 rdf:type lis:ReflectionState .
+lis:ReflectionState11 rdf:type lis:ReflectionState .
+lis:ReflectionState12 rdf:type lis:ReflectionState .
 lis:ReconsiderChoice1 rdf:type lis:ReconsiderChoice .
 lis:ReconsiderChoice2 rdf:type lis:ReconsiderChoice .
 lis:AcceptChoice1 rdf:type lis:AcceptChoice .
@@ -114,6 +230,8 @@ lis:AcceptChoice5 rdf:type lis:AcceptChoice .
 lis:AcceptChoice6 rdf:type lis:AcceptChoice .
 lis:AcceptChoice7 rdf:type lis:AcceptChoice .
 lis:AcceptChoice8 rdf:type lis:AcceptChoice .
+lis:AcceptChoice9 rdf:type lis:AcceptChoice .
+lis:AcceptChoice10 rdf:type lis:AcceptChoice .
 lis:FinalDecision1 rdf:type lis:FinalDecision .
 lis:FinalDecision2 rdf:type lis:FinalDecision .
 lis:FinalDecision3 rdf:type lis:FinalDecision .
@@ -122,10 +240,25 @@ lis:FinalDecision5 rdf:type lis:FinalDecision .
 lis:FinalDecision6 rdf:type lis:FinalDecision .
 lis:FinalDecision7 rdf:type lis:FinalDecision .
 lis:FinalDecision8 rdf:type lis:FinalDecision .
+lis:FinalDecision9 rdf:type lis:FinalDecision .
+lis:FinalDecision10 rdf:type lis:FinalDecision .
 lis:RewindMechanic1 rdf:type lis:RewindMechanic .
 lis:RewindMechanic2 rdf:type lis:RewindMechanic .
+lis:RewindMechanic3 rdf:type lis:RewindMechanic .
 lis:GameEnd rdf:type owl:Class .
 lis:internalizedMeaning1 rdf:type lis:InternalizedMeaning .
+lis:kateFeelsExposed rdf:type lis:Outcome .
+lis:kateTrustsMax rdf:type lis:Outcome .
+lis:victoriaFeelsBullied rdf:type lis:Outcome .
+lis:kateSlateVandalizedAgain rdf:type lis:Outcome .
+lis:photoAvailableIfReorganizedAndRewound rdf:type lis:Outcome .
+lis:lisaWillLookHealthy rdf:type lis:Outcome .
+
+# Correzione di playerEmotionEmpathy → playerEmotionRelief
+lis:emotionalResponseKateRelief lis:isDrivenBy lis:playerEmotionRelief .
+
+# Aggiunta dichiarazione mancante per playerMotivationSelfPreservation
+lis:playerMotivationSelfPreservation rdf:type lis:PlayerMotivation .
 
 ### EPISODE 1 RELATIONS ###
 
@@ -522,7 +655,7 @@ lis:AcceptChoice10 rdf:type lis:AcceptChoice ;
 
 ### Additional Relations
 lis:MaxCaulfield
-    lis:hasValue lis:playerValueFear, lis:playerValueConfidence ;
+    lis:has lis:playerValueFear, lis:playerValueConfidence ;
     lis:makesChoice lis:blameChloeWeed, lis:acceptDanielPortrait .
 
 lis:Episode1End rdf:type lis:GameEnd ;

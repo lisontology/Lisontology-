@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://example.org/lisabox" uri="lisontology_dataset.ttl"/>
     <uri id="Imports Wizard Entry" name="https://raw.githubusercontent.com/aldogangemi/CreOn/refs/heads/main/creon.ttl" uri="lis-creon-bridge.ttl"/>
     <uri id="Imports Wizard Entry" name="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#" uri="lis-creon-bridge.ttl"/>
     <uri id="Imports Wizard Entry" name="http://example.org/lis-creon-bridge#" uri="lis-creon-bridge.ttl"/>
