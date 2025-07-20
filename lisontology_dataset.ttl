@@ -193,14 +193,9 @@ lis:chloeDisapproves rdf:type lis:Outcome .
 lis:chloeGladNoReport rdf:type lis:Outcome .
 lis:danielPortraitNotPosted rdf:type lis:Outcome .
 lis:danielPortraitPosted rdf:type lis:Outcome .
-lis:keepLukeRelationship rdf:type lis:Outcome .
-lis:lukeFeelsSatisfied rdf:type lis:Outcome .
 lis:michelleMentionsMax rdf:type lis:Outcome .
-lis:michelleMentionsNotEnoughPeople rdf:type lis:Outcome .
 lis:nathanGetsAngry rdf:type lis:Outcome .
-lis:nathanIntimidates rdf:type lis:Outcome .
 lis:noPublicAnnouncement rdf:type lis:Outcome .
-lis:principalCallsNathan rdf:type lis:Outcome .
 
 # Emotions and Values
 lis:emotionalResponseReflection rdf:type lis:EmotionalResponse .
@@ -247,7 +242,6 @@ lis:FinalDecision9 rdf:type lis:FinalDecision .
 lis:FinalDecision10 rdf:type lis:FinalDecision .
 lis:RewindMechanic1 rdf:type lis:RewindMechanic .
 lis:RewindMechanic2 rdf:type lis:RewindMechanic .
-lis:RewindMechanic3 rdf:type lis:RewindMechanic .
 lis:EpisodeEnd rdf:type owl:Class .
 lis:internalizedMeaning1 rdf:type lis:InternalizedMeaning .
 lis:kateFeelsExposed rdf:type lis:Outcome .
@@ -342,11 +336,11 @@ lis:RewindMechanic1 rdf:type lis:RewindMechanic ;
 
 lis:interveneKateDavidConfrontation rdf:type lis:MajorChoice ;
     lis:isChoiceOf lis:Player1 ;
-    lis:leadsTo lis:kateTrustsMax ;
-    lis:induces lis:ReflectionState3 .
+    lis:leadsTo lis:kateTrustsMax .
 
 lis:kateTrustsMax rdf:type lis:Outcome ;
-    lis:elicits lis:emotionalResponseKateRelief .
+    lis:elicits lis:emotionalResponseKateRelief ;
+    lis:induces lis:ReflectionState3 .
 
 lis:emotionalResponseKateRelief rdf:type lis:EmotionalResponse ;
     lis:isDrivenBy lis:playerEmotionEmpathy,
@@ -361,6 +355,7 @@ lis:AcceptChoice2 rdf:type lis:AcceptChoice ;
     lis:marks lis:FinalDecision2 .
 
 lis:FinalDecision2 rdf:type lis:FinalDecision .
+
 # EVENT 3: Victoria Chase Outside Dormitory
 lis:victoriaChaseOutsideDormitory rdf:type lis:Event ;
     lis:takesPlaceIn lis:PrescottDormitory ;
@@ -602,11 +597,11 @@ lis:RewindMechanic2 rdf:type lis:RewindMechanic ;
 
 lis:takeBlameChloeWeed rdf:type lis:MajorChoice ;
     lis:leadsTo lis:chloeGladNoReport ;
-    lis:isChoiceOf lis:Player1 ;
-    lis:induces lis:ReflectionState11 .
+    lis:isChoiceOf lis:Player1 .
 
 lis:chloeGladNoReport rdf:type lis:Outcome ;
-    lis:elicits lis:emotionalResponseRelief2 .
+    lis:elicits lis:emotionalResponseRelief2 ;
+    lis:induces lis:ReflectionState11 .
 
 lis:emotionalResponseRelief2 rdf:type lis:EmotionalResponse ;
     lis:isDrivenBy lis:playerEmotionAffection,
