@@ -8,7 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:creon="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10">
-        <owl:imports rdf:resource="http://example.org/lis-creon-bridge#"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/aldogangemi/CreOn/refs/heads/main/creon.ttl"/>
     </owl:Ontology>
     
 
