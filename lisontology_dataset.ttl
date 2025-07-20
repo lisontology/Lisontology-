@@ -1,672 +1,1006 @@
 @prefix : <http://example.org/lisabox#> .
 @prefix lis: <http://example.org/lis#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://example.org/lisabox#> .
 
-<http://example.org/lisabox>
-    a owl:Ontology ;
-    owl:imports <https://raw.githubusercontent.com/lisontology/Lisontology-/main/aligned_lisontology.rdf> .
+<http://example.org/lisabox> rdf:type owl:Ontology ;
+                              owl:imports <https://raw.githubusercontent.com/lisontology/Lisontology-/main/aligned_lisontology.rdf> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://example.org/lis#isInfluencedBy
+lis:isInfluencedBy rdf:type owl:AnnotationProperty .
 
 
-# classes and type
-# Definizione proprietà oggetto
-lis:impersonates rdf:type owl:ObjectProperty .
-lis:takesPlaceIn rdf:type owl:ObjectProperty .
-lis:isContainedIn rdf:type owl:ObjectProperty .
-lis:involves rdf:type owl:ObjectProperty .
-lis:triggers rdf:type owl:ObjectProperty .
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.org/lis#culminates
+lis:culminates rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/lis#elicits
 lis:elicits rdf:type owl:ObjectProperty .
-lis:isDrivenBy rdf:type owl:ObjectProperty .
-lis:influences rdf:type owl:ObjectProperty .
-lis:isChoiceOf rdf:type owl:ObjectProperty .
-lis:leadsTo rdf:type owl:ObjectProperty .
-lis:induces rdf:type owl:ObjectProperty .
-lis:resultsIn rdf:type owl:ObjectProperty .
-lis:marks rdf:type owl:ObjectProperty .
-lis:rejectsChoice rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/lis#enables
 lis:enables rdf:type owl:ObjectProperty .
-lis:resets rdf:type owl:ObjectProperty .
-lis:isPartOf rdf:type owl:ObjectProperty .
-lis:reaffirmsChoice rdf:type owl:ObjectProperty .
-lis:makesChoice rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/lis#has
 lis:has rdf:type owl:ObjectProperty .
-lis:culminates  rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/lis#impersonates
+lis:impersonates rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/lis#induces
+lis:induces rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/lis#influences
+lis:influences rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/lis#involves
+lis:involves rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/lis#isChoiceOf
+lis:isChoiceOf rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/lis#isContainedIn
+lis:isContainedIn rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/lis#isDrivenBy
+lis:isDrivenBy rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/lis#isPartOf
+lis:isPartOf rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/lis#leadsTo
+lis:leadsTo rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/lis#makesChoice
+lis:makesChoice rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/lis#marks
+lis:marks rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/lis#reaffirmsChoice
+lis:reaffirmsChoice rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/lis#rejectsChoice
+lis:rejectsChoice rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/lis#resets
+lis:resets rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/lis#resolvesTo
 lis:resolvesTo rdf:type owl:ObjectProperty .
 
 
+###  http://example.org/lis#resultsIn
+lis:resultsIn rdf:type owl:ObjectProperty .
 
-# CLASSI DI VALORI, EMOZIONI, MOTIVAZIONI, MECCANICHE, SCELTE, STATI 
-
-lis:PlayerValue rdf:type owl:Class .
-lis:PlayerEmotion rdf:type owl:Class .
-lis:PlayerMotivation rdf:type owl:Class .
-lis:Player rdf:type owl:Class .
-
-lis:NPC rdf:type owl:Class .
-lis:Protagonist rdf:type owl:Class .
-lis:MajorChoice rdf:type owl:Class .
-lis:MinorChoice rdf:type owl:Class .
-lis:Episode rdf:type owl:Class .
-lis:Event rdf:type owl:Class .
-lis:Location rdf:type owl:Class .
-lis:Place rdf:type owl:Class .
-lis:Outcome rdf:type owl:Class .
-
-
-
-lis:EmotionalResponse rdf:type owl:Class .
-lis:ReflectionState rdf:type owl:Class .
-lis:ReconsiderChoice rdf:type owl:Class .
-lis:AcceptChoice rdf:type owl:Class .
-lis:FinalDecision rdf:type owl:Class .
-lis:RewindMechanic rdf:type owl:Class .
-lis:InternalizedMeaning rdf:type owl:Class .
-lis:EpisodeEnd rdf:type owl:Class .
-
-
-# Player Values
-lis:playerValueSelfPreservation rdf:type lis:PlayerValue .
-lis:playerValueResponsibility rdf:type lis:PlayerValue .
-lis:playerValueJustice rdf:type lis:PlayerValue .
-lis:playerValueAltruism rdf:type lis:PlayerValue .
-lis:playerValueIntegrity rdf:type lis:PlayerValue .
-lis:playerValueRespect rdf:type lis:PlayerValue .
-lis:playerValueTrust rdf:type lis:PlayerValue .
-lis:playerValueEmpathy rdf:type lis:PlayerValue .
-lis:playerValueLoyalty rdf:type lis:PlayerValue .
-lis:playerValueCare rdf:type lis:PlayerValue .
-lis:playerValueCreativity rdf:type lis:PlayerValue .
-lis:playerValueMoralGrowth rdf:type lis:PlayerValue .
-lis:playerValueHonesty rdf:type lis:PlayerValue .
-lis:playerValueOpenness rdf:type lis:PlayerValue .
-
-# Player Emotions
-lis:playerEmotionAnxiety rdf:type lis:PlayerEmotion .
-lis:playerEmotionConcern rdf:type lis:PlayerEmotion .
-lis:playerEmotionUncertainty rdf:type lis:PlayerEmotion .
-lis:playerEmotionGratitude rdf:type lis:PlayerEmotion .
-lis:playerEmotionSatisfaction rdf:type lis:PlayerEmotion .
-lis:playerEmotionAppreciation rdf:type lis:PlayerEmotion .
-lis:playerEmotionDetermination rdf:type lis:PlayerEmotion .
-lis:playerEmotionSadness rdf:type lis:PlayerEmotion .
-lis:playerEmotionResignation rdf:type lis:PlayerEmotion .
-lis:playerEmotionGuilt rdf:type lis:PlayerEmotion .
-lis:playerEmotionEmpathy rdf:type lis:PlayerEmotion .
-lis:playerEmotionThoughtfulness rdf:type lis:PlayerEmotion .
-lis:playerEmotionPride rdf:type lis:PlayerEmotion .
-lis:playerEmotionRelief rdf:type lis:PlayerEmotion .
-
-# Player Motivations
-lis:playerMotivationAvoidDanger rdf:type lis:PlayerMotivation .
-lis:playerMotivationProtectOthers rdf:type lis:PlayerMotivation .
-lis:playerMotivationRepairRelationship rdf:type lis:PlayerMotivation .
-lis:playerMotivationSupportingKate rdf:type lis:PlayerMotivation .
-lis:playerMotivationSocialResponsibility rdf:type lis:PlayerMotivation .
-lis:playerMotivationSupportCommunity rdf:type lis:PlayerMotivation .
-lis:playerMotivationChallengeAuthority rdf:type lis:PlayerMotivation .
-lis:playerMotivationStandingUpForBeliefs rdf:type lis:PlayerMotivation .
-lis:playerMotivationMaintainRelationships rdf:type lis:PlayerMotivation .
-lis:playerMotivationNurtureOthers rdf:type lis:PlayerMotivation .
-lis:playerMotivationSelfPreservation rdf:type lis:PlayerMotivation .
-lis:playerMotivationAvoidConflict rdf:type lis:PlayerMotivation .
-lis:playerMotivationPositiveImpact rdf:type lis:PlayerMotivation .
-lis:playerMotivationEncourageDanielWork rdf:type lis:PlayerMotivation .
-lis:playerMotivationProtectTheVulnerable rdf:type lis:PlayerMotivation .
-lis:playerMotivationProtectKate rdf:type lis:PlayerMotivation .
-lis:playerMotivationSelectiveCare rdf:type lis:PlayerMotivation .
-lis:playerMotivationConflictAvoidance rdf:type lis:PlayerMotivation .
-lis:playerMotivationSupportiveness rdf:type lis:PlayerMotivation .
-lis:playerMotivationRepairRelationship rdf:type lis:PlayerMotivation .
-lis:playerMotivationProtectingChloe rdf:type lis:PlayerMotivation .
-
-# Characters
-lis:ChloePrice rdf:type lis:NPC .
-lis:DanielDaCosta rdf:type lis:NPC .
-lis:DavidMadsen rdf:type lis:NPC .
-lis:KateMarsh rdf:type lis:NPC .
-lis:MaxCaulfield rdf:type lis:Protagonist .
-lis:MichelleGrant rdf:type lis:NPC .
-lis:NathanPrescott rdf:type lis:NPC .
-lis:VictoriaChase rdf:type lis:NPC .
-
-# Choices
-lis:blameChloeWeed rdf:type lis:MajorChoice .
-lis:hideAndRevealToDavidChloeWeed rdf:type lis:MajorChoice .
-lis:stayHiddenChloeWeed rdf:type lis:MajorChoice .
-lis:takeBlameChloeWeed rdf:type lis:MajorChoice .
-lis:acceptDanielPortrait rdf:type lis:MinorChoice .
-lis:comfortVictoria rdf:type lis:MajorChoice .
-lis:declineDanielPortrait rdf:type lis:MinorChoice .
-lis:eraseInsultKatesSlate rdf:type lis:MinorChoice .
-lis:hideTheTruth rdf:type lis:MajorChoice .
-lis:ignoreFootballAlyssa rdf:type lis:MinorChoice .
-lis:ignoreInsultKatesSlate rdf:type lis:MinorChoice .
-lis:interveneKateDavidConfrontation rdf:type lis:MajorChoice .
-lis:makeFunOfVictoria rdf:type lis:MajorChoice .
-lis:dontReorganizeVictoriaPhoto rdf:type lis:MinorChoice .
-lis:dontSignMichellePetition rdf:type lis:MinorChoice .
-lis:dontTouchDanaPregnancy rdf:type lis:MinorChoice .
-lis:dontWaterLisaPlant rdf:type lis:MinorChoice .
-lis:dontWriteRV rdf:type lis:MinorChoice .
-lis:reorganizeVictoriaPhoto rdf:type lis:MinorChoice .
-lis:reportNathan rdf:type lis:MajorChoice .
-lis:signMichellePetition rdf:type lis:MinorChoice .
-lis:touchDanaPregnancy rdf:type lis:MinorChoice .
-lis:touchAndRewindDanaPregnancy rdf:type lis:MinorChoice .
-lis:takePhotoKateDavidConfrontation rdf:type lis:MajorChoice .
-lis:waterLisaPlant rdf:type lis:MinorChoice .
-lis:warnFootballAlyssa rdf:type lis:MinorChoice .
-lis:writeRV rdf:type lis:MinorChoice .
-
-# Episodes
-lis:Episode1 rdf:type lis:Episode .
-lis:Episode2 rdf:type lis:Episode .
-lis:Episode3 rdf:type lis:Episode .
-lis:Episode4 rdf:type lis:Episode .
-lis:Episode5 rdf:type lis:Episode .
-
-# Events
-lis:chloesWeed rdf:type lis:Event .
-lis:danielDaCostaPortrait rdf:type lis:Event .
-lis:insultsOnKateMarshSlate rdf:type lis:Event .
-lis:kateMarshDavidMadsenConfrontation rdf:type lis:Event .
-lis:michelleGrantPetition rdf:type lis:Event .
-lis:nathansGun rdf:type lis:Event .
-lis:rvAtParkingLot rdf:type lis:Event .
-lis:victoriaChaseOutsideDormitory rdf:type lis:Event .
-lis:victoriasPhotoCollection rdf:type lis:Event .
-lis:waterLisaPlantEvent rdf:type lis:Event .
-
-# Places and Locations
-lis:ArcadiaBay rdf:type lis:Location .
-lis:BlackwellAcademy rdf:type lis:Location .
-lis:ChloesRoom rdf:type lis:Place .
-lis:MainCampus rdf:type lis:Place .
-lis:MichelleGrantsClassroom rdf:type lis:Place .
-lis:ParkingLot rdf:type lis:Place .
-lis:PrescottDormitory rdf:type lis:Place .
-lis:VictoriasRoom rdf:type lis:Place .
-
-# Outcomes
-lis:chloeDisapproves rdf:type lis:Outcome .
-lis:chloeGladNoReport rdf:type lis:Outcome .
-lis:danielPortraitNotPosted rdf:type lis:Outcome .
-lis:danielPortraitPosted rdf:type lis:Outcome .
-lis:michelleMentionsMax rdf:type lis:Outcome .
-lis:nathanGetsAngry rdf:type lis:Outcome .
-lis:noPublicAnnouncement rdf:type lis:Outcome .
-
-# Emotions and Values
-lis:emotionalResponseReflection rdf:type lis:EmotionalResponse .
-lis:playerValueHonesty rdf:type lis:PlayerValue .
-lis:playerValueOpenness rdf:type lis:PlayerValue .
-lis:playerValueMoralGrowth rdf:type lis:PlayerValue .
-lis:playerValueConfidence rdf:type lis:PlayerValue .
-lis:playerValueFear rdf:type lis:PlayerValue .
-lis:playerEmotionAffection rdf:type lis:PlayerEmotion .
-lis:playerEmotionRelief rdf:type lis:PlayerEmotion .
-lis:ReflectionState1 rdf:type lis:ReflectionState .
-lis:ReflectionState2 rdf:type lis:ReflectionState .
-lis:ReflectionState3 rdf:type lis:ReflectionState .
-lis:ReflectionState4 rdf:type lis:ReflectionState .
-lis:ReflectionState5 rdf:type lis:ReflectionState .
-lis:ReflectionState6 rdf:type lis:ReflectionState .
-lis:ReflectionState7 rdf:type lis:ReflectionState .
-lis:ReflectionState8 rdf:type lis:ReflectionState .
-lis:ReflectionState9 rdf:type lis:ReflectionState .
-lis:ReflectionState10 rdf:type lis:ReflectionState .
-lis:ReflectionState11 rdf:type lis:ReflectionState .
-lis:ReflectionState12 rdf:type lis:ReflectionState .
-lis:ReconsiderChoice1 rdf:type lis:ReconsiderChoice .
-lis:ReconsiderChoice2 rdf:type lis:ReconsiderChoice .
-lis:AcceptChoice1 rdf:type lis:AcceptChoice .
-lis:AcceptChoice2 rdf:type lis:AcceptChoice .
-lis:AcceptChoice3 rdf:type lis:AcceptChoice .
-lis:AcceptChoice4 rdf:type lis:AcceptChoice .
-lis:AcceptChoice5 rdf:type lis:AcceptChoice .
-lis:AcceptChoice6 rdf:type lis:AcceptChoice .
-lis:AcceptChoice7 rdf:type lis:AcceptChoice .
-lis:AcceptChoice8 rdf:type lis:AcceptChoice .
-lis:AcceptChoice9 rdf:type lis:AcceptChoice .
-lis:AcceptChoice10 rdf:type lis:AcceptChoice .
-lis:FinalDecision1 rdf:type lis:FinalDecision .
-lis:FinalDecision2 rdf:type lis:FinalDecision .
-lis:FinalDecision3 rdf:type lis:FinalDecision .
-lis:FinalDecision4 rdf:type lis:FinalDecision .
-lis:FinalDecision5 rdf:type lis:FinalDecision .
-lis:FinalDecision6 rdf:type lis:FinalDecision .
-lis:FinalDecision7 rdf:type lis:FinalDecision .
-lis:FinalDecision8 rdf:type lis:FinalDecision .
-lis:FinalDecision9 rdf:type lis:FinalDecision .
-lis:FinalDecision10 rdf:type lis:FinalDecision .
-lis:RewindMechanic1 rdf:type lis:RewindMechanic .
-lis:RewindMechanic2 rdf:type lis:RewindMechanic .
-lis:EpisodeEnd rdf:type owl:Class .
-lis:internalizedMeaning1 rdf:type lis:InternalizedMeaning .
-lis:kateFeelsExposed rdf:type lis:Outcome .
-lis:kateTrustsMax rdf:type lis:Outcome .
-lis:victoriaFeelsBullied rdf:type lis:Outcome .
-lis:kateSlateVandalizedAgain rdf:type lis:Outcome .
-lis:photoAvailableIfReorganizedAndRewound rdf:type lis:Outcome .
-lis:lisaWillLookHealthy rdf:type lis:Outcome .
-
-# Correzione di playerEmotionEmpathy → playerEmotionRelief
-lis:emotionalResponseKateRelief lis:isDrivenBy lis:playerEmotionRelief .
-
-# Aggiunta dichiarazione mancante per playerMotivationSelfPreservation
-lis:playerMotivationSelfPreservation rdf:type lis:PlayerMotivation .
-
-# EPISODE 1 RELATIONS
-
-# Player
-lis:Player1 rdf:type lis:Player ;
-    lis:impersonates lis:MaxCaulfield .
-
-#EVENT 1: Nathan's Gun
-lis:nathansGun rdf:type lis:Event ;
-    lis:takesPlaceIn lis:PrescottDormitory ;
-    lis:isContainedIn lis:Episode1 ;
-    lis:involves lis:MaxCaulfield, lis:NathanPrescott ;
-    lis:triggers lis:reportNathan ;
-    lis:elicits lis:emotionalResponseInitialFear .
-
-lis:emotionalResponseInitialFear rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerEmotionFear, lis:playerValueSelfPreservation,
-                lis:playerMotivationAvoidDanger ;
-    lis:influences lis:reportNathan .
-
-lis:reportNathan rdf:type lis:MajorChoice ;
-    lis:isChoiceOf lis:Player1 ;
-    lis:leadsTo lis:nathanGetsAngry .
-
-lis:nathanGetsAngry rdf:type lis:Outcome ;
-    lis:elicits lis:emotionalResponseThreatened ;
-    lis:induces lis:ReflectionState1 .
-
-lis:emotionalResponseThreatened rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerEmotionAnxiety,
-                lis:playerValueResponsibility,
-                lis:playerMotivationProtectOthers .
-
-lis:ReflectionState1 rdf:type lis:ReflectionState ;
-    lis:isInfluencedBy lis:emotionalResponseThreatened ;
-    lis:resultsIn lis:AcceptChoice1 .
-
-lis:AcceptChoice1 rdf:type lis:AcceptChoice ;
-    lis:marks lis:FinalDecision1 .
-
-# EVENT 2: Kate Marsh and David Madsen Confrontation
-lis:kateMarshDavidMadsenConfrontation rdf:type lis:Event ;
-    lis:takesPlaceIn lis:MainCampus ;
-    lis:isContainedIn lis:Episode1 ;
-    lis:involves lis:MaxCaulfield, lis:KateMarsh, lis:DavidMadsen ;
-    lis:triggers lis:interveneKateDavidConfrontation, lis:takePhotoKateDavidConfrontation ;
-    lis:elicits lis:emotionalResponseMoralConflict .
-
-lis:emotionalResponseMoralConflict rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerEmotionAnxiety,
-                lis:playerValueJustice,
-                lis:playerMotivationProtectTheVulnerable ;
-    lis:influences lis:interveneKateDavidConfrontation, lis:takePhotoKateDavidConfrontation .
-
-lis:takePhotoKateDavidConfrontation rdf:type lis:MajorChoice ;
-    lis:isChoiceOf lis:Player1 ;
-    lis:leadsTo lis:kateFeelsExposed .
-
-lis:kateFeelsExposed rdf:type lis:Outcome ;
-    lis:elicits lis:emotionalResponseKateGuilt ;
-    lis:induces lis:ReflectionState2 .
-
-lis:emotionalResponseKateGuilt rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerEmotionGuilt,
-                lis:playerValueEmpathy,
-                lis:playerMotivationRepairRelationship .
-
-lis:ReflectionState2 rdf:type lis:ReflectionState ;
-    lis:isInfluencedBy lis:emotionalResponseKateGuilt ;
-    lis:resultsIn lis:ReconsiderChoice1 .
-
-lis:ReconsiderChoice1 rdf:type lis:ReconsiderChoice ;
-    lis:rejectsChoice lis:takePhotoKateDavidConfrontation ;
-    lis:enables lis:RewindMechanic1 .
-
-lis:RewindMechanic1 rdf:type lis:RewindMechanic ;
-    lis:resets lis:kateMarshDavidMadsenConfrontation .
-
-lis:interveneKateDavidConfrontation rdf:type lis:MajorChoice ;
-    lis:isChoiceOf lis:Player1 ;
-    lis:leadsTo lis:kateTrustsMax .
-
-lis:kateTrustsMax rdf:type lis:Outcome ;
-    lis:elicits lis:emotionalResponseKateRelief ;
-    lis:induces lis:ReflectionState3 .
-
-lis:emotionalResponseKateRelief rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerEmotionEmpathy,
-                lis:playerValueLoyalty,
-                lis:playerMotivationProtectKate .
-
-lis:ReflectionState3 rdf:type lis:ReflectionState ;
-    lis:isInfluencedBy lis:emotionalResponseKateRelief ;
-    lis:resultsIn lis:AcceptChoice2 .
-
-lis:AcceptChoice2 rdf:type lis:AcceptChoice ;
-    lis:marks lis:FinalDecision2 .
-
-lis:FinalDecision2 rdf:type lis:FinalDecision .
-
-# EVENT 3: Victoria Chase Outside Dormitory
-lis:victoriaChaseOutsideDormitory rdf:type lis:Event ;
-    lis:takesPlaceIn lis:PrescottDormitory ;
-    lis:isContainedIn lis:Episode1 ;
-    lis:involves lis:MaxCaulfield, lis:VictoriaChase, lis:NathanPrescott ;
-    lis:triggers lis:makeFunOfVictoria ;
-    lis:elicits lis:emotionalResponseIndifference .
-
-lis:emotionalResponseIndifference rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerEmotionResignation,
-                lis:playerValueSelfPreservation,
-                lis:playerMotivationAvoidConflict ;
-    lis:influences lis:makeFunOfVictoria .
-
-lis:makeFunOfVictoria rdf:type lis:MajorChoice ;
-    lis:isChoiceOf lis:Player1 ;
-    lis:leadsTo lis:victoriaFeelsBullied .
-
-lis:victoriaFeelsBullied rdf:type lis:Outcome ;
-    lis:elicits lis:emotionalResponseSadness ;
-    lis:induces lis:ReflectionState4 .
-
-lis:emotionalResponseSadness rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerEmotionGuilt,
-                lis:playerValueEmpathy,
-                lis:playerMotivationSelectiveCare .
-
-lis:ReflectionState4 rdf:type lis:ReflectionState ;
-    lis:isInfluencedBy lis:emotionalResponseSadness ;
-    lis:resultsIn lis:AcceptChoice3 .
-
-lis:AcceptChoice3 rdf:type lis:AcceptChoice ;
-    lis:marks lis:FinalDecision3 .
-
-# EVENT 4: Insults on Kate Marsh Slate
-lis:insultsOnKateMarshSlate rdf:type lis:Event ;
-    lis:isContainedIn lis:Episode1 ;
-    lis:takesPlaceIn lis:MainCampus ;
-    lis:involves lis:MaxCaulfield, lis:KateMarsh ;
-    lis:triggers lis:eraseInsultKatesSlate ;
-    lis:elicits lis:emotionalResponseKateEmpathy .
-
-lis:eraseInsultKatesSlate rdf:type lis:MinorChoice ;
-    lis:isChoiceOf lis:Player1 ;
-    lis:leadsTo lis:kateSlateVandalizedAgain .
-
-lis:emotionalResponseKateEmpathy rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerEmotionConcern,
-                lis:playerValueEmpathy,
-                lis:playerMotivationSupportingKate .
-
-lis:kateSlateVandalizedAgain rdf:type lis:Outcome ;
-    lis:induces lis:ReflectionState5 .
-
-lis:ReflectionState5 rdf:type lis:ReflectionState ;
-    lis:isInfluencedBy lis:emotionalResponseSadness ;
-    lis:resultsIn lis:AcceptChoice4 .
-
-lis:AcceptChoice4 rdf:type lis:AcceptChoice ;
-    lis:reaffirmsChoice lis:eraseInsultKatesSlate ;
-    lis:marks lis:FinalDecision4 .
-
-# EVENT 5: Michelle Grant Petition
-lis:michelleGrantPetition rdf:type lis:Event ;
-    lis:takesPlaceIn lis:MichelleGrantsClassroom ;
-    lis:isContainedIn lis:Episode1 ;
-    lis:involves lis:MaxCaulfield, lis:MichelleGrant ;
-    lis:triggers lis:signMichellePetition ;
-    lis:elicits lis:emotionalResponseConsideration .
-
-lis:emotionalResponseConsideration rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerEmotionUncertainty,
-                lis:playerValueJustice,
-                lis:playerMotivationSocialResponsibility ;
-    lis:influences lis:signMichellePetition .
-
-lis:signMichellePetition rdf:type lis:MinorChoice ;
-    lis:isChoiceOf lis:Player1 ;
-    lis:leadsTo lis:michelleMentionsMax .
-
-lis:michelleMentionsMax rdf:type lis:Outcome ;
-    lis:elicits lis:emotionalResponseAppreciation ;
-    lis:induces lis:ReflectionState6 .
-
-lis:emotionalResponseAppreciation rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerEmotionGratitude,
-                lis:playerValueAltruism,
-                lis:playerMotivationSupportCommunity .
-
-lis:ReflectionState6 rdf:type lis:ReflectionState ;
-    lis:isInfluencedBy lis:emotionalResponseAppreciation ;
-    lis:resultsIn lis:AcceptChoice5 .
-
-lis:AcceptChoice5 rdf:type lis:AcceptChoice ;
-    lis:marks lis:FinalDecision5 .
-
-# EVENT 6: RV at Parking Lot
-lis:rvAtParkingLot rdf:type lis:Event ;
-    lis:takesPlaceIn lis:ParkingLot ;
-    lis:isContainedIn lis:Episode1 ;
-    lis:involves lis:MaxCaulfield, lis:VictoriaChase ;
-    lis:triggers lis:writeRV ;
-    lis:elicits lis:emotionalResponseDefiance .
-
-lis:emotionalResponseDefiance rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerEmotionDetermination,
-                lis:playerValueJustice,
-                lis:playerMotivationChallengeAuthority ;
-    lis:influences lis:writeRV .
-
-lis:writeRV rdf:type lis:MinorChoice ;
-    lis:isChoiceOf lis:Player1 ;
-    lis:leadsTo lis:noPublicAnnouncement .
-
-lis:noPublicAnnouncement rdf:type lis:Outcome ;
-    lis:elicits lis:emotionalResponseSatisfaction ;
-    lis:induces lis:ReflectionState7 .
-
-lis:emotionalResponseSatisfaction rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerEmotionSatisfaction,
-                lis:playerValueIntegrity,
-                lis:playerMotivationStandingUpForBeliefs .
-
-lis:ReflectionState7 rdf:type lis:ReflectionState ;
-    lis:isInfluencedBy lis:emotionalResponseSatisfaction ;
-    lis:resultsIn lis:AcceptChoice6 .
-
-lis:AcceptChoice6 rdf:type lis:AcceptChoice ;
-    lis:marks lis:FinalDecision6 .
-
-# EVENT 7: Victoria's Photo Collection
-lis:victoriasPhotoCollection rdf:type lis:Event ;
-    lis:takesPlaceIn lis:VictoriasRoom ;
-    lis:isContainedIn lis:Episode1 ;
-    lis:involves lis:MaxCaulfield, lis:VictoriaChase ;
-    lis:triggers lis:reorganizeVictoriaPhoto ;
-    lis:elicits lis:emotionalResponseConsideration2 .
-
-lis:emotionalResponseConsideration2 rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerEmotionThoughtfulness,
-                lis:playerValueRespect,
-                lis:playerMotivationMaintainRelationships ;
-    lis:influences lis:reorganizeVictoriaPhoto .
-
-lis:reorganizeVictoriaPhoto rdf:type lis:MinorChoice ;
-    lis:isChoiceOf lis:Player1 ;
-    lis:leadsTo lis:photoAvailableIfReorganizedAndRewound .
-
-lis:photoAvailableIfReorganizedAndRewound rdf:type lis:Outcome ;
-    lis:elicits lis:emotionalResponseRelief ;
-    lis:induces lis:ReflectionState8 .
-
-lis:emotionalResponseRelief rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerEmotionRelief,
-                lis:playerValueTrust,
-                lis:playerMotivationConflictAvoidance .
-
-lis:ReflectionState8 rdf:type lis:ReflectionState ;
-    lis:isInfluencedBy lis:emotionalResponseRelief ;
-    lis:resultsIn lis:AcceptChoice7 .
-
-lis:AcceptChoice7 rdf:type lis:AcceptChoice ;
-    lis:marks lis:FinalDecision7 .
-
-# EVENT 8: Water Lisa Plant
-lis:waterLisaPlantEvent rdf:type lis:Event ;
-    lis:takesPlaceIn lis:BlackwellAcademy ;
-    lis:isContainedIn lis:Episode1 ;
-    lis:involves lis:MaxCaulfield ;
-    lis:triggers lis:waterLisaPlant ;
-    lis:elicits lis:emotionalResponseCare .
-
-lis:emotionalResponseCare rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerEmotionAffection,
-                lis:playerValueResponsibility,
-                lis:playerMotivationNurtureOthers ;
-    lis:influences lis:waterLisaPlant .
-
-lis:waterLisaPlant rdf:type lis:MinorChoice ;
-    lis:isChoiceOf lis:Player1 ;
-    lis:leadsTo lis:lisaWillLookHealthy .
-
-lis:lisaWillLookHealthy rdf:type lis:Outcome ;
-    lis:elicits lis:emotionalResponseSatisfaction2 ;
-    lis:induces lis:ReflectionState9 .
-
-lis:emotionalResponseSatisfaction2 rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerEmotionSatisfaction,
-                lis:playerValueCare,
-                lis:playerMotivationPositiveImpact .
-
-lis:ReflectionState9 rdf:type lis:ReflectionState ;
-    lis:isInfluencedBy lis:emotionalResponseSatisfaction2 ;
-    lis:resultsIn lis:AcceptChoice8 .
-
-lis:AcceptChoice8 rdf:type lis:AcceptChoice ;
-    lis:marks lis:FinalDecision8 .
-
-# EVENT 9: Chloe's Weed
-lis:chloesWeed rdf:type lis:Event ;
-    lis:takesPlaceIn lis:ChloesRoom ;
-    lis:involves lis:MaxCaulfield, lis:ChloePrice ;
-    lis:isContainedIn lis:Episode1 ;
-    lis:triggers lis:blameChloeWeed, lis:takeBlameChloeWeed ;
-    lis:elicits lis:emotionalResponseAnxiety .
-
-lis:emotionalResponseAnxiety rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerValueHonesty,
-                lis:playerMotivationSelfPreservation,
-                lis:playerEmotionAnxiety ;
-    lis:influences lis:blameChloeWeed, lis:takeBlameChloeWeed .
-
-lis:blameChloeWeed rdf:type lis:MajorChoice ;
-    lis:leadsTo lis:chloeDisapproves ;
-    lis:isChoiceOf lis:Player1 .
-
-lis:chloeDisapproves rdf:type lis:Outcome ;
-    lis:elicits lis:emotionalResponseGuilt ;
-    lis:induces lis:ReflectionState10 .
-
-lis:emotionalResponseGuilt rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerEmotionGuilt,
-                lis:playerValueEmpathy,
-                lis:playerMotivationRepairRelationship .
-
-lis:ReflectionState10 rdf:type lis:ReflectionState ;
-    lis:isInfluencedBy lis:emotionalResponseGuilt ;
-    lis:isDrivenBy lis:playerValueEmpathy,
-                lis:playerEmotionGuilt,
-                lis:playerMotivationRepairRelationship ;
-    lis:resultsIn lis:ReconsiderChoice2 .
-
-lis:ReconsiderChoice2 rdf:type lis:ReconsiderChoice ;
-    lis:rejectsChoice lis:blameChloeWeed ;
-    lis:enables lis:RewindMechanic2 .
-
-lis:RewindMechanic2 rdf:type lis:RewindMechanic ;
-    lis:resets lis:chloesWeed .
-
-lis:takeBlameChloeWeed rdf:type lis:MajorChoice ;
-    lis:leadsTo lis:chloeGladNoReport ;
-    lis:isChoiceOf lis:Player1 .
-
-lis:chloeGladNoReport rdf:type lis:Outcome ;
-    lis:elicits lis:emotionalResponseRelief2 ;
-    lis:induces lis:ReflectionState11 .
-
-lis:emotionalResponseRelief2 rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerEmotionAffection,
-                lis:playerValueMoralGrowth,
-                lis:playerMotivationProtectingChloe .
-
-lis:ReflectionState11 rdf:type lis:ReflectionState ;
-    lis:isInfluencedBy lis:emotionalResponseRelief2 ;
-    lis:resultsIn lis:AcceptChoice9 .
-
-lis:AcceptChoice9 rdf:type lis:AcceptChoice ;
-    lis:reaffirmsChoice lis:takeBlameChloeWeed ;
-    lis:marks lis:FinalDecision9 .
-
-lis:FinalDecision9 rdf:type lis:FinalDecision ;
-    lis:resolvesTo lis:Episode1End .
-
-# EVENT 10: Daniel's Portrait
-lis:danielDaCostaPortrait rdf:type lis:Event ;
-    lis:takesPlaceIn lis:MainCampus ;
-    lis:involves lis:MaxCaulfield, lis:DanielDaCosta ;
-    lis:isContainedIn lis:Episode1 ;
-    lis:triggers lis:acceptDanielPortrait ;
-    lis:elicits lis:emotionalResponseFlattery .
-
-lis:emotionalResponseFlattery rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerValueOpenness,
-                lis:playerMotivationSupportiveness,
-                lis:playerEmotionAppreciation ;
-    lis:influences lis:acceptDanielPortrait .
-
-lis:acceptDanielPortrait rdf:type lis:MinorChoice ;
-    lis:leadsTo lis:danielPortraitPosted ;
-    lis:isChoiceOf lis:Player1 .
-
-lis:danielPortraitPosted rdf:type lis:Outcome ;
-    lis:induces lis:ReflectionState12 ;
-    lis:elicits lis:emotionalResponseValidation .
-
-lis:emotionalResponseValidation rdf:type lis:EmotionalResponse ;
-    lis:isDrivenBy lis:playerValueCreativity,
-                lis:playerMotivationEncourageDanielWork,
-                lis:playerEmotionPride .
-
-lis:ReflectionState12 rdf:type lis:ReflectionState ;
-    lis:isInfluencedBy lis:emotionalResponseValidation ;
-    lis:resultsIn lis:AcceptChoice10 .
-
-lis:AcceptChoice10 rdf:type lis:AcceptChoice ;
-    lis:reaffirmsChoice lis:acceptDanielPortrait ;
-    lis:marks lis:FinalDecision10 .
-
-# Additional Relations
-lis:MaxCaulfield
-    lis:has lis:playerValueFear, lis:playerValueConfidence ;
-    lis:makesChoice lis:blameChloeWeed, lis:acceptDanielPortrait .
-
-
-
-lis:Episode1End rdf:type lis:EpisodeEnd ;
-    lis:culminates lis:internalizedMeaning1 .
-
-lis:internalizedMeaning1 rdf:type lis:InternalizedMeaning ;
-    rdfs:label "I learned that small choices shape relationships." .
-
-# Location containment
-lis:ChloesRoom lis:isPartOf lis:BlackwellAcademy .
-lis:MainCampus lis:isPartOf lis:ArcadiaBay .
+
+###  http://example.org/lis#takesPlaceIn
+lis:takesPlaceIn rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/lis#triggers
+lis:triggers rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.org/lis#AcceptChoice1
+lis:AcceptChoice1 rdf:type owl:NamedIndividual ;
+                  lis:marks lis:FinalDecision1 .
+
+
+###  http://example.org/lis#AcceptChoice10
+lis:AcceptChoice10 rdf:type owl:NamedIndividual ;
+                   lis:marks lis:FinalDecision10 ;
+                   lis:reaffirmsChoice lis:acceptDanielPortrait .
+
+
+###  http://example.org/lis#AcceptChoice2
+lis:AcceptChoice2 rdf:type owl:NamedIndividual ;
+                  lis:marks lis:FinalDecision2 .
+
+
+###  http://example.org/lis#AcceptChoice3
+lis:AcceptChoice3 rdf:type owl:NamedIndividual ;
+                  lis:marks lis:FinalDecision3 .
+
+
+###  http://example.org/lis#AcceptChoice4
+lis:AcceptChoice4 rdf:type owl:NamedIndividual ;
+                  lis:marks lis:FinalDecision4 ;
+                  lis:reaffirmsChoice lis:eraseInsultKatesSlate .
+
+
+###  http://example.org/lis#AcceptChoice5
+lis:AcceptChoice5 rdf:type owl:NamedIndividual ;
+                  lis:marks lis:FinalDecision5 .
+
+
+###  http://example.org/lis#AcceptChoice6
+lis:AcceptChoice6 rdf:type owl:NamedIndividual ;
+                  lis:marks lis:FinalDecision6 .
+
+
+###  http://example.org/lis#AcceptChoice7
+lis:AcceptChoice7 rdf:type owl:NamedIndividual ;
+                  lis:marks lis:FinalDecision7 .
+
+
+###  http://example.org/lis#AcceptChoice8
+lis:AcceptChoice8 rdf:type owl:NamedIndividual ;
+                  lis:marks lis:FinalDecision8 .
+
+
+###  http://example.org/lis#AcceptChoice9
+lis:AcceptChoice9 rdf:type owl:NamedIndividual ;
+                  lis:marks lis:FinalDecision9 ;
+                  lis:reaffirmsChoice lis:takeBlameChloeWeed .
+
+
+###  http://example.org/lis#ArcadiaBay
+lis:ArcadiaBay rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#BlackwellAcademy
+lis:BlackwellAcademy rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#ChloePrice
+lis:ChloePrice rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#ChloesRoom
+lis:ChloesRoom rdf:type owl:NamedIndividual ;
+               lis:isPartOf lis:BlackwellAcademy .
+
+
+###  http://example.org/lis#DanielDaCosta
+lis:DanielDaCosta rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#DavidMadsen
+lis:DavidMadsen rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#Episode1
+lis:Episode1 rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#Episode1End
+lis:Episode1End rdf:type owl:NamedIndividual ;
+                lis:culminates lis:internalizedMeaning1 .
+
+
+###  http://example.org/lis#FinalDecision1
+lis:FinalDecision1 rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#FinalDecision10
+lis:FinalDecision10 rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#FinalDecision2
+lis:FinalDecision2 rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#FinalDecision3
+lis:FinalDecision3 rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#FinalDecision4
+lis:FinalDecision4 rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#FinalDecision5
+lis:FinalDecision5 rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#FinalDecision6
+lis:FinalDecision6 rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#FinalDecision7
+lis:FinalDecision7 rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#FinalDecision8
+lis:FinalDecision8 rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#FinalDecision9
+lis:FinalDecision9 rdf:type owl:NamedIndividual ;
+                   lis:resolvesTo lis:Episode1End .
+
+
+###  http://example.org/lis#KateMarsh
+lis:KateMarsh rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#MainCampus
+lis:MainCampus rdf:type owl:NamedIndividual ;
+               lis:isPartOf lis:ArcadiaBay .
+
+
+###  http://example.org/lis#MaxCaulfield
+lis:MaxCaulfield rdf:type owl:NamedIndividual ;
+                 lis:has lis:playerValueConfidence ,
+                         lis:playerValueFear ;
+                 lis:makesChoice lis:acceptDanielPortrait ,
+                                 lis:blameChloeWeed .
+
+
+###  http://example.org/lis#MichelleGrant
+lis:MichelleGrant rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#MichelleGrantsClassroom
+lis:MichelleGrantsClassroom rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#NathanPrescott
+lis:NathanPrescott rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#ParkingLot
+lis:ParkingLot rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#Player1
+lis:Player1 rdf:type owl:NamedIndividual ;
+            lis:impersonates lis:MaxCaulfield .
+
+
+###  http://example.org/lis#PrescottDormitory
+lis:PrescottDormitory rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#ReconsiderChoice1
+lis:ReconsiderChoice1 rdf:type owl:NamedIndividual ;
+                      lis:enables lis:RewindMechanic1 ;
+                      lis:rejectsChoice lis:takePhotoKateDavidConfrontation .
+
+
+###  http://example.org/lis#ReconsiderChoice2
+lis:ReconsiderChoice2 rdf:type owl:NamedIndividual ;
+                      lis:enables lis:RewindMechanic2 ;
+                      lis:rejectsChoice lis:blameChloeWeed .
+
+
+###  http://example.org/lis#ReflectionState1
+lis:ReflectionState1 rdf:type owl:NamedIndividual ;
+                     lis:resultsIn lis:AcceptChoice1 ;
+                     lis:isInfluencedBy lis:emotionalResponseThreatened .
+
+
+###  http://example.org/lis#ReflectionState10
+lis:ReflectionState10 rdf:type owl:NamedIndividual ;
+                      lis:isDrivenBy lis:playerEmotionGuilt ,
+                                     lis:playerMotivationRepairRelationship ,
+                                     lis:playerValueEmpathy ;
+                      lis:resultsIn lis:ReconsiderChoice2 ;
+                      lis:isInfluencedBy lis:emotionalResponseGuilt .
+
+
+###  http://example.org/lis#ReflectionState11
+lis:ReflectionState11 rdf:type owl:NamedIndividual ;
+                      lis:resultsIn lis:AcceptChoice9 ;
+                      lis:isInfluencedBy lis:emotionalResponseRelief2 .
+
+
+###  http://example.org/lis#ReflectionState12
+lis:ReflectionState12 rdf:type owl:NamedIndividual ;
+                      lis:resultsIn lis:AcceptChoice10 ;
+                      lis:isInfluencedBy lis:emotionalResponseValidation .
+
+
+###  http://example.org/lis#ReflectionState2
+lis:ReflectionState2 rdf:type owl:NamedIndividual ;
+                     lis:resultsIn lis:ReconsiderChoice1 ;
+                     lis:isInfluencedBy lis:emotionalResponseKateGuilt .
+
+
+###  http://example.org/lis#ReflectionState3
+lis:ReflectionState3 rdf:type owl:NamedIndividual ;
+                     lis:resultsIn lis:AcceptChoice2 ;
+                     lis:isInfluencedBy lis:emotionalResponseKateRelief .
+
+
+###  http://example.org/lis#ReflectionState4
+lis:ReflectionState4 rdf:type owl:NamedIndividual ;
+                     lis:resultsIn lis:AcceptChoice3 ;
+                     lis:isInfluencedBy lis:emotionalResponseSadness .
+
+
+###  http://example.org/lis#ReflectionState5
+lis:ReflectionState5 rdf:type owl:NamedIndividual ;
+                     lis:resultsIn lis:AcceptChoice4 ;
+                     lis:isInfluencedBy lis:emotionalResponseSadness .
+
+
+###  http://example.org/lis#ReflectionState6
+lis:ReflectionState6 rdf:type owl:NamedIndividual ;
+                     lis:resultsIn lis:AcceptChoice5 ;
+                     lis:isInfluencedBy lis:emotionalResponseAppreciation .
+
+
+###  http://example.org/lis#ReflectionState7
+lis:ReflectionState7 rdf:type owl:NamedIndividual ;
+                     lis:resultsIn lis:AcceptChoice6 ;
+                     lis:isInfluencedBy lis:emotionalResponseSatisfaction .
+
+
+###  http://example.org/lis#ReflectionState8
+lis:ReflectionState8 rdf:type owl:NamedIndividual ;
+                     lis:resultsIn lis:AcceptChoice7 ;
+                     lis:isInfluencedBy lis:emotionalResponseRelief .
+
+
+###  http://example.org/lis#ReflectionState9
+lis:ReflectionState9 rdf:type owl:NamedIndividual ;
+                     lis:resultsIn lis:AcceptChoice8 ;
+                     lis:isInfluencedBy lis:emotionalResponseSatisfaction2 .
+
+
+###  http://example.org/lis#RewindMechanic1
+lis:RewindMechanic1 rdf:type owl:NamedIndividual ;
+                    lis:resets lis:kateMarshDavidMadsenConfrontation .
+
+
+###  http://example.org/lis#RewindMechanic2
+lis:RewindMechanic2 rdf:type owl:NamedIndividual ;
+                    lis:resets lis:chloesWeed .
+
+
+###  http://example.org/lis#VictoriaChase
+lis:VictoriaChase rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#VictoriasRoom
+lis:VictoriasRoom rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#acceptDanielPortrait
+lis:acceptDanielPortrait rdf:type owl:NamedIndividual ;
+                         lis:isChoiceOf lis:Player1 ;
+                         lis:leadsTo lis:danielPortraitPosted .
+
+
+###  http://example.org/lis#blameChloeWeed
+lis:blameChloeWeed rdf:type owl:NamedIndividual ;
+                   lis:isChoiceOf lis:Player1 ;
+                   lis:leadsTo lis:chloeDisapproves .
+
+
+###  http://example.org/lis#chloeDisapproves
+lis:chloeDisapproves rdf:type owl:NamedIndividual ;
+                     lis:elicits lis:emotionalResponseGuilt ;
+                     lis:induces lis:ReflectionState10 .
+
+
+###  http://example.org/lis#chloeGladNoReport
+lis:chloeGladNoReport rdf:type owl:NamedIndividual ;
+                      lis:elicits lis:emotionalResponseRelief2 ;
+                      lis:induces lis:ReflectionState11 .
+
+
+###  http://example.org/lis#chloesWeed
+lis:chloesWeed rdf:type owl:NamedIndividual ;
+               lis:elicits lis:emotionalResponseAnxiety ;
+               lis:involves lis:ChloePrice ,
+                            lis:MaxCaulfield ;
+               lis:isContainedIn lis:Episode1 ;
+               lis:takesPlaceIn lis:ChloesRoom ;
+               lis:triggers lis:blameChloeWeed ,
+                            lis:takeBlameChloeWeed .
+
+
+###  http://example.org/lis#danielDaCostaPortrait
+lis:danielDaCostaPortrait rdf:type owl:NamedIndividual ;
+                          lis:elicits lis:emotionalResponseFlattery ;
+                          lis:involves lis:DanielDaCosta ,
+                                       lis:MaxCaulfield ;
+                          lis:isContainedIn lis:Episode1 ;
+                          lis:takesPlaceIn lis:MainCampus ;
+                          lis:triggers lis:acceptDanielPortrait .
+
+
+###  http://example.org/lis#danielPortraitPosted
+lis:danielPortraitPosted rdf:type owl:NamedIndividual ;
+                         lis:elicits lis:emotionalResponseValidation ;
+                         lis:induces lis:ReflectionState12 .
+
+
+###  http://example.org/lis#emotionalResponseAnxiety
+lis:emotionalResponseAnxiety rdf:type owl:NamedIndividual ;
+                             lis:influences lis:blameChloeWeed ,
+                                            lis:takeBlameChloeWeed ;
+                             lis:isDrivenBy lis:playerEmotionAnxiety ,
+                                            lis:playerMotivationSelfPreservation ,
+                                            lis:playerValueHonesty .
+
+
+###  http://example.org/lis#emotionalResponseAppreciation
+lis:emotionalResponseAppreciation rdf:type owl:NamedIndividual ;
+                                  lis:isDrivenBy lis:playerEmotionGratitude ,
+                                                 lis:playerMotivationSupportCommunity ,
+                                                 lis:playerValueAltruism .
+
+
+###  http://example.org/lis#emotionalResponseCare
+lis:emotionalResponseCare rdf:type owl:NamedIndividual ;
+                          lis:influences lis:waterLisaPlant ;
+                          lis:isDrivenBy lis:playerEmotionAffection ,
+                                         lis:playerMotivationNurtureOthers ,
+                                         lis:playerValueResponsibility .
+
+
+###  http://example.org/lis#emotionalResponseConsideration
+lis:emotionalResponseConsideration rdf:type owl:NamedIndividual ;
+                                   lis:influences lis:signMichellePetition ;
+                                   lis:isDrivenBy lis:playerEmotionUncertainty ,
+                                                  lis:playerMotivationSocialResponsibility ,
+                                                  lis:playerValueJustice .
+
+
+###  http://example.org/lis#emotionalResponseConsideration2
+lis:emotionalResponseConsideration2 rdf:type owl:NamedIndividual ;
+                                    lis:influences lis:reorganizeVictoriaPhoto ;
+                                    lis:isDrivenBy lis:playerEmotionThoughtfulness ,
+                                                   lis:playerMotivationMaintainRelationships ,
+                                                   lis:playerValueRespect .
+
+
+###  http://example.org/lis#emotionalResponseDefiance
+lis:emotionalResponseDefiance rdf:type owl:NamedIndividual ;
+                              lis:influences lis:writeRV ;
+                              lis:isDrivenBy lis:playerEmotionDetermination ,
+                                             lis:playerMotivationChallengeAuthority ,
+                                             lis:playerValueJustice .
+
+
+###  http://example.org/lis#emotionalResponseFlattery
+lis:emotionalResponseFlattery rdf:type owl:NamedIndividual ;
+                              lis:influences lis:acceptDanielPortrait ;
+                              lis:isDrivenBy lis:playerEmotionAppreciation ,
+                                             lis:playerMotivationSupportiveness ,
+                                             lis:playerValueOpenness .
+
+
+###  http://example.org/lis#emotionalResponseGuilt
+lis:emotionalResponseGuilt rdf:type owl:NamedIndividual ;
+                           lis:isDrivenBy lis:playerEmotionGuilt ,
+                                          lis:playerMotivationRepairRelationship ,
+                                          lis:playerValueEmpathy .
+
+
+###  http://example.org/lis#emotionalResponseIndifference
+lis:emotionalResponseIndifference rdf:type owl:NamedIndividual ;
+                                  lis:influences lis:makeFunOfVictoria ;
+                                  lis:isDrivenBy lis:playerEmotionResignation ,
+                                                 lis:playerMotivationAvoidConflict ,
+                                                 lis:playerValueSelfPreservation .
+
+
+###  http://example.org/lis#emotionalResponseInitialFear
+lis:emotionalResponseInitialFear rdf:type owl:NamedIndividual ;
+                                 lis:influences lis:reportNathan ;
+                                 lis:isDrivenBy lis:playerEmotionFear ,
+                                                lis:playerMotivationAvoidDanger ,
+                                                lis:playerValueSelfPreservation .
+
+
+###  http://example.org/lis#emotionalResponseKateEmpathy
+lis:emotionalResponseKateEmpathy rdf:type owl:NamedIndividual ;
+                                 lis:isDrivenBy lis:playerEmotionConcern ,
+                                                lis:playerMotivationSupportingKate ,
+                                                lis:playerValueEmpathy .
+
+
+###  http://example.org/lis#emotionalResponseKateGuilt
+lis:emotionalResponseKateGuilt rdf:type owl:NamedIndividual ;
+                               lis:isDrivenBy lis:playerEmotionGuilt ,
+                                              lis:playerMotivationRepairRelationship ,
+                                              lis:playerValueEmpathy .
+
+
+###  http://example.org/lis#emotionalResponseKateRelief
+lis:emotionalResponseKateRelief rdf:type owl:NamedIndividual ;
+                                lis:isDrivenBy lis:playerEmotionEmpathy ,
+                                               lis:playerEmotionRelief ,
+                                               lis:playerMotivationProtectKate ,
+                                               lis:playerValueLoyalty .
+
+
+###  http://example.org/lis#emotionalResponseMoralConflict
+lis:emotionalResponseMoralConflict rdf:type owl:NamedIndividual ;
+                                   lis:influences lis:interveneKateDavidConfrontation ,
+                                                  lis:takePhotoKateDavidConfrontation ;
+                                   lis:isDrivenBy lis:playerEmotionAnxiety ,
+                                                  lis:playerMotivationProtectTheVulnerable ,
+                                                  lis:playerValueJustice .
+
+
+###  http://example.org/lis#emotionalResponseRelief
+lis:emotionalResponseRelief rdf:type owl:NamedIndividual ;
+                            lis:isDrivenBy lis:playerEmotionRelief ,
+                                           lis:playerMotivationConflictAvoidance ,
+                                           lis:playerValueTrust .
+
+
+###  http://example.org/lis#emotionalResponseRelief2
+lis:emotionalResponseRelief2 rdf:type owl:NamedIndividual ;
+                             lis:isDrivenBy lis:playerEmotionAffection ,
+                                            lis:playerMotivationProtectingChloe ,
+                                            lis:playerValueMoralGrowth .
+
+
+###  http://example.org/lis#emotionalResponseSadness
+lis:emotionalResponseSadness rdf:type owl:NamedIndividual ;
+                             lis:isDrivenBy lis:playerEmotionGuilt ,
+                                            lis:playerMotivationSelectiveCare ,
+                                            lis:playerValueEmpathy .
+
+
+###  http://example.org/lis#emotionalResponseSatisfaction
+lis:emotionalResponseSatisfaction rdf:type owl:NamedIndividual ;
+                                  lis:isDrivenBy lis:playerEmotionSatisfaction ,
+                                                 lis:playerMotivationStandingUpForBeliefs ,
+                                                 lis:playerValueIntegrity .
+
+
+###  http://example.org/lis#emotionalResponseSatisfaction2
+lis:emotionalResponseSatisfaction2 rdf:type owl:NamedIndividual ;
+                                   lis:isDrivenBy lis:playerEmotionSatisfaction ,
+                                                  lis:playerMotivationPositiveImpact ,
+                                                  lis:playerValueCare .
+
+
+###  http://example.org/lis#emotionalResponseThreatened
+lis:emotionalResponseThreatened rdf:type owl:NamedIndividual ;
+                                lis:isDrivenBy lis:playerEmotionAnxiety ,
+                                               lis:playerMotivationProtectOthers ,
+                                               lis:playerValueResponsibility .
+
+
+###  http://example.org/lis#emotionalResponseValidation
+lis:emotionalResponseValidation rdf:type owl:NamedIndividual ;
+                                lis:isDrivenBy lis:playerEmotionPride ,
+                                               lis:playerMotivationEncourageDanielWork ,
+                                               lis:playerValueCreativity .
+
+
+###  http://example.org/lis#eraseInsultKatesSlate
+lis:eraseInsultKatesSlate rdf:type owl:NamedIndividual ;
+                          lis:isChoiceOf lis:Player1 ;
+                          lis:leadsTo lis:kateSlateVandalizedAgain .
+
+
+###  http://example.org/lis#insultsOnKateMarshSlate
+lis:insultsOnKateMarshSlate rdf:type owl:NamedIndividual ;
+                            lis:elicits lis:emotionalResponseKateEmpathy ;
+                            lis:involves lis:KateMarsh ,
+                                         lis:MaxCaulfield ;
+                            lis:isContainedIn lis:Episode1 ;
+                            lis:takesPlaceIn lis:MainCampus ;
+                            lis:triggers lis:eraseInsultKatesSlate .
+
+
+###  http://example.org/lis#internalizedMeaning1
+lis:internalizedMeaning1 rdf:type owl:NamedIndividual ;
+                         rdfs:label "I learned that small choices shape relationships." .
+
+
+###  http://example.org/lis#interveneKateDavidConfrontation
+lis:interveneKateDavidConfrontation rdf:type owl:NamedIndividual ;
+                                    lis:isChoiceOf lis:Player1 ;
+                                    lis:leadsTo lis:kateTrustsMax .
+
+
+###  http://example.org/lis#kateFeelsExposed
+lis:kateFeelsExposed rdf:type owl:NamedIndividual ;
+                     lis:elicits lis:emotionalResponseKateGuilt ;
+                     lis:induces lis:ReflectionState2 .
+
+
+###  http://example.org/lis#kateMarshDavidMadsenConfrontation
+lis:kateMarshDavidMadsenConfrontation rdf:type owl:NamedIndividual ;
+                                      lis:elicits lis:emotionalResponseMoralConflict ;
+                                      lis:involves lis:DavidMadsen ,
+                                                   lis:KateMarsh ,
+                                                   lis:MaxCaulfield ;
+                                      lis:isContainedIn lis:Episode1 ;
+                                      lis:takesPlaceIn lis:MainCampus ;
+                                      lis:triggers lis:interveneKateDavidConfrontation ,
+                                                   lis:takePhotoKateDavidConfrontation .
+
+
+###  http://example.org/lis#kateSlateVandalizedAgain
+lis:kateSlateVandalizedAgain rdf:type owl:NamedIndividual ;
+                             lis:induces lis:ReflectionState5 .
+
+
+###  http://example.org/lis#kateTrustsMax
+lis:kateTrustsMax rdf:type owl:NamedIndividual ;
+                  lis:elicits lis:emotionalResponseKateRelief ;
+                  lis:induces lis:ReflectionState3 .
+
+
+###  http://example.org/lis#lisaWillLookHealthy
+lis:lisaWillLookHealthy rdf:type owl:NamedIndividual ;
+                        lis:elicits lis:emotionalResponseSatisfaction2 ;
+                        lis:induces lis:ReflectionState9 .
+
+
+###  http://example.org/lis#makeFunOfVictoria
+lis:makeFunOfVictoria rdf:type owl:NamedIndividual ;
+                      lis:isChoiceOf lis:Player1 ;
+                      lis:leadsTo lis:victoriaFeelsBullied .
+
+
+###  http://example.org/lis#michelleGrantPetition
+lis:michelleGrantPetition rdf:type owl:NamedIndividual ;
+                          lis:elicits lis:emotionalResponseConsideration ;
+                          lis:involves lis:MaxCaulfield ,
+                                       lis:MichelleGrant ;
+                          lis:isContainedIn lis:Episode1 ;
+                          lis:takesPlaceIn lis:MichelleGrantsClassroom ;
+                          lis:triggers lis:signMichellePetition .
+
+
+###  http://example.org/lis#michelleMentionsMax
+lis:michelleMentionsMax rdf:type owl:NamedIndividual ;
+                        lis:elicits lis:emotionalResponseAppreciation ;
+                        lis:induces lis:ReflectionState6 .
+
+
+###  http://example.org/lis#nathanGetsAngry
+lis:nathanGetsAngry rdf:type owl:NamedIndividual ;
+                    lis:elicits lis:emotionalResponseThreatened ;
+                    lis:induces lis:ReflectionState1 .
+
+
+###  http://example.org/lis#nathansGun
+lis:nathansGun rdf:type owl:NamedIndividual ;
+               lis:elicits lis:emotionalResponseInitialFear ;
+               lis:involves lis:MaxCaulfield ,
+                            lis:NathanPrescott ;
+               lis:isContainedIn lis:Episode1 ;
+               lis:takesPlaceIn lis:PrescottDormitory ;
+               lis:triggers lis:reportNathan .
+
+
+###  http://example.org/lis#noPublicAnnouncement
+lis:noPublicAnnouncement rdf:type owl:NamedIndividual ;
+                         lis:elicits lis:emotionalResponseSatisfaction ;
+                         lis:induces lis:ReflectionState7 .
+
+
+###  http://example.org/lis#photoAvailableIfReorganizedAndRewound
+lis:photoAvailableIfReorganizedAndRewound rdf:type owl:NamedIndividual ;
+                                          lis:elicits lis:emotionalResponseRelief ;
+                                          lis:induces lis:ReflectionState8 .
+
+
+###  http://example.org/lis#playerEmotionAffection
+lis:playerEmotionAffection rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerEmotionAnxiety
+lis:playerEmotionAnxiety rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerEmotionAppreciation
+lis:playerEmotionAppreciation rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerEmotionConcern
+lis:playerEmotionConcern rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerEmotionDetermination
+lis:playerEmotionDetermination rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerEmotionEmpathy
+lis:playerEmotionEmpathy rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerEmotionFear
+lis:playerEmotionFear rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerEmotionGratitude
+lis:playerEmotionGratitude rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerEmotionGuilt
+lis:playerEmotionGuilt rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerEmotionPride
+lis:playerEmotionPride rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerEmotionRelief
+lis:playerEmotionRelief rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerEmotionResignation
+lis:playerEmotionResignation rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerEmotionSatisfaction
+lis:playerEmotionSatisfaction rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerEmotionThoughtfulness
+lis:playerEmotionThoughtfulness rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerEmotionUncertainty
+lis:playerEmotionUncertainty rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationAvoidConflict
+lis:playerMotivationAvoidConflict rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationAvoidDanger
+lis:playerMotivationAvoidDanger rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationChallengeAuthority
+lis:playerMotivationChallengeAuthority rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationConflictAvoidance
+lis:playerMotivationConflictAvoidance rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationEncourageDanielWork
+lis:playerMotivationEncourageDanielWork rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationMaintainRelationships
+lis:playerMotivationMaintainRelationships rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationNurtureOthers
+lis:playerMotivationNurtureOthers rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationPositiveImpact
+lis:playerMotivationPositiveImpact rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationProtectKate
+lis:playerMotivationProtectKate rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationProtectOthers
+lis:playerMotivationProtectOthers rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationProtectTheVulnerable
+lis:playerMotivationProtectTheVulnerable rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationProtectingChloe
+lis:playerMotivationProtectingChloe rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationRepairRelationship
+lis:playerMotivationRepairRelationship rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationSelectiveCare
+lis:playerMotivationSelectiveCare rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationSelfPreservation
+lis:playerMotivationSelfPreservation rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationSocialResponsibility
+lis:playerMotivationSocialResponsibility rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationStandingUpForBeliefs
+lis:playerMotivationStandingUpForBeliefs rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationSupportCommunity
+lis:playerMotivationSupportCommunity rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationSupportingKate
+lis:playerMotivationSupportingKate rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerMotivationSupportiveness
+lis:playerMotivationSupportiveness rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerValueAltruism
+lis:playerValueAltruism rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerValueCare
+lis:playerValueCare rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerValueConfidence
+lis:playerValueConfidence rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerValueCreativity
+lis:playerValueCreativity rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerValueEmpathy
+lis:playerValueEmpathy rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerValueFear
+lis:playerValueFear rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerValueHonesty
+lis:playerValueHonesty rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerValueIntegrity
+lis:playerValueIntegrity rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerValueJustice
+lis:playerValueJustice rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerValueLoyalty
+lis:playerValueLoyalty rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerValueMoralGrowth
+lis:playerValueMoralGrowth rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerValueOpenness
+lis:playerValueOpenness rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerValueRespect
+lis:playerValueRespect rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerValueResponsibility
+lis:playerValueResponsibility rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerValueSelfPreservation
+lis:playerValueSelfPreservation rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#playerValueTrust
+lis:playerValueTrust rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/lis#reorganizeVictoriaPhoto
+lis:reorganizeVictoriaPhoto rdf:type owl:NamedIndividual ;
+                            lis:isChoiceOf lis:Player1 ;
+                            lis:leadsTo lis:photoAvailableIfReorganizedAndRewound .
+
+
+###  http://example.org/lis#reportNathan
+lis:reportNathan rdf:type owl:NamedIndividual ;
+                 lis:isChoiceOf lis:Player1 ;
+                 lis:leadsTo lis:nathanGetsAngry .
+
+
+###  http://example.org/lis#rvAtParkingLot
+lis:rvAtParkingLot rdf:type owl:NamedIndividual ;
+                   lis:elicits lis:emotionalResponseDefiance ;
+                   lis:involves lis:MaxCaulfield ,
+                                lis:VictoriaChase ;
+                   lis:isContainedIn lis:Episode1 ;
+                   lis:takesPlaceIn lis:ParkingLot ;
+                   lis:triggers lis:writeRV .
+
+
+###  http://example.org/lis#signMichellePetition
+lis:signMichellePetition rdf:type owl:NamedIndividual ;
+                         lis:isChoiceOf lis:Player1 ;
+                         lis:leadsTo lis:michelleMentionsMax .
+
+
+###  http://example.org/lis#takeBlameChloeWeed
+lis:takeBlameChloeWeed rdf:type owl:NamedIndividual ;
+                       lis:isChoiceOf lis:Player1 ;
+                       lis:leadsTo lis:chloeGladNoReport .
+
+
+###  http://example.org/lis#takePhotoKateDavidConfrontation
+lis:takePhotoKateDavidConfrontation rdf:type owl:NamedIndividual ;
+                                    lis:isChoiceOf lis:Player1 ;
+                                    lis:leadsTo lis:kateFeelsExposed .
+
+
+###  http://example.org/lis#victoriaChaseOutsideDormitory
+lis:victoriaChaseOutsideDormitory rdf:type owl:NamedIndividual ;
+                                  lis:elicits lis:emotionalResponseIndifference ;
+                                  lis:involves lis:MaxCaulfield ,
+                                               lis:NathanPrescott ,
+                                               lis:VictoriaChase ;
+                                  lis:isContainedIn lis:Episode1 ;
+                                  lis:takesPlaceIn lis:PrescottDormitory ;
+                                  lis:triggers lis:makeFunOfVictoria .
+
+
+###  http://example.org/lis#victoriaFeelsBullied
+lis:victoriaFeelsBullied rdf:type owl:NamedIndividual ;
+                         lis:elicits lis:emotionalResponseSadness ;
+                         lis:induces lis:ReflectionState4 .
+
+
+###  http://example.org/lis#victoriasPhotoCollection
+lis:victoriasPhotoCollection rdf:type owl:NamedIndividual ;
+                             lis:elicits lis:emotionalResponseConsideration2 ;
+                             lis:involves lis:MaxCaulfield ,
+                                          lis:VictoriaChase ;
+                             lis:isContainedIn lis:Episode1 ;
+                             lis:takesPlaceIn lis:VictoriasRoom ;
+                             lis:triggers lis:reorganizeVictoriaPhoto .
+
+
+###  http://example.org/lis#waterLisaPlant
+lis:waterLisaPlant rdf:type owl:NamedIndividual ;
+                   lis:isChoiceOf lis:Player1 ;
+                   lis:leadsTo lis:lisaWillLookHealthy .
+
+
+###  http://example.org/lis#waterLisaPlantEvent
+lis:waterLisaPlantEvent rdf:type owl:NamedIndividual ;
+                        lis:elicits lis:emotionalResponseCare ;
+                        lis:involves lis:MaxCaulfield ;
+                        lis:isContainedIn lis:Episode1 ;
+                        lis:takesPlaceIn lis:BlackwellAcademy ;
+                        lis:triggers lis:waterLisaPlant .
+
+
+###  http://example.org/lis#writeRV
+lis:writeRV rdf:type owl:NamedIndividual ;
+            lis:isChoiceOf lis:Player1 ;
+            lis:leadsTo lis:noPublicAnnouncement .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
