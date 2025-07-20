@@ -9,7 +9,7 @@
     owl:imports <https://raw.githubusercontent.com/lisontology/Lisontology-/main/aligned_lisontology.rdf> .
 
 
-### CLASSES AND TYPES ###
+# classes and type
 # Definizione proprietà oggetto
 lis:impersonates rdf:type owl:ObjectProperty .
 lis:takesPlaceIn rdf:type owl:ObjectProperty .
@@ -31,9 +31,12 @@ lis:isPartOf rdf:type owl:ObjectProperty .
 lis:reaffirmsChoice rdf:type owl:ObjectProperty .
 lis:makesChoice rdf:type owl:ObjectProperty .
 lis:has rdf:type owl:ObjectProperty .
+lis:culminates  rdf:type owl:ObjectProperty .
+lis:resolvesTo rdf:type owl:ObjectProperty .
 
 
-### CLASSI DI VALORI, EMOZIONI, MOTIVAZIONI, MECCANICHE, SCELTE, STATI ###
+
+# CLASSI DI VALORI, EMOZIONI, MOTIVAZIONI, MECCANICHE, SCELTE, STATI 
 
 lis:PlayerValue rdf:type owl:Class .
 lis:PlayerEmotion rdf:type owl:Class .
@@ -59,7 +62,7 @@ lis:AcceptChoice rdf:type owl:Class .
 lis:FinalDecision rdf:type owl:Class .
 lis:RewindMechanic rdf:type owl:Class .
 lis:InternalizedMeaning rdf:type owl:Class .
-lis:GameEnd rdf:type owl:Class .
+lis:EpisodeEnd rdf:type owl:Class .
 
 
 # Player Values
@@ -245,7 +248,7 @@ lis:FinalDecision10 rdf:type lis:FinalDecision .
 lis:RewindMechanic1 rdf:type lis:RewindMechanic .
 lis:RewindMechanic2 rdf:type lis:RewindMechanic .
 lis:RewindMechanic3 rdf:type lis:RewindMechanic .
-lis:GameEnd rdf:type owl:Class .
+lis:EpisodeEnd rdf:type owl:Class .
 lis:internalizedMeaning1 rdf:type lis:InternalizedMeaning .
 lis:kateFeelsExposed rdf:type lis:Outcome .
 lis:kateTrustsMax rdf:type lis:Outcome .
@@ -260,13 +263,13 @@ lis:emotionalResponseKateRelief lis:isDrivenBy lis:playerEmotionRelief .
 # Aggiunta dichiarazione mancante per playerMotivationSelfPreservation
 lis:playerMotivationSelfPreservation rdf:type lis:PlayerMotivation .
 
-### EPISODE 1 RELATIONS ###
+# EPISODE 1 RELATIONS
 
 # Player
 lis:Player1 rdf:type lis:Player ;
     lis:impersonates lis:MaxCaulfield .
 
-### EVENT 1: Nathan's Gun
+#EVENT 1: Nathan's Gun
 lis:nathansGun rdf:type lis:Event ;
     lis:takesPlaceIn lis:PrescottDormitory ;
     lis:isContainedIn lis:Episode1 ;
@@ -299,7 +302,7 @@ lis:ReflectionState1 rdf:type lis:ReflectionState ;
 lis:AcceptChoice1 rdf:type lis:AcceptChoice ;
     lis:marks lis:FinalDecision1 .
 
-### EVENT 2: Kate Marsh and David Madsen Confrontation
+# EVENT 2: Kate Marsh and David Madsen Confrontation
 lis:kateMarshDavidMadsenConfrontation rdf:type lis:Event ;
     lis:takesPlaceIn lis:MainCampus ;
     lis:isContainedIn lis:Episode1 ;
@@ -358,8 +361,7 @@ lis:AcceptChoice2 rdf:type lis:AcceptChoice ;
     lis:marks lis:FinalDecision2 .
 
 lis:FinalDecision2 rdf:type lis:FinalDecision .
-
-### EVENT 3: Victoria Chase Outside Dormitory
+# EVENT 3: Victoria Chase Outside Dormitory
 lis:victoriaChaseOutsideDormitory rdf:type lis:Event ;
     lis:takesPlaceIn lis:PrescottDormitory ;
     lis:isContainedIn lis:Episode1 ;
@@ -393,7 +395,7 @@ lis:ReflectionState4 rdf:type lis:ReflectionState ;
 lis:AcceptChoice3 rdf:type lis:AcceptChoice ;
     lis:marks lis:FinalDecision3 .
 
-### EVENT 4: Insults on Kate Marsh Slate
+# EVENT 4: Insults on Kate Marsh Slate
 lis:insultsOnKateMarshSlate rdf:type lis:Event ;
     lis:isContainedIn lis:Episode1 ;
     lis:takesPlaceIn lis:MainCampus ;
@@ -421,7 +423,7 @@ lis:AcceptChoice4 rdf:type lis:AcceptChoice ;
     lis:reaffirmsChoice lis:eraseInsultKatesSlate ;
     lis:marks lis:FinalDecision4 .
 
-### EVENT 5: Michelle Grant Petition
+# EVENT 5: Michelle Grant Petition
 lis:michelleGrantPetition rdf:type lis:Event ;
     lis:takesPlaceIn lis:MichelleGrantsClassroom ;
     lis:isContainedIn lis:Episode1 ;
@@ -455,7 +457,7 @@ lis:ReflectionState6 rdf:type lis:ReflectionState ;
 lis:AcceptChoice5 rdf:type lis:AcceptChoice ;
     lis:marks lis:FinalDecision5 .
 
-### EVENT 6: RV at Parking Lot
+# EVENT 6: RV at Parking Lot
 lis:rvAtParkingLot rdf:type lis:Event ;
     lis:takesPlaceIn lis:ParkingLot ;
     lis:isContainedIn lis:Episode1 ;
@@ -489,7 +491,7 @@ lis:ReflectionState7 rdf:type lis:ReflectionState ;
 lis:AcceptChoice6 rdf:type lis:AcceptChoice ;
     lis:marks lis:FinalDecision6 .
 
-### EVENT 7: Victoria's Photo Collection
+# EVENT 7: Victoria's Photo Collection
 lis:victoriasPhotoCollection rdf:type lis:Event ;
     lis:takesPlaceIn lis:VictoriasRoom ;
     lis:isContainedIn lis:Episode1 ;
@@ -523,7 +525,7 @@ lis:ReflectionState8 rdf:type lis:ReflectionState ;
 lis:AcceptChoice7 rdf:type lis:AcceptChoice ;
     lis:marks lis:FinalDecision7 .
 
-### EVENT 8: Water Lisa Plant
+# EVENT 8: Water Lisa Plant
 lis:waterLisaPlantEvent rdf:type lis:Event ;
     lis:takesPlaceIn lis:BlackwellAcademy ;
     lis:isContainedIn lis:Episode1 ;
@@ -557,7 +559,7 @@ lis:ReflectionState9 rdf:type lis:ReflectionState ;
 lis:AcceptChoice8 rdf:type lis:AcceptChoice ;
     lis:marks lis:FinalDecision8 .
 
-### EVENT 9: Chloe's Weed
+# EVENT 9: Chloe's Weed
 lis:chloesWeed rdf:type lis:Event ;
     lis:takesPlaceIn lis:ChloesRoom ;
     lis:involves lis:MaxCaulfield, lis:ChloePrice ;
@@ -616,9 +618,13 @@ lis:ReflectionState11 rdf:type lis:ReflectionState ;
     lis:resultsIn lis:AcceptChoice9 .
 
 lis:AcceptChoice9 rdf:type lis:AcceptChoice ;
+    lis:reaffirmsChoice lis:takeBlameChloeWeed ;
     lis:marks lis:FinalDecision9 .
 
-### EVENT 10: Daniel's Portrait
+lis:FinalDecision9 rdf:type lis:FinalDecision ;
+    lis:resolvesTo lis:Episode1End .
+
+# EVENT 10: Daniel's Portrait
 lis:danielDaCostaPortrait rdf:type lis:Event ;
     lis:takesPlaceIn lis:MainCampus ;
     lis:involves lis:MaxCaulfield, lis:DanielDaCosta ;
@@ -653,13 +659,15 @@ lis:AcceptChoice10 rdf:type lis:AcceptChoice ;
     lis:reaffirmsChoice lis:acceptDanielPortrait ;
     lis:marks lis:FinalDecision10 .
 
-### Additional Relations
+# Additional Relations
 lis:MaxCaulfield
     lis:has lis:playerValueFear, lis:playerValueConfidence ;
     lis:makesChoice lis:blameChloeWeed, lis:acceptDanielPortrait .
 
-lis:Episode1End rdf:type lis:GameEnd ;
-    lis:triggers lis:internalizedMeaning1 .
+
+
+lis:Episode1End rdf:type lis:EpisodeEnd ;
+    lis:culminates lis:internalizedMeaning1 .
 
 lis:internalizedMeaning1 rdf:type lis:InternalizedMeaning ;
     rdfs:label "I learned that small choices shape relationships." .
