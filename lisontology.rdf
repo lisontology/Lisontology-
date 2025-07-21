@@ -175,31 +175,40 @@
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:comment>Any person in the game world who can participate in Events and influence the narrative.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice">
+        <rdfs:comment>A decision point where the player influences the story&apos;s direction, leading to different Outcomes.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode">
+        <rdfs:comment>A major chapter in the game&apos;s story that groups together related Events and Choices (e.g,“Chrysalis”).</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event">
+        <rdfs:comment>A narrative occurrence or situation in the game tied to a specific Episode and Location.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location">
+        <rdfs:comment>general setting in the game world that contains Places and hosts Episodes or Events (e.g, Blackwell Academy)</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -208,13 +217,16 @@
     <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NPC">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Character"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Protagonist"/>
+        <rdfs:comment>A non-playable Character that the player interacts with (e.g., Chloe, David), often triggering new Events.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome">
+        <rdfs:comment>The resulting state or consequence of an Event or Choice, marking a new point in the narrative.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -222,6 +234,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Place">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
+        <rdfs:comment>A specific, detailed area within a larger Location where Events occur (e.g, Chloe&apos;s Garage).</rdfs:comment>
     </owl:Class>
     
 
@@ -230,6 +243,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Protagonist">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Character"/>
+        <rdfs:comment>The main player-controlled Character (Max Caulfield), whose decisions shape the unfolding story.</rdfs:comment>
     </owl:Class>
     
 
@@ -238,6 +252,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice"/>
+        <rdfs:comment>A high-impact player decision that significantly affects story progression or character development.</rdfs:comment>
     </owl:Class>
     
 
@@ -246,6 +261,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice"/>
+        <rdfs:comment>A lower-impact decision that may influence relationships or small environmental details.</rdfs:comment>
     </owl:Class>
     
 
