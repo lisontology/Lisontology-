@@ -22,102 +22,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#BelongsTo -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#BelongsTo">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventBelongsToEpisode"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Contains"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Contains -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Contains">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#EpisodeContainsEvent"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#BelongsTo"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#EpisodeContainsEvent -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#EpisodeContainsEvent">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#BelongsTo"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventBelongsToEpisode"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Hosts -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Hosts">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#locationHostsEvent"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventTakesPlaceInLocation"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#TakesPlaceIn"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#InvolvedIn -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#InvolvedIn">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#characterIsInvolvedinEvent"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#characterIsInvolvedinEvent"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Involves"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Character"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Involves -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Involves">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventInvolvesCharacter"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#characterIsInvolvedinEvent"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Character"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#LeadsTo -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#LeadsTo">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventLeadsToChoice"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventLeadsToChoice"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ResultsIn -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ResultsIn">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#choiceResultsInOutcome"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#choiceResultsInOutcome"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#outcomeIsResultOfChoice"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#TakesPlaceIn -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#TakesPlaceIn">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventTakesPlaceInLocation"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventTakesPlaceInLocation"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
+        <rdfs:comment>Indicates that an Episode includes a specific Event</rdfs:comment>
+        <rdfs:label>contains the event</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -128,6 +41,8 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventInvolvesCharacter"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Character"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
+        <rdfs:comment>Links an Event to multiple Characters involved in it</rdfs:comment>
+        <rdfs:label>is involved in the event</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -135,10 +50,11 @@
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#choiceResultsInOutcome -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#choiceResultsInOutcome">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#isResultOf"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#outcomeIsResultOfChoice"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
+        <rdfs:comment>Indicates that making a Choice leads to a particular Outcome</rdfs:comment>
+        <rdfs:label>reuslts in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -146,9 +62,11 @@
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventBelongsToEpisode -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventBelongsToEpisode">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#BelongsTo"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode"/>
+        <rdfs:comment>Connects an Event to the Episode it is part of.</rdfs:comment>
+        <rdfs:label>belongs to</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -156,9 +74,11 @@
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventInvolvesCharacter -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventInvolvesCharacter">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#characterIsInvolvedinEvent"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Character"/>
+        <rdfs:comment>Relates an Event to the Character(s) involved in it.</rdfs:comment>
+        <rdfs:label>involves</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -168,6 +88,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventLeadsToChoice">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice"/>
+        <rdfs:comment>Used when an Event presents the player or character with a Choice.</rdfs:comment>
+        <rdfs:label>leads to the choice of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -178,15 +100,8 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#locationHostsEvent"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#isResultOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#isResultOf">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#outcomeIsResultOfChoice"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#choiceResultsInOutcome"/>
+        <rdfs:comment>Specifies the Location where an Event occurs.</rdfs:comment>
+        <rdfs:label>takes place in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -194,9 +109,11 @@
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#locationHostsEvent -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#locationHostsEvent">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventTakesPlaceInLocation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
+        <rdfs:comment>Indicates that a Location hosts one or more Events.</rdfs:comment>
+        <rdfs:label>hosts</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -204,9 +121,11 @@
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#outcomeBelongsToEpisode -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#outcomeBelongsToEpisode">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#choiceResultsInOutcome"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode"/>
+        <rdfs:comment>Indicates that this is an Outcome which happens in this Episode.</rdfs:comment>
+        <rdfs:label>belongs to</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -214,9 +133,11 @@
     <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#outcomeIsResultOfChoice -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#outcomeIsResultOfChoice">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#choiceResultsInOutcome"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice"/>
+        <rdfs:comment>Links an Outcome to the Choice that led to it.</rdfs:comment>
+        <rdfs:label>is result of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -226,6 +147,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#resultOfEvent">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
+        <rdfs:comment>Connects an Choice to the Event that caused it.</rdfs:comment>
+        <rdfs:label>is the result of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1070,7 +993,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#nathansGun">
         <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:Involves rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_Caulfield"/>
         <untitled-ontology-11:eventBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
         <untitled-ontology-11:eventInvolvesCharacter rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Nathan_Prescott"/>
         <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideTheTruth"/>
