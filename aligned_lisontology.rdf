@@ -31,6 +31,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#culminates">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning"/>
+        <rdfs:comment>Indicates that the episode ends with the formation of an internalized meaning for the player.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -42,6 +43,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"/>
+        <rdfs:comment>Models how an event or outcome generates an emotional reaction in the player.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -51,6 +53,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#enables">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"/>
+        <rdfs:comment>Represents the link between a reconsidered choice and the enabling of the rewind mechanic.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -70,6 +73,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue"/>
+        <rdfs:comment>Connects a player to their internal attributes—values, emotions, and motivations—that influence their gameplay decisions and emotional journey.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -79,6 +83,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#impersonates">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Protagonist"/>
+        <rdfs:comment>Links a player to the protagonist they control, capturing the identification and narrative embodiment within the game.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -88,6 +93,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#induces">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"/>
+        <rdfs:comment>Links an outcome to the reflective process it triggers in the player.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -98,6 +104,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"/>
+        <rdfs:comment>Models the effect of an emotional response on the player’s decisions or reflection states.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -138,6 +145,7 @@
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue"/>
+        <rdfs:comment>Links an emotional response to the player’s internal state—emotions, motivations, and values—that cause it.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -167,6 +175,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInvolvedIn">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
+        <rdfs:comment></rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -195,6 +204,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#marks">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision"/>
+        <rdfs:comment>Signifies that an accepted choice leads to the final, confirmed decision of the episode.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -222,6 +232,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resets">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
+        <rdfs:comment>Indicates that the rewind mechanic resets an event, offering the player a second chance.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -231,6 +242,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resolvesTo">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd"/>
+        <rdfs:comment>Links the final decision to the conclusion of the episode.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -241,6 +253,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice"/>
+        <rdfs:comment>Represents the decision taken during a reflection—either to accept or reconsider a previous choice.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -324,7 +337,9 @@
 
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice">
+        <rdfs:comment>The player&apos;s decision to confirm the choice they just made.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -346,6 +361,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#PersonalSituation"/>
+        <rdfs:comment>Represents the player’s emotional reaction to events and outcomes.</rdfs:comment>
     </owl:Class>
     
 
@@ -358,7 +374,9 @@
 
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd">
+        <rdfs:comment>Represents the conclusive state of an episode’s narrative, shaped by prior decisions and actions.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -372,7 +390,9 @@
 
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision">
+        <rdfs:comment>The final confirmed choice made by the player in an episode, usually with lasting consequences on the narrative.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -380,6 +400,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeProduct"/>
+        <rdfs:comment>A non-material but meaningful product created by the player as a result of their journey.</rdfs:comment>
     </owl:Class>
     
 
@@ -434,6 +455,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person"/>
+        <rdfs:comment>Represents the real-world human agent who interacts with the game system. Represents the person responsile for the unfolding of the narrative.</rdfs:comment>
     </owl:Class>
     
 
@@ -442,6 +464,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EmotionDynamics"/>
+        <rdfs:comment>Captures the immediate and fluctuating emotional reactions of the player.</rdfs:comment>
     </owl:Class>
     
 
@@ -450,6 +473,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#PersonalAbility"/>
+        <rdfs:comment>Describes the player’s inner drive and reasons for engaging with the game and making a choice over another.</rdfs:comment>
     </owl:Class>
     
 
@@ -458,6 +482,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#PersonalAbility"/>
+        <rdfs:comment>Represents the ethical and moral principles that guide the player’s choices.</rdfs:comment>
     </owl:Class>
     
 
@@ -472,13 +497,17 @@
 
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice">
+        <rdfs:comment>A situation in which the player chooses to undo a previous decision, often through the use of a game mechanic.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState">
+        <rdfs:comment>A moment of internal reflection triggered by the consequences of a choice. Here, the player may evaluate or reconsider their actions.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -486,6 +515,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#Resource"/>
+        <rdfs:comment>A resource that allows the player to revisit and possibly alter past decisions.</rdfs:comment>
     </owl:Class>
 </rdf:RDF>
 

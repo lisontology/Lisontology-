@@ -1,20 +1,22 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.w3.org/2002/07/owl"
-     xmlns:lis="http://example.org/lis#"
+<rdf:RDF xmlns="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10/"
+     xml:base="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <Ontology/>
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:creon="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10"/>
     
 
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Annotation properties
+    // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
@@ -22,135 +24,271 @@
     
 
 
-    <!-- http://example.org/lis#elicits -->
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#atLocation -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#elicits"/>
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#atLocation"/>
     
 
 
-    <!-- http://example.org/lis#enables -->
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#hasTrait -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#enables"/>
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#hasTrait"/>
     
 
 
-    <!-- http://example.org/lis#hasValue -->
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#induces -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#hasValue"/>
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#induces"/>
     
 
 
-    <!-- http://example.org/lis#impersonates -->
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#participantIn -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#impersonates"/>
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#participantIn"/>
     
 
 
-    <!-- http://example.org/lis#induces -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#culminates -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#induces"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#culminates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/lis#influences -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#elicits -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#influences"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#elicits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/lis#involves -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#enables -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#involves"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#enables">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/lis#isChoiceOf -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#enteredBy -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#isChoiceOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#enteredBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/lis#isContainedIn -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#has -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#isContainedIn"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#has">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#hasTrait"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/lis#isDrivenBy -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#impersonates -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#isDrivenBy"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#impersonates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Protagonist"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/lis#isInfluencedBy -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#induces -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#isInfluencedBy"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#induces">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#induces"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/lis#isPartOf -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#influences -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#isPartOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#influences">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/lis#leadsTo -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#involves -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#leadsTo"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#involves">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#NPCs"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Protagonist"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/lis#makesChoice -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isChoiceOf -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#makesChoice"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isChoiceOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/lis#marks -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isContainedIn -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#marks"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isContainedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Episode"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/lis#reaffirmsChoice -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#reaffirmsChoice"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/lis#rejectsChoice -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isExperiencedBy -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#rejectsChoice"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isExperiencedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/lis#resets -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInfluencedBy -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#resets"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInfluencedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#reaffirmsChoice"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/lis#resolves -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInvolvedIn -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#resolves"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInvolvedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#participantIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/lis#resultsIn -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPartOf -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#resultsIn"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPartOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Place"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/lis#takesPlaceIn -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#leadsTo -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#takesPlaceIn"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#leadsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://example.org/lis#triggers -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#marks -->
 
-    <AnnotationProperty rdf:about="http://example.org/lis#triggers"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#marks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#reaffirmsChoice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#reaffirmsChoice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#rejectsChoice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#rejectsChoice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resets -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resets">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resolvesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resolvesTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resultsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resultsIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#takesPlaceIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#takesPlaceIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#atLocation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#triggers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#triggers">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+    </owl:ObjectProperty>
     
 
 
@@ -165,970 +303,227 @@
     
 
 
-    <!-- http://example.org/lis#AcceptChoice -->
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#ActionDynamics -->
 
-    <Class rdf:about="http://example.org/lis#AcceptChoice"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#ActionDynamics"/>
     
 
 
-    <!-- http://example.org/lis#EmotionalResponse -->
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeProduct -->
 
-    <Class rdf:about="http://example.org/lis#EmotionalResponse"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeProduct"/>
     
 
 
-    <!-- http://example.org/lis#Episode -->
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EmotionDynamics -->
 
-    <Class rdf:about="http://example.org/lis#Episode"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EmotionDynamics"/>
     
 
 
-    <!-- http://example.org/lis#Event -->
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalCondition -->
 
-    <Class rdf:about="http://example.org/lis#Event"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalCondition"/>
     
 
 
-    <!-- http://example.org/lis#FinalDecision -->
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#ExternalRandomEvent -->
 
-    <Class rdf:about="http://example.org/lis#FinalDecision"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#ExternalRandomEvent"/>
     
 
 
-    <!-- http://example.org/lis#GameEnd -->
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#PersonalSituation -->
 
-    <Class rdf:about="http://example.org/lis#GameEnd"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#PersonalSituation"/>
     
 
 
-    <!-- http://example.org/lis#InternalizedMeaning -->
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#Resource -->
 
-    <Class rdf:about="http://example.org/lis#InternalizedMeaning"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#Resource"/>
     
 
 
-    <!-- http://example.org/lis#Location -->
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person -->
 
-    <Class rdf:about="http://example.org/lis#Location"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person"/>
     
 
 
-    <!-- http://example.org/lis#MajorChoice -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice -->
 
-    <Class rdf:about="http://example.org/lis#MajorChoice"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice"/>
     
 
 
-    <!-- http://example.org/lis#MinorChoice -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character -->
 
-    <Class rdf:about="http://example.org/lis#MinorChoice">
-        <rdfs:subClassOf rdf:resource="http://example.org/lis#Place"/>
-    </Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character"/>
     
 
 
-    <!-- http://example.org/lis#NPC -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice -->
 
-    <Class rdf:about="http://example.org/lis#NPC"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#ActionDynamics"/>
+    </owl:Class>
     
 
 
-    <!-- http://example.org/lis#Outcome -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse -->
 
-    <Class rdf:about="http://example.org/lis#Outcome"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#PersonalSituation"/>
+    </owl:Class>
     
 
 
-    <!-- http://example.org/lis#Place -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Episode -->
 
-    <Class rdf:about="http://example.org/lis#Place"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Episode"/>
     
 
 
-    <!-- http://example.org/lis#Player -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd -->
 
-    <Class rdf:about="http://example.org/lis#Player"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd"/>
     
 
 
-    <!-- http://example.org/lis#PlayerEmotion -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event -->
 
-    <Class rdf:about="http://example.org/lis#PlayerEmotion"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#ExternalRandomEvent"/>
+    </owl:Class>
     
 
 
-    <!-- http://example.org/lis#PlayerValue -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision -->
 
-    <Class rdf:about="http://example.org/lis#PlayerValue"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision"/>
     
 
 
-    <!-- http://example.org/lis#Protagonist -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning -->
 
-    <Class rdf:about="http://example.org/lis#Protagonist"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeProduct"/>
+    </owl:Class>
     
 
 
-    <!-- http://example.org/lis#ReconsiderChoice -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location -->
 
-    <Class rdf:about="http://example.org/lis#ReconsiderChoice"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalCondition"/>
+    </owl:Class>
     
 
 
-    <!-- http://example.org/lis#ReflectionState -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MajorChoice -->
 
-    <Class rdf:about="http://example.org/lis#ReflectionState"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MajorChoice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+    </owl:Class>
     
 
 
-    <!-- http://example.org/lis#RewindMechanic -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MinorChoice -->
 
-    <Class rdf:about="http://example.org/lis#RewindMechanic"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MinorChoice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice"/>
+    </owl:Class>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#NPCs -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#NPCs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character"/>
+    </owl:Class>
     
 
 
-    <!-- http://example.org/lis#AcceptChoice1 -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome -->
 
-    <NamedIndividual rdf:about="http://example.org/lis#AcceptChoice1">
-        <rdf:type rdf:resource="http://example.org/lis#AcceptChoice"/>
-        <lis:marks rdf:resource="http://example.org/lis#FinalDecision1"/>
-    </NamedIndividual>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome"/>
     
 
 
-    <!-- http://example.org/lis#AcceptChoice2 -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PersonalAbility -->
 
-    <NamedIndividual rdf:about="http://example.org/lis#AcceptChoice2">
-        <rdf:type rdf:resource="http://example.org/lis#AcceptChoice"/>
-        <lis:marks rdf:resource="http://example.org/lis#FinalDecision2"/>
-        <lis:reaffirmsChoice rdf:resource="http://example.org/lis#acceptDanielPortrait"/>
-    </NamedIndividual>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PersonalAbility">
+        <rdfs:label>Personal Ability</rdfs:label>
+    </owl:Class>
     
 
 
-    <!-- http://example.org/lis#ArcadiaBay -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Place -->
 
-    <NamedIndividual rdf:about="http://example.org/lis#ArcadiaBay">
-        <rdf:type rdf:resource="http://example.org/lis#Location"/>
-    </NamedIndividual>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Place">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location"/>
+    </owl:Class>
     
 
 
-    <!-- http://example.org/lis#BlackwellAcademy -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player -->
 
-    <NamedIndividual rdf:about="http://example.org/lis#BlackwellAcademy">
-        <rdf:type rdf:resource="http://example.org/lis#Location"/>
-    </NamedIndividual>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person"/>
+    </owl:Class>
     
 
 
-    <!-- http://example.org/lis#ChloePrice -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion -->
 
-    <NamedIndividual rdf:about="http://example.org/lis#ChloePrice">
-        <rdf:type rdf:resource="http://example.org/lis#NPC"/>
-    </NamedIndividual>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EmotionDynamics"/>
+    </owl:Class>
     
 
 
-    <!-- http://example.org/lis#ChloesRoom -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation -->
 
-    <NamedIndividual rdf:about="http://example.org/lis#ChloesRoom">
-        <rdf:type rdf:resource="http://example.org/lis#Place"/>
-        <lis:isPartOf rdf:resource="http://example.org/lis#BlackwellAcademy"/>
-    </NamedIndividual>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PersonalAbility"/>
+    </owl:Class>
     
 
 
-    <!-- http://example.org/lis#DanielDaCosta -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue -->
 
-    <NamedIndividual rdf:about="http://example.org/lis#DanielDaCosta">
-        <rdf:type rdf:resource="http://example.org/lis#NPC"/>
-    </NamedIndividual>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PersonalAbility"/>
+    </owl:Class>
     
 
 
-    <!-- http://example.org/lis#DavidMadsen -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Protagonist -->
 
-    <NamedIndividual rdf:about="http://example.org/lis#DavidMadsen">
-        <rdf:type rdf:resource="http://example.org/lis#NPC"/>
-    </NamedIndividual>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Protagonist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character"/>
+    </owl:Class>
     
 
 
-    <!-- http://example.org/lis#Episode1 -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice -->
 
-    <NamedIndividual rdf:about="http://example.org/lis#Episode1">
-        <rdf:type rdf:resource="http://example.org/lis#Episode"/>
-    </NamedIndividual>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice"/>
     
 
 
-    <!-- http://example.org/lis#Episode1End -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState -->
 
-    <NamedIndividual rdf:about="http://example.org/lis#Episode1End">
-        <rdf:type rdf:resource="http://example.org/lis#GameEnd"/>
-        <lis:triggers rdf:resource="http://example.org/lis#internalizedMeaning1"/>
-    </NamedIndividual>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState"/>
     
 
 
-    <!-- http://example.org/lis#Episode2 -->
+    <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic -->
 
-    <NamedIndividual rdf:about="http://example.org/lis#Episode2">
-        <rdf:type rdf:resource="http://example.org/lis#Episode"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#Episode3 -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#Episode3">
-        <rdf:type rdf:resource="http://example.org/lis#Episode"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#Episode4 -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#Episode4">
-        <rdf:type rdf:resource="http://example.org/lis#Episode"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#Episode5 -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#Episode5">
-        <rdf:type rdf:resource="http://example.org/lis#Episode"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#FinalDecision1 -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#FinalDecision1">
-        <rdf:type rdf:resource="http://example.org/lis#FinalDecision"/>
-        <lis:resolves rdf:resource="http://example.org/lis#Episode1End"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#FinalDecision2 -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#FinalDecision2">
-        <rdf:type rdf:resource="http://example.org/lis#FinalDecision"/>
-        <lis:resolves rdf:resource="http://example.org/lis#Episode1End"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#KateMarsh -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#KateMarsh">
-        <rdf:type rdf:resource="http://example.org/lis#NPC"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#MainCampus -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#MainCampus">
-        <rdf:type rdf:resource="http://example.org/lis#Place"/>
-        <lis:isPartOf rdf:resource="http://example.org/lis#ArcadiaBay"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#MaxCaulfield -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#MaxCaulfield">
-        <rdf:type rdf:resource="http://example.org/lis#Protagonist"/>
-        <lis:hasValue rdf:resource="http://example.org/lis#playerValueConfidence"/>
-        <lis:hasValue rdf:resource="http://example.org/lis#playerValueFear"/>
-        <lis:makesChoice rdf:resource="http://example.org/lis#acceptDanielPortrait"/>
-        <lis:makesChoice rdf:resource="http://example.org/lis#blameChloeWeed"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#MichelleGrant -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#MichelleGrant">
-        <rdf:type rdf:resource="http://example.org/lis#NPC"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#MichelleGrantsClassroom -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#MichelleGrantsClassroom">
-        <rdf:type rdf:resource="http://example.org/lis#Place"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#NathanPrescott -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#NathanPrescott">
-        <rdf:type rdf:resource="http://example.org/lis#NPC"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#ParkingLot -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#ParkingLot">
-        <rdf:type rdf:resource="http://example.org/lis#Place"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#Player1 -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#Player1">
-        <rdf:type rdf:resource="http://example.org/lis#Player"/>
-        <lis:impersonates rdf:resource="http://example.org/lis#MaxCaulfield"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#PrescottDormitory -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#PrescottDormitory">
-        <rdf:type rdf:resource="http://example.org/lis#Place"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#ReconsiderChoice1 -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#ReconsiderChoice1">
-        <rdf:type rdf:resource="http://example.org/lis#ReconsiderChoice"/>
-        <lis:enables rdf:resource="http://example.org/lis#RewindMechanic1"/>
-        <lis:rejectsChoice rdf:resource="http://example.org/lis#blameChloeWeed"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#ReflectionState1 -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#ReflectionState1">
-        <rdf:type rdf:resource="http://example.org/lis#ReflectionState"/>
-        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerEmotionGuilt"/>
-        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerMotivationRepairRelationship"/>
-        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerValueEmpathy"/>
-        <lis:isInfluencedBy rdf:resource="http://example.org/lis#emotionalResponseGuilt"/>
-        <lis:resultsIn rdf:resource="http://example.org/lis#ReconsiderChoice1"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#ReflectionState2 -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#ReflectionState2">
-        <rdf:type rdf:resource="http://example.org/lis#ReflectionState"/>
-        <lis:isInfluencedBy rdf:resource="http://example.org/lis#emotionalResponseRelief"/>
-        <lis:resultsIn rdf:resource="http://example.org/lis#AcceptChoice1"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#ReflectionState3 -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#ReflectionState3">
-        <rdf:type rdf:resource="http://example.org/lis#ReflectionState"/>
-        <lis:isInfluencedBy rdf:resource="http://example.org/lis#emotionalResponseValidation"/>
-        <lis:resultsIn rdf:resource="http://example.org/lis#AcceptChoice2"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#RewindMechanic1 -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#RewindMechanic1">
-        <rdf:type rdf:resource="http://example.org/lis#RewindMechanic"/>
-        <lis:resets rdf:resource="http://example.org/lis#chloesWeed"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#VictoriaChase -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#VictoriaChase">
-        <rdf:type rdf:resource="http://example.org/lis#NPC"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#VictoriasRoom -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#VictoriasRoom">
-        <rdf:type rdf:resource="http://example.org/lis#Place"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#acceptDanielPortrait -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#acceptDanielPortrait">
-        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
-        <lis:isChoiceOf rdf:resource="http://example.org/lis#Player1"/>
-        <lis:leadsTo rdf:resource="http://example.org/lis#danielPortraitPosted"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#blameChloeWeed -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#blameChloeWeed">
-        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
-        <lis:isChoiceOf rdf:resource="http://example.org/lis#Player1"/>
-        <lis:leadsTo rdf:resource="http://example.org/lis#chloeDisapproves"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#chloeDisapproves -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#chloeDisapproves">
-        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
-        <lis:elicits rdf:resource="http://example.org/lis#emotionalResponseGuilt"/>
-        <lis:induces rdf:resource="http://example.org/lis#ReflectionState1"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#chloeGladNoReport -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#chloeGladNoReport">
-        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
-        <lis:elicits rdf:resource="http://example.org/lis#emotionalResponseRelief"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#chloesWeed -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#chloesWeed">
-        <rdf:type rdf:resource="http://example.org/lis#Event"/>
-        <lis:elicits rdf:resource="http://example.org/lis#emotionalResponseAnxiety"/>
-        <lis:involves rdf:resource="http://example.org/lis#ChloePrice"/>
-        <lis:involves rdf:resource="http://example.org/lis#MaxCaulfield"/>
-        <lis:isContainedIn rdf:resource="http://example.org/lis#Episode1"/>
-        <lis:takesPlaceIn rdf:resource="http://example.org/lis#ChloesRoom"/>
-        <lis:triggers rdf:resource="http://example.org/lis#blameChloeWeed"/>
-        <lis:triggers rdf:resource="http://example.org/lis#takeBlameChloeWeed"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#comfortVictoria -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#comfortVictoria">
-        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#danielDaCostaPortrait -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#danielDaCostaPortrait">
-        <rdf:type rdf:resource="http://example.org/lis#Event"/>
-        <lis:elicits rdf:resource="http://example.org/lis#emotionalResponseFlattery"/>
-        <lis:involves rdf:resource="http://example.org/lis#DanielDaCosta"/>
-        <lis:involves rdf:resource="http://example.org/lis#MaxCaulfield"/>
-        <lis:isContainedIn rdf:resource="http://example.org/lis#Episode1"/>
-        <lis:takesPlaceIn rdf:resource="http://example.org/lis#MainCampus"/>
-        <lis:triggers rdf:resource="http://example.org/lis#acceptDanielPortrait"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#danielPortraitNotPosted -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#danielPortraitNotPosted">
-        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#danielPortraitPosted -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#danielPortraitPosted">
-        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
-        <lis:elicits rdf:resource="http://example.org/lis#emotionalResponseValidation"/>
-        <lis:induces rdf:resource="http://example.org/lis#ReflectionState3"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#declineDanielPortrait -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#declineDanielPortrait">
-        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#dontReorganizeVictoriaPhoto -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#dontReorganizeVictoriaPhoto">
-        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#dontSignMichellePetition -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#dontSignMichellePetition">
-        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#dontTouchDanaPregnancy -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#dontTouchDanaPregnancy">
-        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#dontWaterLisaPlant -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#dontWaterLisaPlant">
-        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#dontWriteRV -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#dontWriteRV">
-        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#emotionalResponseAnxiety -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#emotionalResponseAnxiety">
-        <rdf:type rdf:resource="http://example.org/lis#EmotionalResponse"/>
-        <lis:influences rdf:resource="http://example.org/lis#blameChloeWeed"/>
-        <lis:influences rdf:resource="http://example.org/lis#takeBlameChloeWeed"/>
-        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerEmotionAnxiety"/>
-        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerMotivationSelfPreservation"/>
-        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerValueHonesty"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#emotionalResponseFlattery -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#emotionalResponseFlattery">
-        <rdf:type rdf:resource="http://example.org/lis#EmotionalResponse"/>
-        <lis:influences rdf:resource="http://example.org/lis#acceptDanielPortrait"/>
-        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerEmotionAppreciation"/>
-        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerMotivationSupportiveness"/>
-        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerValueOpenness"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#emotionalResponseGuilt -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#emotionalResponseGuilt">
-        <rdf:type rdf:resource="http://example.org/lis#EmotionalResponse"/>
-        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerEmotionGuilt"/>
-        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerMotivationRepairRelationship"/>
-        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerValueEmpathy"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#emotionalResponseReflection -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#emotionalResponseReflection">
-        <rdf:type rdf:resource="http://example.org/lis#EmotionalResponse"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#emotionalResponseValidation -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#emotionalResponseValidation">
-        <rdf:type rdf:resource="http://example.org/lis#EmotionalResponse"/>
-        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerEmotionPride"/>
-        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerMotivationEncourageDanielWork"/>
-        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerValueCreativity"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#eraseInsultKatesSlate -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#eraseInsultKatesSlate">
-        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#hideAndRevealToDavidChloeWeed -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#hideAndRevealToDavidChloeWeed">
-        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#hideTheTruth -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#hideTheTruth">
-        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#ignoreFootballAlyssa -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#ignoreFootballAlyssa">
-        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#ignoreInsultKatesSlate -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#ignoreInsultKatesSlate">
-        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#insultsOnKateMarshSlate -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#insultsOnKateMarshSlate">
-        <rdf:type rdf:resource="http://example.org/lis#Event"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#internalizedMeaning1 -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#internalizedMeaning1">
-        <rdf:type rdf:resource="http://example.org/lis#InternalizedMeaning"/>
-        <rdfs:label>I learned that small choices shape relationships.</rdfs:label>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#interveneKateDavidConfrontation -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#interveneKateDavidConfrontation">
-        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#kateMarshDavidMadsenConfrontation -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#kateMarshDavidMadsenConfrontation">
-        <rdf:type rdf:resource="http://example.org/lis#Event"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#keepLukeRelationship -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#keepLukeRelationship">
-        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#lukeFeelsSatisfied -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#lukeFeelsSatisfied">
-        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#makeFunOfVictoria -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#makeFunOfVictoria">
-        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#michelleGrantPetition -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#michelleGrantPetition">
-        <rdf:type rdf:resource="http://example.org/lis#Event"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#michelleMentionsMax -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#michelleMentionsMax">
-        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#michelleMentionsNotEnoughPeople -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#michelleMentionsNotEnoughPeople">
-        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#nathanGetsAngry -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#nathanGetsAngry">
-        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#nathanIntimidates -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#nathanIntimidates">
-        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#nathansGun -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#nathansGun">
-        <rdf:type rdf:resource="http://example.org/lis#Event"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#noPublicAnnouncement -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#noPublicAnnouncement">
-        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#playerEmotionAffection -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#playerEmotionAffection">
-        <rdf:type rdf:resource="http://example.org/lis#PlayerEmotion"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#playerEmotionRelief -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#playerEmotionRelief">
-        <rdf:type rdf:resource="http://example.org/lis#PlayerEmotion"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#playerValueConfidence -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#playerValueConfidence">
-        <rdf:type rdf:resource="http://example.org/lis#PlayerValue"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#playerValueFear -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#playerValueFear">
-        <rdf:type rdf:resource="http://example.org/lis#PlayerValue"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#playerValueHonesty -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#playerValueHonesty">
-        <rdf:type rdf:resource="http://example.org/lis#PlayerValue"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#playerValueMoralGrowth -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#playerValueMoralGrowth">
-        <rdf:type rdf:resource="http://example.org/lis#PlayerValue"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#playerValueOpenness -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#playerValueOpenness">
-        <rdf:type rdf:resource="http://example.org/lis#PlayerValue"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#principalCallsNathan -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#principalCallsNathan">
-        <rdf:type rdf:resource="http://example.org/lis#Outcome"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#reorganizeVictoriaPhoto -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#reorganizeVictoriaPhoto">
-        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#reportNathan -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#reportNathan">
-        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#rvAtParkingLot -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#rvAtParkingLot">
-        <rdf:type rdf:resource="http://example.org/lis#Event"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#signMichellePetition -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#signMichellePetition">
-        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#stayHiddenChloeWeed -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#stayHiddenChloeWeed">
-        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#takeBlameChloeWeed -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#takeBlameChloeWeed">
-        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
-        <lis:induces rdf:resource="http://example.org/lis#ReflectionState2"/>
-        <lis:isChoiceOf rdf:resource="http://example.org/lis#Player1"/>
-        <lis:leadsTo rdf:resource="http://example.org/lis#chloeGladNoReport"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#takePhotoKateDavidConfrontation -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#takePhotoKateDavidConfrontation">
-        <rdf:type rdf:resource="http://example.org/lis#MajorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#touchAndRewindDanaPregnancy -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#touchAndRewindDanaPregnancy">
-        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#touchDanaPregnancy -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#touchDanaPregnancy">
-        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#victoriaChaseOutsideDormitory -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#victoriaChaseOutsideDormitory">
-        <rdf:type rdf:resource="http://example.org/lis#Event"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#victoriasPhotoCollection -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#victoriasPhotoCollection">
-        <rdf:type rdf:resource="http://example.org/lis#Event"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#warnFootballAlyssa -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#warnFootballAlyssa">
-        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#waterLisaPlant -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#waterLisaPlant">
-        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#waterLisaPlantEvent -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#waterLisaPlantEvent">
-        <rdf:type rdf:resource="http://example.org/lis#Event"/>
-    </NamedIndividual>
-    
-
-
-    <!-- http://example.org/lis#writeRV -->
-
-    <NamedIndividual rdf:about="http://example.org/lis#writeRV">
-        <rdf:type rdf:resource="http://example.org/lis#MinorChoice"/>
-    </NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://example.org/lis#emotionalResponseRelief">
-        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerEmotionAffection"/>
-        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerMotivationProtectingChloe"/>
-        <lis:isDrivenBy rdf:resource="http://example.org/lis#playerValueMoralGrowth"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#Resource"/>
+    </owl:Class>
 </rdf:RDF>
 
 

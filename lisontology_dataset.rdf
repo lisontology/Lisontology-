@@ -1,0 +1,2020 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology_dataset.ttl#"
+     xml:base="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology_dataset.ttl"
+     xmlns:lis="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology_dataset.ttl">
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#culminates -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#culminates"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#elicits -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#elicits"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#enables -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#enables"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#has -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#has"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#impersonates -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#impersonates"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#induces -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#induces"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#influences -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#influences"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#involves -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#involves"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#isChoiceOf -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#isChoiceOf"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#isContainedIn -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#isContainedIn"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#isDrivenBy -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#isDrivenBy"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#isInfluencedBy -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#isInfluencedBy"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#isPartOf -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#isPartOf"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#leadsTo -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#leadsTo"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#makesChoice -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#makesChoice"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#marks -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#marks"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#reaffirmsChoice -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#reaffirmsChoice"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#rejectsChoice -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#rejectsChoice"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#resets -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#resets"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#resolvesTo -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#resolvesTo"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#resultsIn -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#resultsIn"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#takesPlaceIn -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#takesPlaceIn"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#triggers -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#triggers"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EpisodeEnd -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EpisodeEnd"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#InternalizedMeaning -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#InternalizedMeaning"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Location -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Location"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MajorChoice -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MajorChoice"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NPC -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NPC"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Place -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Place"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerEmotion -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerEmotion"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Protagonist -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Protagonist"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReconsiderChoice -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReconsiderChoice"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#RewindMechanic -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#RewindMechanic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice1 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice"/>
+        <lis:marks rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice10 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice10">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice"/>
+        <lis:marks rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision10"/>
+        <lis:reaffirmsChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#acceptDanielPortrait"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice2 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice"/>
+        <lis:marks rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice3 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice3">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice"/>
+        <lis:marks rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice4 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice4">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice"/>
+        <lis:marks rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision4"/>
+        <lis:reaffirmsChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#eraseInsultKatesSlate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice5 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice5">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice"/>
+        <lis:marks rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice6 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice6">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice"/>
+        <lis:marks rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice7 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice7">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice"/>
+        <lis:marks rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice8 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice8">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice"/>
+        <lis:marks rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice9 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice9">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice"/>
+        <lis:marks rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision9"/>
+        <lis:reaffirmsChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#takeBlameChloeWeed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ArcadiaBay -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ArcadiaBay">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#BlackwellAcademy -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#BlackwellAcademy">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ChloePrice -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ChloePrice">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NPC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ChloesRoom -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ChloesRoom">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Place"/>
+        <lis:isPartOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#BlackwellAcademy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#DanielDaCosta -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#DanielDaCosta">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NPC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#DavidMadsen -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#DavidMadsen">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NPC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode1 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode1End -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode1End">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EpisodeEnd"/>
+        <lis:culminates rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#internalizedMeaning1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode2 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode3 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode3">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode4 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode4">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode5 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode5">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision1 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision10 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision10">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision2 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision3 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision3">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision4 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision4">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision5 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision5">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision6 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision6">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision7 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision7">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision8 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision8">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision9 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision9">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision"/>
+        <lis:resolvesTo rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode1End"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#KateMarsh -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#KateMarsh">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NPC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MainCampus -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MainCampus">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Place"/>
+        <lis:isPartOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ArcadiaBay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MaxCaulfield -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MaxCaulfield">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Protagonist"/>
+        <lis:has rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueConfidence"/>
+        <lis:has rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueFear"/>
+        <lis:makesChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#acceptDanielPortrait"/>
+        <lis:makesChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#blameChloeWeed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MichelleGrant -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MichelleGrant">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NPC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MichelleGrantsClassroom -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MichelleGrantsClassroom">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NathanPrescott -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NathanPrescott">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NPC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ParkingLot -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ParkingLot">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player1 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player"/>
+        <lis:impersonates rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MaxCaulfield"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PrescottDormitory -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PrescottDormitory">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReconsiderChoice1 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReconsiderChoice1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReconsiderChoice"/>
+        <lis:enables rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#RewindMechanic1"/>
+        <lis:rejectsChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#takePhotoKateDavidConfrontation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReconsiderChoice2 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReconsiderChoice2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReconsiderChoice"/>
+        <lis:enables rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#RewindMechanic2"/>
+        <lis:rejectsChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#blameChloeWeed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState1 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState"/>
+        <lis:isInfluencedBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseThreatened"/>
+        <lis:resultsIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState10 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState10">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionGuilt"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationRepairRelationship"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueEmpathy"/>
+        <lis:isInfluencedBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseGuilt"/>
+        <lis:resultsIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReconsiderChoice2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState11 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState11">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState"/>
+        <lis:isInfluencedBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseRelief2"/>
+        <lis:resultsIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState12 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState12">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState"/>
+        <lis:isInfluencedBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseValidation"/>
+        <lis:resultsIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState2 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState"/>
+        <lis:isInfluencedBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseKateGuilt"/>
+        <lis:resultsIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReconsiderChoice1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState3 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState3">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState"/>
+        <lis:isInfluencedBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseKateRelief"/>
+        <lis:resultsIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState4 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState4">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState"/>
+        <lis:isInfluencedBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseSadness"/>
+        <lis:resultsIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState5 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState5">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState"/>
+        <lis:isInfluencedBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseSadness"/>
+        <lis:resultsIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState6 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState6">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState"/>
+        <lis:isInfluencedBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseAppreciation"/>
+        <lis:resultsIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState7 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState7">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState"/>
+        <lis:isInfluencedBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseSatisfaction"/>
+        <lis:resultsIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState8 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState8">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState"/>
+        <lis:isInfluencedBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseRelief"/>
+        <lis:resultsIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState9 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState9">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState"/>
+        <lis:isInfluencedBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseSatisfaction2"/>
+        <lis:resultsIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#RewindMechanic1 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#RewindMechanic1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#RewindMechanic"/>
+        <lis:resets rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#kateMarshDavidMadsenConfrontation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#RewindMechanic2 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#RewindMechanic2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#RewindMechanic"/>
+        <lis:resets rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#chloesWeed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#VictoriaChase -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#VictoriaChase">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NPC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#VictoriasRoom -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#VictoriasRoom">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#acceptDanielPortrait -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#acceptDanielPortrait">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice"/>
+        <lis:isChoiceOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player1"/>
+        <lis:leadsTo rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#danielPortraitPosted"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#blameChloeWeed -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#blameChloeWeed">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MajorChoice"/>
+        <lis:isChoiceOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player1"/>
+        <lis:leadsTo rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#chloeDisapproves"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#chloeDisapproves -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#chloeDisapproves">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseGuilt"/>
+        <lis:induces rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#chloeGladNoReport -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#chloeGladNoReport">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseRelief2"/>
+        <lis:induces rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#chloesWeed -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#chloesWeed">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseAnxiety"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ChloePrice"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MaxCaulfield"/>
+        <lis:isContainedIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode1"/>
+        <lis:takesPlaceIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ChloesRoom"/>
+        <lis:triggers rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#blameChloeWeed"/>
+        <lis:triggers rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#takeBlameChloeWeed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#comfortVictoria -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#comfortVictoria">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MajorChoice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#danielDaCostaPortrait -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#danielDaCostaPortrait">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseFlattery"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#DanielDaCosta"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MaxCaulfield"/>
+        <lis:isContainedIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode1"/>
+        <lis:takesPlaceIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MainCampus"/>
+        <lis:triggers rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#acceptDanielPortrait"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#danielPortraitNotPosted -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#danielPortraitNotPosted">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#danielPortraitPosted -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#danielPortraitPosted">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseValidation"/>
+        <lis:induces rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState12"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#declineDanielPortrait -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#declineDanielPortrait">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#dontReorganizeVictoriaPhoto -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#dontReorganizeVictoriaPhoto">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#dontSignMichellePetition -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#dontSignMichellePetition">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#dontTouchDanaPregnancy -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#dontTouchDanaPregnancy">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#dontWaterLisaPlant -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#dontWaterLisaPlant">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#dontWriteRV -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#dontWriteRV">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseAnxiety -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseAnxiety">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:influences rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#blameChloeWeed"/>
+        <lis:influences rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#takeBlameChloeWeed"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionAnxiety"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationSelfPreservation"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueHonesty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseAppreciation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseAppreciation">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionGratitude"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationSupportCommunity"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueAltruism"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseCare -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseCare">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:influences rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#waterLisaPlant"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionAffection"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationNurtureOthers"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueResponsibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseConsideration -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseConsideration">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:influences rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#signMichellePetition"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionUncertainty"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationSocialResponsibility"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueJustice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseConsideration2 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseConsideration2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:influences rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#reorganizeVictoriaPhoto"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionThoughtfulness"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationMaintainRelationships"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueRespect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseDefiance -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseDefiance">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:influences rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#writeRV"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionDetermination"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationChallengeAuthority"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueJustice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseFlattery -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseFlattery">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:influences rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#acceptDanielPortrait"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionAppreciation"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationSupportiveness"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueOpenness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseGuilt -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseGuilt">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionGuilt"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationRepairRelationship"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueEmpathy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseIndifference -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseIndifference">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:influences rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#makeFunOfVictoria"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionResignation"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationAvoidConflict"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueSelfPreservation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseInitialFear -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseInitialFear">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:influences rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#reportNathan"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionFear"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationAvoidDanger"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueSelfPreservation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseKateEmpathy -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseKateEmpathy">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionConcern"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationSupportingKate"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueEmpathy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseKateGuilt -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseKateGuilt">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionGuilt"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationRepairRelationship"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueEmpathy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseKateRelief -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseKateRelief">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionEmpathy"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionRelief"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationProtectKate"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueLoyalty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseMoralConflict -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseMoralConflict">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:influences rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#interveneKateDavidConfrontation"/>
+        <lis:influences rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#takePhotoKateDavidConfrontation"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionAnxiety"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationProtectTheVulnerable"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueJustice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseReflection -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseReflection">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseRelief -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseRelief">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionRelief"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationConflictAvoidance"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueTrust"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseRelief2 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseRelief2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionAffection"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationProtectingChloe"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueMoralGrowth"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseSadness -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseSadness">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionGuilt"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationSelectiveCare"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueEmpathy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseSatisfaction -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseSatisfaction">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionSatisfaction"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationStandingUpForBeliefs"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueIntegrity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseSatisfaction2 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseSatisfaction2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionSatisfaction"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationPositiveImpact"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueCare"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseThreatened -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseThreatened">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionAnxiety"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationProtectOthers"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueResponsibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseValidation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseValidation">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionPride"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationEncourageDanielWork"/>
+        <lis:isDrivenBy rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueCreativity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#eraseInsultKatesSlate -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#eraseInsultKatesSlate">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice"/>
+        <lis:isChoiceOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player1"/>
+        <lis:leadsTo rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#kateSlateVandalizedAgain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#hideAndRevealToDavidChloeWeed -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#hideAndRevealToDavidChloeWeed">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MajorChoice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#hideTheTruth -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#hideTheTruth">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MajorChoice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ignoreFootballAlyssa -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ignoreFootballAlyssa">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ignoreInsultKatesSlate -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ignoreInsultKatesSlate">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#insultsOnKateMarshSlate -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#insultsOnKateMarshSlate">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseKateEmpathy"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#KateMarsh"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MaxCaulfield"/>
+        <lis:isContainedIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode1"/>
+        <lis:takesPlaceIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MainCampus"/>
+        <lis:triggers rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#eraseInsultKatesSlate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#internalizedMeaning1 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#internalizedMeaning1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#InternalizedMeaning"/>
+        <rdfs:label>I learned that small choices shape relationships.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#interveneKateDavidConfrontation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#interveneKateDavidConfrontation">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MajorChoice"/>
+        <lis:isChoiceOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player1"/>
+        <lis:leadsTo rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#kateTrustsMax"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#kateFeelsExposed -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#kateFeelsExposed">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseKateGuilt"/>
+        <lis:induces rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#kateMarshDavidMadsenConfrontation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#kateMarshDavidMadsenConfrontation">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseMoralConflict"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#DavidMadsen"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#KateMarsh"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MaxCaulfield"/>
+        <lis:isContainedIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode1"/>
+        <lis:takesPlaceIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MainCampus"/>
+        <lis:triggers rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#interveneKateDavidConfrontation"/>
+        <lis:triggers rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#takePhotoKateDavidConfrontation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#kateSlateVandalizedAgain -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#kateSlateVandalizedAgain">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome"/>
+        <lis:induces rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#kateTrustsMax -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#kateTrustsMax">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseKateRelief"/>
+        <lis:induces rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#lisaWillLookHealthy -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#lisaWillLookHealthy">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseSatisfaction2"/>
+        <lis:induces rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#makeFunOfVictoria -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#makeFunOfVictoria">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MajorChoice"/>
+        <lis:isChoiceOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player1"/>
+        <lis:leadsTo rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#victoriaFeelsBullied"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#michelleGrantPetition -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#michelleGrantPetition">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseConsideration"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MaxCaulfield"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MichelleGrant"/>
+        <lis:isContainedIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode1"/>
+        <lis:takesPlaceIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MichelleGrantsClassroom"/>
+        <lis:triggers rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#signMichellePetition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#michelleMentionsMax -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#michelleMentionsMax">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseAppreciation"/>
+        <lis:induces rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#nathanGetsAngry -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#nathanGetsAngry">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseThreatened"/>
+        <lis:induces rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#nathansGun -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#nathansGun">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseInitialFear"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MaxCaulfield"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NathanPrescott"/>
+        <lis:isContainedIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode1"/>
+        <lis:takesPlaceIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PrescottDormitory"/>
+        <lis:triggers rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#reportNathan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#noPublicAnnouncement -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#noPublicAnnouncement">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseSatisfaction"/>
+        <lis:induces rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#photoAvailableIfReorganizedAndRewound -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#photoAvailableIfReorganizedAndRewound">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseRelief"/>
+        <lis:induces rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionAffection -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionAffection">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerEmotion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionAnxiety -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionAnxiety">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerEmotion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionAppreciation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionAppreciation">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerEmotion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionConcern -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionConcern">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerEmotion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionDetermination -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionDetermination">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerEmotion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionEmpathy -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionEmpathy">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerEmotion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionGratitude -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionGratitude">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerEmotion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionGuilt -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionGuilt">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerEmotion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionPride -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionPride">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerEmotion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionRelief -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionRelief">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerEmotion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionResignation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionResignation">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerEmotion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionSadness -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionSadness">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerEmotion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionSatisfaction -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionSatisfaction">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerEmotion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionThoughtfulness -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionThoughtfulness">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerEmotion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionUncertainty -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerEmotionUncertainty">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerEmotion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationAvoidConflict -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationAvoidConflict">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationAvoidDanger -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationAvoidDanger">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationChallengeAuthority -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationChallengeAuthority">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationConflictAvoidance -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationConflictAvoidance">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationEncourageDanielWork -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationEncourageDanielWork">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationMaintainRelationships -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationMaintainRelationships">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationNurtureOthers -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationNurtureOthers">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationPositiveImpact -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationPositiveImpact">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationProtectKate -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationProtectKate">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationProtectOthers -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationProtectOthers">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationProtectTheVulnerable -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationProtectTheVulnerable">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationProtectingChloe -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationProtectingChloe">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationRepairRelationship -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationRepairRelationship">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationSelectiveCare -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationSelectiveCare">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationSelfPreservation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationSelfPreservation">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationSocialResponsibility -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationSocialResponsibility">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationStandingUpForBeliefs -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationStandingUpForBeliefs">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationSupportCommunity -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationSupportCommunity">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationSupportingKate -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationSupportingKate">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationSupportiveness -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerMotivationSupportiveness">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueAltruism -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueAltruism">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueCare -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueCare">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueConfidence -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueConfidence">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueCreativity -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueCreativity">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueEmpathy -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueEmpathy">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueFear -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueFear">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueHonesty -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueHonesty">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueIntegrity -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueIntegrity">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueJustice -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueJustice">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueLoyalty -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueLoyalty">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueMoralGrowth -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueMoralGrowth">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueOpenness -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueOpenness">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueRespect -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueRespect">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueResponsibility -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueResponsibility">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueSelfPreservation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueSelfPreservation">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueTrust -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#playerValueTrust">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#reorganizeVictoriaPhoto -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#reorganizeVictoriaPhoto">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice"/>
+        <lis:isChoiceOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player1"/>
+        <lis:leadsTo rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#photoAvailableIfReorganizedAndRewound"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#reportNathan -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#reportNathan">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MajorChoice"/>
+        <lis:isChoiceOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player1"/>
+        <lis:leadsTo rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#nathanGetsAngry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#rvAtParkingLot -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#rvAtParkingLot">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseDefiance"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MaxCaulfield"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#VictoriaChase"/>
+        <lis:isContainedIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode1"/>
+        <lis:takesPlaceIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ParkingLot"/>
+        <lis:triggers rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#writeRV"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#signMichellePetition -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#signMichellePetition">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice"/>
+        <lis:isChoiceOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player1"/>
+        <lis:leadsTo rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#michelleMentionsMax"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#stayHiddenChloeWeed -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#stayHiddenChloeWeed">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MajorChoice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#takeBlameChloeWeed -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#takeBlameChloeWeed">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MajorChoice"/>
+        <lis:isChoiceOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player1"/>
+        <lis:leadsTo rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#chloeGladNoReport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#takePhotoKateDavidConfrontation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#takePhotoKateDavidConfrontation">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MajorChoice"/>
+        <lis:isChoiceOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player1"/>
+        <lis:leadsTo rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#kateFeelsExposed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#touchAndRewindDanaPregnancy -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#touchAndRewindDanaPregnancy">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#touchDanaPregnancy -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#touchDanaPregnancy">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#victoriaChaseOutsideDormitory -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#victoriaChaseOutsideDormitory">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseIndifference"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MaxCaulfield"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NathanPrescott"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#VictoriaChase"/>
+        <lis:isContainedIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode1"/>
+        <lis:takesPlaceIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PrescottDormitory"/>
+        <lis:triggers rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#makeFunOfVictoria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#victoriaFeelsBullied -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#victoriaFeelsBullied">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseSadness"/>
+        <lis:induces rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#victoriasPhotoCollection -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#victoriasPhotoCollection">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseConsideration2"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MaxCaulfield"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#VictoriaChase"/>
+        <lis:isContainedIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode1"/>
+        <lis:takesPlaceIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#VictoriasRoom"/>
+        <lis:triggers rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#reorganizeVictoriaPhoto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#warnFootballAlyssa -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#warnFootballAlyssa">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#waterLisaPlant -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#waterLisaPlant">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice"/>
+        <lis:isChoiceOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player1"/>
+        <lis:leadsTo rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#lisaWillLookHealthy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#waterLisaPlantEvent -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#waterLisaPlantEvent">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event"/>
+        <lis:elicits rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#emotionalResponseCare"/>
+        <lis:involves rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MaxCaulfield"/>
+        <lis:isContainedIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode1"/>
+        <lis:takesPlaceIn rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#BlackwellAcademy"/>
+        <lis:triggers rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#waterLisaPlant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#writeRV -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#writeRV">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice"/>
+        <lis:isChoiceOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player1"/>
+        <lis:leadsTo rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#noPublicAnnouncement"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

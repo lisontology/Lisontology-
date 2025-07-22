@@ -186,7 +186,6 @@ lis:FinalDecision9 rdf:type lis:FinalDecision .
 lis:FinalDecision10 rdf:type lis:FinalDecision .
 lis:RewindMechanic1 rdf:type lis:RewindMechanic .
 lis:RewindMechanic2 rdf:type lis:RewindMechanic .
-lis:EpisodeEnd rdf:type owl:Class .
 lis:internalizedMeaning1 rdf:type lis:InternalizedMeaning .
 lis:kateFeelsExposed rdf:type lis:Outcome .
 lis:kateTrustsMax rdf:type lis:Outcome .
@@ -195,10 +194,10 @@ lis:kateSlateVandalizedAgain rdf:type lis:Outcome .
 lis:photoAvailableIfReorganizedAndRewound rdf:type lis:Outcome .
 lis:lisaWillLookHealthy rdf:type lis:Outcome .
 
-# Correzione di playerEmotionEmpathy → playerEmotionRelief
+
 lis:emotionalResponseKateRelief lis:isDrivenBy lis:playerEmotionRelief .
 
-# Aggiunta dichiarazione mancante per playerMotivationSelfPreservation
+
 lis:playerMotivationSelfPreservation rdf:type lis:PlayerMotivation .
 
 # EPISODE 1 RELATIONS
