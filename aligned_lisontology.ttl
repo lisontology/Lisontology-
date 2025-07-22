@@ -1,0 +1,349 @@
+@prefix : <http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix creon: <http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#> .
+@base <http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10/> .
+
+<http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10> rdf:type owl:Ontology ;
+                                                                           owl:imports <http://example.org/lis-creon-bridge#> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#culminates
+:culminates rdf:type owl:ObjectProperty ;
+            rdfs:domain :AcceptChoice ,
+                        :EpisodeEnd ;
+            rdfs:range :InternalizedMeaning .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#elicits
+:elicits rdf:type owl:ObjectProperty ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( :Event
+                                     :Outcome
+                                     :RewindMechanic
+                                   )
+                     ] ;
+         rdfs:range :EmotionalResponse .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#enables
+:enables rdf:type owl:ObjectProperty ;
+         rdfs:domain :ReconsiderChoice ;
+         rdfs:range :RewindMechanic .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#enteredBy
+:enteredBy rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :ReflectionState ;
+           rdfs:range :Player .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#has
+:has rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf owl:topObjectProperty ;
+     rdfs:domain :Player ;
+     rdfs:range [ rdf:type owl:Class ;
+                  owl:unionOf ( :PlayerMotivation
+                                :PlayerValue
+                              )
+                ] .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#impersonates
+:impersonates rdf:type owl:ObjectProperty ;
+              rdfs:domain :Player ;
+              rdfs:range :Protagonist .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#induces
+:induces rdf:type owl:ObjectProperty ;
+         rdfs:domain :Outcome ;
+         rdfs:range :ReflectionState .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#influences
+:influences rdf:type owl:ObjectProperty ;
+            rdfs:domain :EmotionalResponse ;
+            rdfs:range [ rdf:type owl:Class ;
+                         owl:unionOf ( :Choice
+                                       :ReflectionState
+                                     )
+                       ] .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#involves
+:involves rdf:type owl:ObjectProperty ;
+          rdfs:domain :Event ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :Character
+                                     :NPCs
+                                     :Protagonist
+                                   )
+                     ] .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isChoiceOf
+:isChoiceOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :Choice ;
+            rdfs:range :Player .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isContainedIn
+:isContainedIn rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :Event ;
+               rdfs:range :Episode .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isDrivenBy
+:isDrivenBy rdf:type owl:ObjectProperty ;
+            owl:equivalentProperty owl:topObjectProperty ;
+            rdfs:domain :EmotionalResponse ;
+            rdfs:range [ rdf:type owl:Class ;
+                         owl:unionOf ( :PlayerEmotion
+                                       :PlayerMotivation
+                                       :PlayerValue
+                                     )
+                       ] .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isExperiencedBy
+:isExperiencedBy rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain :EmotionalResponse ;
+                 rdfs:range :Player .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInfluencedBy
+:isInfluencedBy rdf:type owl:ObjectProperty ;
+                owl:inverseOf :reaffirmsChoice ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :Choice
+                                            :ReflectionState
+                                          )
+                            ] ;
+                rdfs:range :EmotionalResponse .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isInvolvedIn
+:isInvolvedIn rdf:type owl:ObjectProperty ;
+              rdfs:domain :Player ;
+              rdfs:range :Event .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPartOf
+:isPartOf rdf:type owl:ObjectProperty ,
+                   owl:TransitiveProperty ;
+          rdfs:domain :Place ;
+          rdfs:range :Location .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#isPerformedBy
+:isPerformedBy rdf:type owl:ObjectProperty ;
+               rdfs:domain :ReflectionState ;
+               rdfs:range :Player .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#leadsTo
+:leadsTo rdf:type owl:ObjectProperty ;
+         rdfs:domain :Choice ;
+         rdfs:range :Outcome .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#marks
+:marks rdf:type owl:ObjectProperty ;
+       rdfs:domain :AcceptChoice ;
+       rdfs:range :FinalDecision .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#prompts
+:prompts rdf:type owl:ObjectProperty ;
+         rdfs:domain :Outcome ;
+         rdfs:range :ReflectionState .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#reaffirmsChoice
+:reaffirmsChoice rdf:type owl:ObjectProperty ;
+                 rdfs:domain :AcceptChoice ;
+                 rdfs:range :Choice .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#rejectsChoice
+:rejectsChoice rdf:type owl:ObjectProperty ;
+               rdfs:domain :ReconsiderChoice ;
+               rdfs:range :Choice .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resets
+:resets rdf:type owl:ObjectProperty ;
+        rdfs:domain :RewindMechanic ;
+        rdfs:range :Event .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resolvesTo
+:resolvesTo rdf:type owl:ObjectProperty ;
+            rdfs:domain :FinalDecision ;
+            rdfs:range :EpisodeEnd .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#resultsIn
+:resultsIn rdf:type owl:ObjectProperty ;
+           rdfs:domain :ReflectionState ;
+           rdfs:range [ rdf:type owl:Class ;
+                        owl:unionOf ( :AcceptChoice
+                                      :ReconsiderChoice
+                                    )
+                      ] .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#takesPlaceIn
+:takesPlaceIn rdf:type owl:ObjectProperty ;
+              rdfs:domain :Event ;
+              rdfs:range :Location .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#triggers
+:triggers rdf:type owl:ObjectProperty ;
+          rdfs:domain :Event ;
+          rdfs:range :Choice .
+
+
+###  http://www.w3.org/2002/07/owl#equivalentClass
+owl:equivalentClass rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAct
+creon:CreativeAct owl:equivalentClass :Choice .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeAgent
+creon:CreativeAgent owl:equivalentClass :Player .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeTrait
+creon:CreativeTrait owl:equivalentClass :PlayerEmotion ,
+                                        :PlayerMotivation ,
+                                        :PlayerValue .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalConstraint
+creon:EnvironmentalConstraint owl:equivalentClass :RewindMechanic .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#IncubationPhase
+creon:IncubationPhase owl:equivalentClass :ReflectionState .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#InterpretativeArtwork
+creon:InterpretativeArtwork owl:equivalentClass :InternalizedMeaning .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#AcceptChoice
+:AcceptChoice rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Character
+:Character rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Choice
+:Choice rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EmotionalResponse
+:EmotionalResponse rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Episode
+:Episode rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#EpisodeEnd
+:EpisodeEnd rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Event
+:Event rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#FinalDecision
+:FinalDecision rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#InternalizedMeaning
+:InternalizedMeaning rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Location
+:Location rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MajorChoice
+:MajorChoice rdf:type owl:Class ;
+             rdfs:subClassOf :Choice .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#MinorChoice
+:MinorChoice rdf:type owl:Class ;
+             rdfs:subClassOf :Choice .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#NPCs
+:NPCs rdf:type owl:Class ;
+      rdfs:subClassOf :Character .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Outcome
+:Outcome rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Place
+:Place rdf:type owl:Class ;
+       rdfs:subClassOf :Location .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Player
+:Player rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerEmotion
+:PlayerEmotion rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerMotivation
+:PlayerMotivation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#PlayerValue
+:PlayerValue rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#Protagonist
+:Protagonist rdf:type owl:Class ;
+             rdfs:subClassOf :Character .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReconsiderChoice
+:ReconsiderChoice rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#ReflectionState
+:ReflectionState rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#RewindMechanic
+:RewindMechanic rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
