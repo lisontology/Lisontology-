@@ -26,6 +26,30 @@
     
 
 
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#atLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#atLocation"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#hasTrait -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#hasTrait"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#induces -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#induces"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#participantIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#participantIn"/>
+    
+
+
     <!-- http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#culminates -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10#culminates">
@@ -278,6 +302,54 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#ActionDynamics -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#ActionDynamics"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeProduct -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeProduct"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EmotionDynamics -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EmotionDynamics"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalCondition -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalCondition"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#ExternalRandomEvent -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#ExternalRandomEvent"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#PersonalSituation -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#PersonalSituation"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#Resource -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#Resource"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person"/>
     
 
 
