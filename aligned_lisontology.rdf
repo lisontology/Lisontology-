@@ -1,32 +1,17 @@
 <?xml version="1.0"?>
-<rdf:RDF
-    xmlns="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#"
-    xml:base="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:xml="http://www.w3.org/XML/1998/namespace"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:prov="http://www.w3.org/ns/prov#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:creon="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#">
-    
-    <!-- Dichiara esplicitamente che questo file è l’ontologia “aligned_lisontology.rdf” -->
+<rdf:RDF xmlns="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#"
+     xml:base="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:creon="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf">
-        <!-- Se hai ancora bisogno di importare creon.owl -->
         <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl"/>
     </owl:Ontology>
-    
-    <!-- Qui di seguito le tue classi, proprietà, annotazioni… -->
-    <!-- per es. -->
-    <owl:Class rdf:about="#PlayerValue">
-        <rdfs:label xml:lang="en">Player Value</rdfs:label>
-        <rdfs:comment xml:lang="en">…”descrizione”…</rdfs:comment>
-    </owl:Class>
-    
-    <!-- …ecc. -->
-
-
     
 
 
@@ -408,6 +393,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#PersonalSituation"/>
         <rdfs:comment>Represents the player’s emotional reaction to events and outcomes.</rdfs:comment>
+        <rdfs:label>Emotional Response</rdfs:label>
     </owl:Class>
     
 
@@ -422,6 +408,7 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EpisodeEnd">
         <rdfs:comment>Represents the conclusive state of an episode’s narrative, shaped by prior decisions and actions.</rdfs:comment>
+        <rdfs:label>Episode End</rdfs:label>
     </owl:Class>
     
 
@@ -438,6 +425,7 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#FinalDecision">
         <rdfs:comment>The final confirmed choice made by the player in an episode, usually with lasting consequences on the narrative.</rdfs:comment>
+        <rdfs:label>Final Decision</rdfs:label>
     </owl:Class>
     
 
@@ -447,6 +435,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#InternalizedMeaning">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeProduct"/>
         <rdfs:comment>A non-material but meaningful product created by the player as a result of their journey.</rdfs:comment>
+        <rdfs:label>Internalized Meaning</rdfs:label>
     </owl:Class>
     
 
@@ -489,14 +478,6 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PersonalAbility -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PersonalAbility">
-        <rdfs:label>Personal Ability</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Place -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Place">
@@ -519,6 +500,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerEmotion">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EmotionDynamics"/>
         <rdfs:comment>Captures the immediate and fluctuating emotional reactions of the player.</rdfs:comment>
+        <rdfs:label>Player Emotion</rdfs:label>
     </owl:Class>
     
 
@@ -528,6 +510,7 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#PersonalAbility"/>
         <rdfs:comment>Describes the player’s inner drive and reasons for engaging with the game and making a choice over another.</rdfs:comment>
+        <rdfs:label>Player Motivation</rdfs:label>
     </owl:Class>
     
 
@@ -537,6 +520,8 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#PersonalAbility"/>
         <rdfs:comment>Represents the ethical and moral principles that guide the player’s choices.</rdfs:comment>
+        <rdfs:comment xml:lang="en">…”descrizione”…</rdfs:comment>
+        <rdfs:label xml:lang="en">Player Value</rdfs:label>
     </owl:Class>
     
 
@@ -553,6 +538,7 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReconsiderChoice">
         <rdfs:comment>A situation in which the player chooses to undo a previous decision, often through the use of a game mechanic.</rdfs:comment>
+        <rdfs:label>Reconsider Choice</rdfs:label>
     </owl:Class>
     
 
@@ -561,6 +547,7 @@
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState">
         <rdfs:comment>A moment of internal reflection triggered by the consequences of a choice. Here, the player may evaluate or reconsider their actions.</rdfs:comment>
+        <rdfs:label>Reflection State</rdfs:label>
     </owl:Class>
     
 
@@ -570,5 +557,11 @@
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#RewindMechanic">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#Resource"/>
         <rdfs:comment>A resource that allows the player to revisit and possibly alter past decisions.</rdfs:comment>
+        <rdfs:label>Rewind Mechanic</rdfs:label>
     </owl:Class>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
