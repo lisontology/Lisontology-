@@ -1,68 +1,13 @@
-@prefix : <http://example.org/lisabox#> .
-@prefix lis: <http://example.org/lis#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix :    <https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology_dataset.ttl#> .
+@prefix lis: <https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://example.org/lisabox>
-    a owl:Ontology ;
-    owl:imports <https://raw.githubusercontent.com/lisontology/Lisontology-/main/aligned_lisontology.rdf> .
-
-
-# classes and type
-# Definizione proprietà oggetto
-lis:impersonates rdf:type owl:ObjectProperty .
-lis:takesPlaceIn rdf:type owl:ObjectProperty .
-lis:isContainedIn rdf:type owl:ObjectProperty .
-lis:involves rdf:type owl:ObjectProperty .
-lis:triggers rdf:type owl:ObjectProperty .
-lis:elicits rdf:type owl:ObjectProperty .
-lis:isDrivenBy rdf:type owl:ObjectProperty .
-lis:influences rdf:type owl:ObjectProperty .
-lis:isChoiceOf rdf:type owl:ObjectProperty .
-lis:leadsTo rdf:type owl:ObjectProperty .
-lis:induces rdf:type owl:ObjectProperty .
-lis:resultsIn rdf:type owl:ObjectProperty .
-lis:marks rdf:type owl:ObjectProperty .
-lis:rejectsChoice rdf:type owl:ObjectProperty .
-lis:enables rdf:type owl:ObjectProperty .
-lis:resets rdf:type owl:ObjectProperty .
-lis:isPartOf rdf:type owl:ObjectProperty .
-lis:reaffirmsChoice rdf:type owl:ObjectProperty .
-lis:makesChoice rdf:type owl:ObjectProperty .
-lis:has rdf:type owl:ObjectProperty .
-lis:culminates  rdf:type owl:ObjectProperty .
-lis:resolvesTo rdf:type owl:ObjectProperty .
-
-
-
-# CLASSI DI VALORI, EMOZIONI, MOTIVAZIONI, MECCANICHE, SCELTE, STATI 
-
-lis:PlayerValue rdf:type owl:Class .
-lis:PlayerEmotion rdf:type owl:Class .
-lis:PlayerMotivation rdf:type owl:Class .
-lis:Player rdf:type owl:Class .
-
-lis:NPC rdf:type owl:Class .
-lis:Protagonist rdf:type owl:Class .
-lis:MajorChoice rdf:type owl:Class .
-lis:MinorChoice rdf:type owl:Class .
-lis:Episode rdf:type owl:Class .
-lis:Event rdf:type owl:Class .
-lis:Location rdf:type owl:Class .
-lis:Place rdf:type owl:Class .
-lis:Outcome rdf:type owl:Class .
-
-
-
-lis:EmotionalResponse rdf:type owl:Class .
-lis:ReflectionState rdf:type owl:Class .
-lis:ReconsiderChoice rdf:type owl:Class .
-lis:AcceptChoice rdf:type owl:Class .
-lis:FinalDecision rdf:type owl:Class .
-lis:RewindMechanic rdf:type owl:Class .
-lis:InternalizedMeaning rdf:type owl:Class .
-lis:EpisodeEnd rdf:type owl:Class .
+<https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology_dataset.ttl>
+    a       owl:Ontology ;
+    owl:imports  
+        <https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf> .
 
 
 # Player Values

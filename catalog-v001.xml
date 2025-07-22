@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1753187964173" name="http://www.lis./" uri="lisontology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1753187964173" name="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10/" uri="aligned_lisontology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1753187964173" name="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology_dataset.ttl" uri="lisontology_dataset.rdf"/>
+    </group>
+</catalog>
