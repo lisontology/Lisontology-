@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl" uri="https://raw.githubusercontent.com/aldogangemi/CreOn/refs/heads/main/creon.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://example.org/lisabox" uri="lisontology_dataset.ttl"/>
+    <uri id="Imports Wizard Entry" name="https://raw.githubusercontent.com/aldogangemi/CreOn/refs/heads/main/creon.ttl" uri="lis-creon-bridge.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#" uri="lis-creon-bridge.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://example.org/lis-creon-bridge#" uri="lis-creon-bridge.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://example.org/lis-creon-bridge#" uri="lis_creon_bridge_ontology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://example.org/lis-creon-bridge#" uri="aligned_lisontology.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1753177640796" name="http://www.lis./" uri="lisontology.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1753177640796" name="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10/" uri="aligned_lisontology.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1753177640796" name="http://www.w3.org/2002/07/owl" uri="aligned_lisontology_dataset.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1753045878137" name="http://www.lis./" uri="lisontology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1753045878137" name="http://www.semanticweb.org/nadia/ontologies/2025/6/untitled-ontology-10/" uri="aligned_lisontology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1753045878137" name="http://www.w3.org/2002/07/owl" uri="aligned_lisontology_dataset.rdf"/>
     </group>
 </catalog>
