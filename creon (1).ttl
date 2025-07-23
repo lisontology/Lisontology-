@@ -1,0 +1,457 @@
+@prefix : <http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix creon: <http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@base <http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#> .
+
+<http://www.ontologydesignpatterns.org/ont/creativity/creon.owl> rdf:type owl:Ontology ;
+                                                                  dc:creator "Aldo Gangemi" ,
+                                                                             "Chiara Lucifora" ;
+                                                                  rdfs:comment """An integrated, synthetic ontology of creativity, formalising and integrating multiple theories:
+
+(a) Personal creativity
+Wallace's personal creativity phases
+Guilford's personal creativity traits
+Smith's cognitive creativity
+Moruzzi's personal creativity keys
+
+(b) social creativity:
+Csikszentmihali's domain/field of creativity
+Amabile's expertise/thinking/motivation
+Sternberg's creative personal traits
+
+(c) dual personal/social creativity:
+Gardner's multidimensional theory (personality plus context)
+Rhodes' 4P theory
+Simonton's c/C, creativity function theory, divergence/error
+Corazza's mental/social process
+Jenning's computational creativity
+
+(d) neuro creativity:
+Kenett's metaanalysis of neural correlates of creativity
+
+Some important questions need special investigation, concerning computational creativity, fruition, and opera aperta:
+
+- AI is not a person, and how could we distinguish between personal and social for an LLM?
+
+- Opera aperta goes beyond production vs. fruition (the patina of a monument, table, and metaphorically a book or a painting, let alone Sistine Chapel colors ...)
+
+Version 1.2: added support for modelling Guilford's divergence as the search for a meta-convergence connecting two convergent but unrelated ideas.
+
+Version 1.3: added the divergent dimension to products.""" ;
+                                                                  owl:versionInfo "1.2, February 22nd, 2024" ,
+                                                                                  "1.3, May 4th, 2025" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasAttributedTo
+<http://www.w3.org/ns/prov#wasAttributedTo> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+<http://www.w3.org/ns/prov#wasDerivedFrom> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#atLocation
+creon:atLocation rdf:type owl:ObjectProperty ;
+                 rdfs:range owl:Thing ;
+                 dc:creator "Aldo Gangemi" ;
+                 dc:date "2023-09-14T08:35:59Z"^^xsd:dateTime .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#atTime
+creon:atTime rdf:type owl:ObjectProperty ;
+             dc:creator "Aldo Gangemi" ;
+             dc:date "2023-09-14T08:35:53Z"^^xsd:dateTime .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#builtBy
+creon:builtBy rdf:type owl:ObjectProperty ;
+              rdfs:domain creon:CreativeProduct ;
+              dc:creator "Aldo Gangemi" ;
+              dc:date "2023-08-31T10:42:28Z"^^xsd:dateTime ;
+              rdfs:comment "The relation between product and producer" ;
+              rdfs:label "built by" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#correlatesWith
+creon:correlatesWith rdf:type owl:ObjectProperty ,
+                              owl:SymmetricProperty ;
+                     dc:creator "Aldo Gangemi" ;
+                     dc:date "2023-08-31T14:05:36Z"^^xsd:dateTime ;
+                     rdfs:comment "The correlation between functional constructs and neural or physiological states" ;
+                     rdfs:label "correlates with" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#exhibitedBy
+creon:exhibitedBy rdf:type owl:ObjectProperty ;
+                  dc:creator "Aldo Gangemi" ;
+                  dc:date "2023-09-04T15:01:13Z"^^xsd:dateTime ;
+                  rdfs:label "exhibited by" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#focusedOn
+creon:focusedOn rdf:type owl:ObjectProperty ;
+                rdfs:range owl:Thing ;
+                dc:creator "Aldo Gangemi" ;
+                dc:date "2023-08-31T12:40:20Z"^^xsd:dateTime ;
+                rdfs:comment "The relation between a creative situation, and an antity it focuses on, for example between a painting process, and its social context, or between a musical composition, and its author." ;
+                rdfs:label "focused on" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#hasPart
+creon:hasPart rdf:type owl:ObjectProperty ,
+                       owl:TransitiveProperty ;
+              dc:creator "Aldo Gangemi" ;
+              dc:date "2023-09-06T16:55:45Z"^^xsd:dateTime ;
+              rdfs:label "has part" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#hasTrait
+creon:hasTrait rdf:type owl:ObjectProperty ;
+               owl:inverseOf creon:traitOf ;
+               rdfs:range creon:PersonalAbility ;
+               dc:creator "Aldo Gangemi" ;
+               dc:date "2023-08-31T11:25:32Z"^^xsd:dateTime ;
+               rdfs:comment "The association between a personality trait whit a specific person" ;
+               rdfs:label "has trait" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#implementedAs
+creon:implementedAs rdf:type owl:ObjectProperty ;
+                    rdfs:range creon:CreativeProduct ;
+                    dc:creator "Aldo Gangemi" ;
+                    dc:date "2023-08-31T12:48:20Z"^^xsd:dateTime ;
+                    rdfs:comment "The relation between idea and product" ;
+                    rdfs:label "implemented as" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#induces
+creon:induces rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#influenced
+creon:influenced rdf:type owl:ObjectProperty ;
+                 dc:creator "Aldo Gangemi" ;
+                 dc:date "2023-09-14T08:35:45Z"^^xsd:dateTime .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#influencedBy
+creon:influencedBy rdf:type owl:ObjectProperty ;
+                   dc:creator "Aldo Gangemi" ;
+                   dc:date "2023-09-04T15:43:02Z"^^xsd:dateTime ;
+                   rdfs:comment "A general influence relation between agents, processes, creative products, or ideas. Specific axioms apply to dependencies between influencing and influenced entities." ;
+                   rdfs:label "influenced by" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#influencer
+creon:influencer rdf:type owl:ObjectProperty ;
+                 owl:propertyChainAxiom ( creon:influenced
+                                          creon:influencedBy
+                                        ) ;
+                 dc:creator "Aldo Gangemi" ;
+                 dc:date "2023-09-14T08:35:38Z"^^xsd:dateTime .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#observedDuring
+creon:observedDuring rdf:type owl:ObjectProperty ;
+                     dc:creator "Aldo Gangemi" ;
+                     dc:date "2023-09-06T16:31:26Z"^^xsd:dateTime ;
+                     rdfs:label "observed during" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#observedIn
+creon:observedIn rdf:type owl:ObjectProperty ;
+                 dc:creator "Aldo Gangemi" ;
+                 dc:date "2023-09-06T16:31:08Z"^^xsd:dateTime ;
+                 rdfs:label "observed in" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#onTask
+creon:onTask rdf:type owl:ObjectProperty ;
+             dc:creator "Aldo Gangemi" ;
+             dc:date "2023-09-06T17:14:03Z"^^xsd:dateTime ;
+             rdfs:label "on task" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#operatesIn
+creon:operatesIn rdf:type owl:ObjectProperty ;
+                 rdfs:range creon:CreativityPress ;
+                 dc:creator "Aldo Gangemi" ;
+                 dc:date "2023-08-31T12:31:20Z"^^xsd:dateTime ;
+                 rdfs:comment "The relation between artist and its environnment" ;
+                 rdfs:label "operates in" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#optimizes
+creon:optimizes rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#participantIn
+creon:participantIn rdf:type owl:ObjectProperty ;
+                    dc:creator "Aldo Gangemi" ;
+                    dc:date "2023-08-31T11:19:22Z"^^xsd:dateTime ;
+                    rdfs:comment "The relation between creative individual and its creative process" ;
+                    rdfs:label "participant in" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#producedIn
+creon:producedIn rdf:type owl:ObjectProperty ;
+                 rdfs:domain creon:CreativeProduct ;
+                 rdfs:range creon:CreativityPress ;
+                 dc:creator "Aldo Gangemi" ;
+                 dc:date "2023-08-31T12:34:20Z"^^xsd:dateTime ;
+                 rdfs:comment "The relation between product and environment" ;
+                 rdfs:label "produced in" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#resultOf
+creon:resultOf rdf:type owl:ObjectProperty ;
+               rdfs:domain creon:CreativeProduct ;
+               dc:creator "Aldo Gangemi" ;
+               dc:date "2023-08-31T10:43:59Z"^^xsd:dateTime ;
+               rdfs:comment "The relation between the creative process and the final creative product" ;
+               rdfs:label "result of" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#traitOf
+creon:traitOf rdf:type owl:ObjectProperty ;
+              dc:creator "Aldo Gangemi" ;
+              dc:date "2023-08-31T11:29:02Z"^^xsd:dateTime ;
+              rdfs:label "trait of" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#usingMethod
+creon:usingMethod rdf:type owl:ObjectProperty ;
+                  dc:creator "Aldo Gangemi" ;
+                  dc:date "2023-09-06T16:52:27Z"^^xsd:dateTime ;
+                  rdfs:label "using method" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#creativityScore
+creon:creativityScore rdf:type owl:DatatypeProperty ;
+                      rdfs:range xsd:float ;
+                      dc:creator "Aldo Gangemi" ;
+                      dc:date "2023-08-31T13:15:39Z"^^xsd:dateTime ;
+                      rdfs:comment "a multiplicative forumala of creativity, based on originality, utility and surprise" ;
+                      rdfs:label "creativity score" ;
+                      <http://www.w3.org/ns/prov#wasAttributedTo> "Simonton, D.K. (2013c). What is a creative idea? Little-c versus Big-C creativity. In J. Chan & K. Thomas (Eds.), Handbook of research on creativity (pp. 69– 83). Cheltenham Glos, UK: Edward Elgar" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#originality
+creon:originality rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:float ;
+                  dc:creator "Aldo Gangemi" ;
+                  dc:date "2023-08-31T13:05:03Z"^^xsd:dateTime ;
+                  rdfs:comment "the idea's personal probability" ;
+                  rdfs:label "originality" ;
+                  <http://www.w3.org/ns/prov#wasAttributedTo> "Simonton, D.K. (2013c). What is a creative idea? Little-c versus Big-C creativity. In J. Chan & K. Thomas (Eds.), Handbook of research on creativity (pp. 69– 83). Cheltenham Glos, UK: Edward Elgar" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#utility
+creon:utility rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:float ;
+              dc:creator "Aldo Gangemi" ;
+              dc:date "2023-08-31T13:09:38Z"^^xsd:dateTime ;
+              rdfs:comment "the idea's personal utility" ;
+              rdfs:label "utility" ;
+              <http://www.w3.org/ns/prov#wasAttributedTo> "Simonton, D.K. (2013c). What is a creative idea? Little-c versus Big-C creativity. In J. Chan & K. Thomas (Eds.), Handbook of research on creativity (pp. 69– 83). Cheltenham Glos, UK: Edward Elgar" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#utilityObviousness
+creon:utilityObviousness rdf:type owl:DatatypeProperty ;
+                         rdfs:range xsd:float ;
+                         dc:creator "Aldo Gangemi" ;
+                         dc:date "2023-08-31T13:09:59Z"^^xsd:dateTime ;
+                         rdfs:comment "the idea's personal obviousness" ;
+                         rdfs:label "utility obviousness" ;
+                         <http://www.w3.org/ns/prov#wasAttributedTo> "Simonton, D.K. (2013c). What is a creative idea? Little-c versus Big-C creativity. In J. Chan & K. Thomas (Eds.), Handbook of research on creativity (pp. 69– 83). Cheltenham Glos, UK: Edward Elgar" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#ActionDynamics
+creon:ActionDynamics rdf:type owl:Class ;
+                     rdfs:subClassOf creon:PersonalSituation ;
+                     dc:creator "Aldo Gangemi" ;
+                     dc:date "2023-09-06T15:43:36Z"^^xsd:dateTime ;
+                     rdfs:label "Action Dynamics" ;
+                     <http://www.w3.org/ns/prov#wasAttributedTo> "From Corazza's DUCP (2019): Actions that influence and shape the creative process, decisions, and directions, with a feedback effect." .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeProduct
+creon:CreativeProduct rdf:type owl:Class ;
+                      dc:creator "Aldo Gangemi" ;
+                      dc:date "2023-08-31T10:38:32Z"^^xsd:dateTime ;
+                      rdfs:comment "It is something that is produced as a result of the creative process, by a specific Person" ;
+                      rdfs:label "Creative Product" ;
+                      <http://www.w3.org/ns/prov#wasAttributedTo> "Rhodes, M. (1961). An analysis of creativity. The Phi Delta Kappan 42, 305–310." .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativityPress
+creon:CreativityPress rdf:type owl:Class ;
+                      rdfs:subClassOf creon:SocialSituation ;
+                      dc:creator "Aldo Gangemi" ;
+                      dc:date "2023-08-31T10:47:04Z"^^xsd:dateTime ;
+                      rdfs:comment "it is related to the relationship between humans and environment" ;
+                      rdfs:label "Creativity Press" ;
+                      <http://www.w3.org/ns/prov#wasAttributedTo> "Rhodes, M. (1961). An analysis of creativity. The Phi Delta Kappan 42, 305–310." .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EmotionDynamics
+creon:EmotionDynamics rdf:type owl:Class ;
+                      rdfs:subClassOf creon:PersonalSituation ;
+                      dc:creator "Aldo Gangemi" ;
+                      dc:date "2023-09-06T15:45:16Z"^^xsd:dateTime ;
+                      rdfs:label "Emotion Dynamics" ;
+                      <http://www.w3.org/ns/prov#wasAttributedTo> "From Corazza's DUCP (2019): Emotions are central to the creative process, influencing motivation, direction, and quality." .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalCondition
+creon:EnvironmentalCondition rdf:type owl:Class ;
+                             rdfs:subClassOf creon:CreativityPress ;
+                             dc:creator "Aldo Gangemi" ;
+                             dc:date "2023-08-31T10:46:23Z"^^xsd:dateTime ;
+                             rdfs:comment "it is related to the social environment" ;
+                             rdfs:label "Environmental Condition" ;
+                             <http://www.w3.org/ns/prov#wasDerivedFrom> "Rhodes, M. (1961). An analysis of creativity. The Phi Delta Kappan 42, 305–310." .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#ExternalRandomEvent
+creon:ExternalRandomEvent rdf:type owl:Class ;
+                          rdfs:subClassOf creon:SocialSituation ;
+                          dc:creator "Aldo Gangemi" ;
+                          dc:date "2023-09-06T15:46:12Z"^^xsd:dateTime ;
+                          rdfs:label "External Random Event" ;
+                          <http://www.w3.org/ns/prov#wasAttributedTo> "From Corazza's DUCP (2019): Random external events that influence creative processes unpredictably." .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#PersonalAbility
+creon:PersonalAbility rdf:type owl:Class ;
+                      dc:creator "Aldo Gangemi" ;
+                      dc:date "2023-08-31T10:34:16Z"^^xsd:dateTime ;
+                      rdfs:comment "Specific personal characteristics, traits, or capabilities of a creative individual" ;
+                      rdfs:label "Personal Ability" ;
+                      <http://www.w3.org/ns/prov#wasDerivedFrom> """Sternberg, R. J. (1988). A three-facet model of creativity.
+Rhodes, M. (1961). An analysis of creativity. The Phi Delta Kappan 42, 305–310.
+Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., & Green, A. E. (2020). Developing a neurally informed ontology of creativity measurement. NeuroImage, 221, 117166.""" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#PersonalSituation
+creon:PersonalSituation rdf:type owl:Class ;
+                        dc:creator "Aldo Gangemi" ;
+                        dc:date "2023-08-31T10:33:26Z"^^xsd:dateTime ;
+                        rdfs:comment "A creativity situation seen as a personal scoring of a creativity function." ;
+                        rdfs:label "Personal Situation" ;
+                        <http://www.w3.org/ns/prov#wasAttributedTo> "Simonton, D.K. (2013c). What is a creative idea? Little-c versus Big-C creativity. In J. Chan & K. Thomas (Eds.), Handbook of research on creativity (pp. 69– 83). Cheltenham Glos, UK: Edward Elgar" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#Resource
+creon:Resource rdf:type owl:Class ;
+               rdfs:subClassOf creon:CreativityPress ;
+               dc:creator "Aldo Gangemi" ;
+               dc:date "2023-08-31T10:46:08Z"^^xsd:dateTime ;
+               rdfs:comment "it defines the resource present in the environment" ;
+               rdfs:label "Resource" ;
+               <http://www.w3.org/ns/prov#wasDerivedFrom> "Rhodes, M. (1961). An analysis of creativity. The Phi Delta Kappan 42, 305–310." .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#SocialSituation
+creon:SocialSituation rdf:type owl:Class ;
+                      dc:creator "Aldo Gangemi" ;
+                      dc:date "2023-08-31T10:33:34Z"^^xsd:dateTime ;
+                      rdfs:comment "A creativity situation seen as a consensual average scoring of a creativity function." ;
+                      rdfs:label "Social Situation" ;
+                      <http://www.w3.org/ns/prov#wasAttributedTo> "Simonton, D.K. (2013c). What is a creative idea? Little-c versus Big-C creativity. In J. Chan & K. Thomas (Eds.), Handbook of research on creativity (pp. 69– 83). Cheltenham Glos, UK: Edward Elgar" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+dul:Agent rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person
+dul:Person rdf:type owl:Class ;
+           rdfs:subClassOf dul:Agent ;
+           rdfs:label "Person" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#Amygdala
+creon:Amygdala rdf:type owl:NamedIndividual ;
+               dc:creator "Aldo Gangemi" ;
+               dc:date "2023-09-06T16:47:13Z"^^xsd:dateTime .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#AnteriorCingulateCortex
+creon:AnteriorCingulateCortex rdf:type owl:NamedIndividual ;
+                              dc:creator "Aldo Gangemi" ;
+                              dc:date "2023-09-06T16:46:18Z"^^xsd:dateTime .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#DivergentThinkingTest-Rebus
+creon:DivergentThinkingTest-Rebus rdf:type owl:NamedIndividual ;
+                                  dc:creator "Aldo Gangemi" ;
+                                  dc:date "2024-02-19T17:37:16Z"^^xsd:dateTime .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#Hippocampus
+creon:Hippocampus rdf:type owl:NamedIndividual ;
+                  dc:creator "Aldo Gangemi" ;
+                  dc:date "2023-09-06T16:47:25Z"^^xsd:dateTime .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#MedialPrefrontalCortex
+creon:MedialPrefrontalCortex rdf:type owl:NamedIndividual ;
+                             dc:creator "Aldo Gangemi" ;
+                             dc:date "2023-09-06T16:46:05Z"^^xsd:dateTime .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#MedialTemporalCortex
+creon:MedialTemporalCortex rdf:type owl:NamedIndividual ;
+                           dc:creator "Aldo Gangemi" ;
+                           dc:date "2023-09-06T16:46:22Z"^^xsd:dateTime .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#PosteriorParietalCortex
+creon:PosteriorParietalCortex rdf:type owl:NamedIndividual ;
+                              dc:creator "Aldo Gangemi" ;
+                              dc:date "2023-09-06T16:46:12Z"^^xsd:dateTime .
+
+
+###  http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#RemoteAssociationDivergentThinkingTest-RAT
+creon:RemoteAssociationDivergentThinkingTest-RAT rdf:type owl:NamedIndividual ;
+                                                 dc:creator "Aldo Gangemi" ;
+                                                 dc:date "2024-02-19T17:37:47Z"^^xsd:dateTime .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
