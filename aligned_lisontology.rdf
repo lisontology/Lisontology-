@@ -180,6 +180,7 @@
     <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#influencedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#influencedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#influenced"/>
         <dc:creator>Aldo Gangemi</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-04T15:43:02Z</dc:date>
         <rdfs:comment>A general influence relation between agents, processes, creative products, or ideas. Specific axioms apply to dependencies between influencing and influenced entities.</rdfs:comment>
@@ -417,6 +418,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode"/>
+        <rdfs:comment>Connects an Event to the Episode it is part of.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -460,7 +462,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#participantIn"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event"/>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment>Links an Event to multiple Characters involved in it.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -480,6 +482,7 @@
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#leadsTo">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Choice"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome"/>
+        <rdfs:comment>Used when an Event presents the player or character with a Choice.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -549,6 +552,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#atLocation"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Location"/>
+        <rdfs:comment>Specifies the Location where an Event occurs.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -558,6 +562,7 @@
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#triggers">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Choice"/>
+        <rdfs:comment>Used when an Event presents the player or character with a Choice.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -799,7 +804,9 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
 
     <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Character -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Character"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Character">
+        <rdfs:comment>Any person in the game world who can participate in Events and influence the narrative.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -807,6 +814,7 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Choice">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#ActionDynamics"/>
+        <rdfs:comment>A decision point where the player influences the story&amp;apos;s direction, leading to different Outcomes.</rdfs:comment>
     </owl:Class>
     
 
@@ -823,7 +831,9 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
 
     <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode">
+        <rdfs:comment>A major chapter in the game&amp;apos;s story that groups together related Events and Choices (e.g,“Chrysalis”).</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -840,6 +850,7 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#ExternalRandomEvent"/>
+        <rdfs:comment>A narrative occurrence or situation in the game tied to a specific Episode and Location.</rdfs:comment>
     </owl:Class>
     
 
@@ -867,6 +878,7 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Location">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalCondition"/>
+        <rdfs:comment>General setting in the game world that contains Places and hosts Episodes or Events (e.g, Blackwell Academy).</rdfs:comment>
     </owl:Class>
     
 
@@ -875,6 +887,7 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MajorChoice">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Choice"/>
+        <rdfs:comment>A high-impact player decision that significantly affects story progression or character development.</rdfs:comment>
     </owl:Class>
     
 
@@ -883,6 +896,7 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Choice"/>
+        <rdfs:comment>A lower-impact decision that may influence relationships or small environmental details.</rdfs:comment>
     </owl:Class>
     
 
@@ -891,13 +905,16 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NPCs">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Character"/>
+        <rdfs:comment>A non-playable Character that the player interacts with (e.g., Chloe, David), often triggering new Events.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome">
+        <rdfs:comment>The resulting state or consequence of an Event or Choice, marking a new point in the narrative.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -905,6 +922,7 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Place">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Location"/>
+        <rdfs:comment>A specific, detailed area within a larger Location where Events occur (e.g, Chloe&amp;apos&apos; Garage).</rdfs:comment>
     </owl:Class>
     
 
@@ -952,6 +970,7 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Protagonist">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Character"/>
+        <rdfs:comment>The main player-controlled Character (Max Caulfield), whose decisions shape the unfolding story.</rdfs:comment>
     </owl:Class>
     
 
