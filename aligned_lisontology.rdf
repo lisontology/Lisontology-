@@ -10,42 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:creon="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf">
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:creator>Chiara Lucifora</dc:creator>
-        <rdfs:comment>An integrated, synthetic ontology of creativity, formalising and integrating multiple theories:
-
-(a) Personal creativity
-Wallace&apos;s personal creativity phases
-Guilford&apos;s personal creativity traits
-Smith&apos;s cognitive creativity
-Moruzzi&apos;s personal creativity keys
-
-(b) social creativity:
-Csikszentmihali&apos;s domain/field of creativity
-Amabile&apos;s expertise/thinking/motivation
-Sternberg&apos;s creative personal traits
-
-(c) dual personal/social creativity:
-Gardner&apos;s multidimensional theory (personality plus context)
-Rhodes&apos; 4P theory
-Simonton&apos;s c/C, creativity function theory, divergence/error
-Corazza&apos;s mental/social process
-Jenning&apos;s computational creativity
-
-(d) neuro creativity:
-Kenett&apos;s metaanalysis of neural correlates of creativity
-
-Some important questions need special investigation, concerning computational creativity, fruition, and opera aperta:
-
-- AI is not a person, and how could we distinguish between personal and social for an LLM?
-
-- Opera aperta goes beyond production vs. fruition (the patina of a monument, table, and metaphorically a book or a painting, let alone Sistine Chapel colors ...)
-
-Version 1.2: added support for modelling Guilford&apos;s divergence as the search for a meta-convergence connecting two convergent but unrelated ideas.
-
-Version 1.3: added the divergent dimension to products.</rdfs:comment>
-        <owl:versionInfo>1.2, February 22nd, 2024</owl:versionInfo>
-        <owl:versionInfo>1.3, May 4th, 2025</owl:versionInfo>
+        <rdfs:comment>This ontology partially aligns with https://raw.githubusercontent.com/aldogangemi/CreOn/refs/heads/main/creon.ttl specifically for certain selected classes.</rdfs:comment>
     </owl:Ontology>
     
 
@@ -677,6 +642,7 @@ Version 1.3: added the divergent dimension to products.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#PersonalSituation"/>
         <dc:creator>Aldo Gangemi</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-06T15:43:36Z</dc:date>
+        <rdfs:isDefinedBy>https://raw.githubusercontent.com/aldogangemi/CreOn/refs/heads/main/creon.ttl</rdfs:isDefinedBy>
         <rdfs:label>Action Dynamics</rdfs:label>
         <prov:wasAttributedTo>From Corazza&apos;s DUCP (2019): Actions that influence and shape the creative process, decisions, and directions, with a feedback effect.</prov:wasAttributedTo>
     </owl:Class>
@@ -689,6 +655,7 @@ Version 1.3: added the divergent dimension to products.</rdfs:comment>
         <dc:creator>Aldo Gangemi</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-31T10:38:32Z</dc:date>
         <rdfs:comment>It is something that is produced as a result of the creative process, by a specific Person</rdfs:comment>
+        <rdfs:isDefinedBy>https://raw.githubusercontent.com/aldogangemi/CreOn/refs/heads/main/creon.ttl</rdfs:isDefinedBy>
         <rdfs:label>Creative Product</rdfs:label>
         <prov:wasAttributedTo>Rhodes, M. (1961). An analysis of creativity. The Phi Delta Kappan 42, 305–310.</prov:wasAttributedTo>
     </owl:Class>
@@ -702,6 +669,7 @@ Version 1.3: added the divergent dimension to products.</rdfs:comment>
         <dc:creator>Aldo Gangemi</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-31T10:47:04Z</dc:date>
         <rdfs:comment>it is related to the relationship between humans and environment</rdfs:comment>
+        <rdfs:isDefinedBy>https://raw.githubusercontent.com/aldogangemi/CreOn/refs/heads/main/creon.ttl</rdfs:isDefinedBy>
         <rdfs:label>Creativity Press</rdfs:label>
         <prov:wasAttributedTo>Rhodes, M. (1961). An analysis of creativity. The Phi Delta Kappan 42, 305–310.</prov:wasAttributedTo>
     </owl:Class>
@@ -714,6 +682,7 @@ Version 1.3: added the divergent dimension to products.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#PersonalSituation"/>
         <dc:creator>Aldo Gangemi</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-06T15:45:16Z</dc:date>
+        <rdfs:isDefinedBy>https://raw.githubusercontent.com/aldogangemi/CreOn/refs/heads/main/creon.ttl</rdfs:isDefinedBy>
         <rdfs:label>Emotion Dynamics</rdfs:label>
         <prov:wasAttributedTo>From Corazza&apos;s DUCP (2019): Emotions are central to the creative process, influencing motivation, direction, and quality.</prov:wasAttributedTo>
     </owl:Class>
@@ -727,6 +696,7 @@ Version 1.3: added the divergent dimension to products.</rdfs:comment>
         <dc:creator>Aldo Gangemi</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-31T10:46:23Z</dc:date>
         <rdfs:comment>it is related to the social environment</rdfs:comment>
+        <rdfs:isDefinedBy>https://raw.githubusercontent.com/aldogangemi/CreOn/refs/heads/main/creon.ttl</rdfs:isDefinedBy>
         <rdfs:label>Environmental Condition</rdfs:label>
         <prov:wasDerivedFrom>Rhodes, M. (1961). An analysis of creativity. The Phi Delta Kappan 42, 305–310.</prov:wasDerivedFrom>
     </owl:Class>
@@ -739,6 +709,7 @@ Version 1.3: added the divergent dimension to products.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#SocialSituation"/>
         <dc:creator>Aldo Gangemi</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-06T15:46:12Z</dc:date>
+        <rdfs:isDefinedBy>https://raw.githubusercontent.com/aldogangemi/CreOn/refs/heads/main/creon.ttl</rdfs:isDefinedBy>
         <rdfs:label>External Random Event</rdfs:label>
         <prov:wasAttributedTo>From Corazza&apos;s DUCP (2019): Random external events that influence creative processes unpredictably.</prov:wasAttributedTo>
     </owl:Class>
@@ -751,6 +722,7 @@ Version 1.3: added the divergent dimension to products.</rdfs:comment>
         <dc:creator>Aldo Gangemi</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-31T10:34:16Z</dc:date>
         <rdfs:comment>Specific personal characteristics, traits, or capabilities of a creative individual</rdfs:comment>
+        <rdfs:isDefinedBy>https://raw.githubusercontent.com/aldogangemi/CreOn/refs/heads/main/creon.ttl</rdfs:isDefinedBy>
         <rdfs:label>Personal Ability</rdfs:label>
         <prov:wasDerivedFrom>Sternberg, R. J. (1988). A three-facet model of creativity.
 Rhodes, M. (1961). An analysis of creativity. The Phi Delta Kappan 42, 305–310.
@@ -765,6 +737,7 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
         <dc:creator>Aldo Gangemi</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-31T10:33:26Z</dc:date>
         <rdfs:comment>A creativity situation seen as a personal scoring of a creativity function.</rdfs:comment>
+        <rdfs:isDefinedBy>https://raw.githubusercontent.com/aldogangemi/CreOn/refs/heads/main/creon.ttl</rdfs:isDefinedBy>
         <rdfs:label>Personal Situation</rdfs:label>
         <prov:wasAttributedTo>Simonton, D.K. (2013c). What is a creative idea? Little-c versus Big-C creativity. In J. Chan &amp; K. Thomas (Eds.), Handbook of research on creativity (pp. 69– 83). Cheltenham Glos, UK: Edward Elgar</prov:wasAttributedTo>
     </owl:Class>
@@ -778,6 +751,7 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
         <dc:creator>Aldo Gangemi</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-31T10:46:08Z</dc:date>
         <rdfs:comment>it defines the resource present in the environment</rdfs:comment>
+        <rdfs:isDefinedBy>https://raw.githubusercontent.com/aldogangemi/CreOn/refs/heads/main/creon.ttl</rdfs:isDefinedBy>
         <rdfs:label>Resource</rdfs:label>
         <prov:wasDerivedFrom>Rhodes, M. (1961). An analysis of creativity. The Phi Delta Kappan 42, 305–310.</prov:wasDerivedFrom>
     </owl:Class>
@@ -790,6 +764,7 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
         <dc:creator>Aldo Gangemi</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-31T10:33:34Z</dc:date>
         <rdfs:comment>A creativity situation seen as a consensual average scoring of a creativity function.</rdfs:comment>
+        <rdfs:isDefinedBy>https://raw.githubusercontent.com/aldogangemi/CreOn/refs/heads/main/creon.ttl</rdfs:isDefinedBy>
         <rdfs:label>Social Situation</rdfs:label>
         <prov:wasAttributedTo>Simonton, D.K. (2013c). What is a creative idea? Little-c versus Big-C creativity. In J. Chan &amp; K. Thomas (Eds.), Handbook of research on creativity (pp. 69– 83). Cheltenham Glos, UK: Edward Elgar</prov:wasAttributedTo>
     </owl:Class>
@@ -798,7 +773,9 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent -->
 
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent">
+        <rdfs:isDefinedBy>https://raw.githubusercontent.com/aldogangemi/CreOn/refs/heads/main/creon.ttl</rdfs:isDefinedBy>
+    </owl:Class>
     
 
 
@@ -806,6 +783,7 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+        <rdfs:isDefinedBy>https://raw.githubusercontent.com/aldogangemi/CreOn/refs/heads/main/creon.ttl</rdfs:isDefinedBy>
         <rdfs:label>Person</rdfs:label>
     </owl:Class>
     
@@ -965,7 +943,6 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#PersonalAbility"/>
         <rdfs:comment>Represents the ethical and moral principles that guide the player’s choices.</rdfs:comment>
-        <rdfs:comment xml:lang="en">…”descrizione”…</rdfs:comment>
         <rdfs:label xml:lang="en">Player Value</rdfs:label>
     </owl:Class>
     
