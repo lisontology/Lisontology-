@@ -2,7 +2,7 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl" uri="https://raw.githubusercontent.com/aldogangemi/CreOn/refs/heads/main/creon.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1753189992585" name="http://www.lis./" uri="lisontology.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1753189992585" name="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf" uri="aligned_lisontology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1753315194608" name="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf" uri="aligned_lisontology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1753315194608" name="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf" uri="lisontology.rdf"/>
     </group>
 </catalog>

@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.lis./"
-     xml:base="http://www.lis./"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#"
+     xml:base="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:untitled-ontology-11="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11"/>
+     xmlns:untitled-ontology-11="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf"/>
     
 
 
@@ -22,131 +22,131 @@
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#EpisodeContainsEvent -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#EpisodeContainsEvent -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#EpisodeContainsEvent">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#EpisodeContainsEvent">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventBelongsToEpisode"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#eventBelongsToEpisode"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event"/>
         <rdfs:comment>Indicates that an Episode includes a specific Event</rdfs:comment>
         <rdfs:label>contains the event</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#characterIsInvolvedinEvent -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#characterIsInvolvedinEvent -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#characterIsInvolvedinEvent">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventInvolvesCharacter"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Character"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#characterIsInvolvedinEvent">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#eventInvolvesCharacter"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Character"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event"/>
         <rdfs:comment>Links an Event to multiple Characters involved in it</rdfs:comment>
         <rdfs:label>is involved in the event</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#choiceResultsInOutcome -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#choiceResultsInOutcome -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#choiceResultsInOutcome">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#outcomeIsResultOfChoice"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#choiceResultsInOutcome">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#outcomeIsResultOfChoice"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Choice"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
         <rdfs:comment>Indicates that making a Choice leads to a particular Outcome</rdfs:comment>
         <rdfs:label>reuslts in</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventBelongsToEpisode -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#eventBelongsToEpisode -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventBelongsToEpisode">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#eventBelongsToEpisode">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode"/>
         <rdfs:comment>Connects an Event to the Episode it is part of.</rdfs:comment>
         <rdfs:label>belongs to</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventInvolvesCharacter -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#eventInvolvesCharacter -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventInvolvesCharacter">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#eventInvolvesCharacter">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Character"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Character"/>
         <rdfs:comment>Relates an Event to the Character(s) involved in it.</rdfs:comment>
         <rdfs:label>involves</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventLeadsToChoice -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#eventLeadsToChoice -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventLeadsToChoice">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#eventLeadsToChoice">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Choice"/>
         <rdfs:comment>Used when an Event presents the player or character with a Choice.</rdfs:comment>
         <rdfs:label>leads to the choice of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventTakesPlaceInLocation -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#eventTakesPlaceInLocation -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#eventTakesPlaceInLocation">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#locationHostsEvent"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#eventTakesPlaceInLocation">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#locationHostsEvent"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Location"/>
         <rdfs:comment>Specifies the Location where an Event occurs.</rdfs:comment>
         <rdfs:label>takes place in</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#locationHostsEvent -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#locationHostsEvent -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#locationHostsEvent">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#locationHostsEvent">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Location"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event"/>
         <rdfs:comment>Indicates that a Location hosts one or more Events.</rdfs:comment>
         <rdfs:label>hosts</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#outcomeBelongsToEpisode -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#outcomeBelongsToEpisode -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#outcomeBelongsToEpisode">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#outcomeBelongsToEpisode">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode"/>
         <rdfs:comment>Indicates that this is an Outcome which happens in this Episode.</rdfs:comment>
         <rdfs:label>belongs to</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#outcomeIsResultOfChoice -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#outcomeIsResultOfChoice -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#outcomeIsResultOfChoice">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#outcomeIsResultOfChoice">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Choice"/>
         <rdfs:comment>Links an Outcome to the Choice that led to it.</rdfs:comment>
         <rdfs:label>is result of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#resultOfEvent -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#resultOfEvent -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#resultOfEvent">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#resultOfEvent">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Choice"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event"/>
         <rdfs:comment>Connects an Choice to the Event that caused it.</rdfs:comment>
         <rdfs:label>is the result of</rdfs:label>
     </owl:ObjectProperty>
@@ -164,14 +164,14 @@
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Character -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Character -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Character">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Character">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NPC"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Protagonist"/>
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NPC"/>
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Protagonist"/>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -180,87 +180,87 @@
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Choice -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Choice">
         <rdfs:comment>A decision point where the player influences the story&apos;s direction, leading to different Outcomes.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode">
         <rdfs:comment>A major chapter in the game&apos;s story that groups together related Events and Choices (e.g,“Chrysalis”).</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event">
         <rdfs:comment>A narrative occurrence or situation in the game tied to a specific Episode and Location.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Location -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Location">
         <rdfs:comment>general setting in the game world that contains Places and hosts Episodes or Events (e.g, Blackwell Academy)</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NPC -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NPC -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NPC">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Character"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Protagonist"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NPC">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Character"/>
+        <owl:disjointWith rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Protagonist"/>
         <rdfs:comment>A non-playable Character that the player interacts with (e.g., Chloe, David), often triggering new Events.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome">
         <rdfs:comment>The resulting state or consequence of an Event or Choice, marking a new point in the narrative.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Place -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Place -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Place">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Place">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Location"/>
         <rdfs:comment>A specific, detailed area within a larger Location where Events occur (e.g, Chloe&apos;s Garage).</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Protagonist -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Protagonist -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Protagonist">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Character"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Protagonist">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Character"/>
         <rdfs:comment>The main player-controlled Character (Max Caulfield), whose decisions shape the unfolding story.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#majorChoice -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#majorChoice">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Choice"/>
         <rdfs:comment>A high-impact player decision that significantly affects story progression or character development.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#minorChoice -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Choice"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#minorChoice">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Choice"/>
         <rdfs:comment>A lower-impact decision that may influence relationships or small environmental details.</rdfs:comment>
     </owl:Class>
     
@@ -277,854 +277,854 @@
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Accept_Daniel_Portrait -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Accept_Daniel_Portrait -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Accept_Daniel_Portrait">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#DanielPortraitPosted"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Daniel_DaCosta_Portrait"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Accept_Daniel_Portrait">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#DanielPortraitPosted"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Daniel_DaCosta_Portrait"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Arcadia_Bay -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Arcadia_Bay -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Arcadia_Bay">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Arcadia_Bay">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Location"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Blackwell_Academy -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Blackwell_Academy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Blackwell_Academy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Location"/>
-        <untitled-ontology-11:locationHostsEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Insults_on_Kate_Marshs_Slate"/>
-        <untitled-ontology-11:locationHostsEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Intervened_kateAndDavid_Confrontation"/>
-        <untitled-ontology-11:locationHostsEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grants_Petition"/>
-        <untitled-ontology-11:locationHostsEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#nathansGun"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Blackwell_Academy">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Location"/>
+        <untitled-ontology-11:locationHostsEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Insults_on_Kate_Marshs_Slate"/>
+        <untitled-ontology-11:locationHostsEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Intervened_kateAndDavid_Confrontation"/>
+        <untitled-ontology-11:locationHostsEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Michelle_Grants_Petition"/>
+        <untitled-ontology-11:locationHostsEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#nathansGun"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeFeelsVictorious -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#ChloeFeelsVictorious -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeFeelsVictorious">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#takeBlame_Chloe_Weed"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#ChloeFeelsVictorious">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#takeBlame_Chloe_Weed"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeHidesGun_WaitsToLeave -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#ChloeHidesGun_WaitsToLeave -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeHidesGun_WaitsToLeave">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#stayHidden_Chloe_Weed"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#ChloeHidesGun_WaitsToLeave">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#stayHidden_Chloe_Weed"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeShowsGun_WaitsToLeave -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#ChloeShowsGun_WaitsToLeave -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeShowsGun_WaitsToLeave">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideAndRevealToDavid_Chloe_Weed"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#ChloeShowsGun_WaitsToLeave">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#hideAndRevealToDavid_Chloe_Weed"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeUpsetRetainsPhone -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#ChloeUpsetRetainsPhone -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeUpsetRetainsPhone">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#blame_Chloe_Weed"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#ChloeUpsetRetainsPhone">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#blame_Chloe_Weed"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_Price -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Chloe_Price -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_Price">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NPC"/>
-        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_Prices_Weed"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Chloe_Price">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NPC"/>
+        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Chloe_Prices_Weed"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_Prices_Weed -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Chloe_Prices_Weed -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_Prices_Weed">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_Price"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#blame_Chloe_Weed"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideAndRevealToDavid_Chloe_Weed"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#stayHidden_Chloe_Weed"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#takeBlame_Chloe_Weed"/>
-        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloes_Room"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Chloe_Prices_Weed">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event"/>
+        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Chloe_Price"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#blame_Chloe_Weed"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#hideAndRevealToDavid_Chloe_Weed"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#stayHidden_Chloe_Weed"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#takeBlame_Chloe_Weed"/>
+        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Chloes_Room"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloes_Room -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Chloes_Room -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloes_Room">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Place"/>
-        <untitled-ontology-11:locationHostsEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_Prices_Weed"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Chloes_Room">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Place"/>
+        <untitled-ontology-11:locationHostsEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Chloe_Prices_Weed"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Comfort_Victoria -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Comfort_Victoria -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Comfort_Victoria">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#VictoriaDeletesPhoto_PostsCampus"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victoria_Chase_Outside_the_Dormitory"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Comfort_Victoria">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#VictoriaDeletesPhoto_PostsCampus"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Victoria_Chase_Outside_the_Dormitory"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Dana_Pregnancy_Test -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Dana_Pregnancy_Test -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Dana_Pregnancy_Test">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Touched_Dana_Pregnancy"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notTouch_Dana_Pregnancy"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#touchedAndRewound_Dana_Pregnancy"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Dana_Pregnancy_Test">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Touched_Dana_Pregnancy"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notTouch_Dana_Pregnancy"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#touchedAndRewound_Dana_Pregnancy"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Dana_admits_pregnancy_to_Max -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Dana_admits_pregnancy_to_Max -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Dana_admits_pregnancy_to_Max">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#touchedAndRewound_Dana_Pregnancy"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Dana_admits_pregnancy_to_Max">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#touchedAndRewound_Dana_Pregnancy"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Dana_and_Max_or_Warren_or_BW -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Dana_and_Max_or_Warren_or_BW -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Dana_and_Max_or_Warren_or_BW">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notTouch_Dana_Pregnancy"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Dana_and_Max_or_Warren_or_BW">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notTouch_Dana_Pregnancy"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Dana_upset_ends_talk_with_Max -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Dana_upset_ends_talk_with_Max -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Dana_upset_ends_talk_with_Max">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Touched_Dana_Pregnancy"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Dana_upset_ends_talk_with_Max">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Touched_Dana_Pregnancy"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#DanielPortraitNotPosted -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#DanielPortraitNotPosted -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#DanielPortraitNotPosted">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Decline_Daniel_Portrait"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#DanielPortraitNotPosted">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Decline_Daniel_Portrait"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#DanielPortraitPosted -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#DanielPortraitPosted -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#DanielPortraitPosted">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#DanielPortraitPosted"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#DanielPortraitPosted">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#DanielPortraitPosted"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Daniel_DaCosta_Portrait -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Daniel_DaCosta_Portrait -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Daniel_DaCosta_Portrait">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Daniel_Da_Costa"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Accept_Daniel_Portrait"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Decline_Daniel_Portrait"/>
-        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Main_Campus"/>
-        <untitled-ontology-11:locationHostsEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Daniel_DaCosta_Portrait"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Daniel_DaCosta_Portrait">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event"/>
+        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Daniel_Da_Costa"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Accept_Daniel_Portrait"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Decline_Daniel_Portrait"/>
+        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Main_Campus"/>
+        <untitled-ontology-11:locationHostsEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Daniel_DaCosta_Portrait"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Daniel_Da_Costa -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Daniel_Da_Costa -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Daniel_Da_Costa">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NPC"/>
-        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Daniel_DaCosta_Portrait"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Daniel_Da_Costa">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NPC"/>
+        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Daniel_DaCosta_Portrait"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#David_Madsens -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#David_Madsens -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#David_Madsens">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NPC"/>
-        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Kate_Marshs_and_David_Madsens_Confrontation"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#David_Madsens">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NPC"/>
+        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Kate_Marshs_and_David_Madsens_Confrontation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Decline_Daniel_Portrait -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Decline_Daniel_Portrait -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Decline_Daniel_Portrait">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#DanielPortraitNotPosted"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Daniel_DaCosta_Portrait"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Decline_Daniel_Portrait">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#DanielPortraitNotPosted"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Daniel_DaCosta_Portrait"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1 -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode2 -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode3 -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode3 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode3">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode4 -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode4 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode4">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode4">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode5 -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode5 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode5">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode5">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Erase_Insult_Kates_Slate -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Erase_Insult_Kates_Slate -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Erase_Insult_Kates_Slate">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#KateSlateVandalizedAgain"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Insults_on_Kate_Marshs_Slate"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Erase_Insult_Kates_Slate">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#KateSlateVandalizedAgain"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Insults_on_Kate_Marshs_Slate"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Ignore_Insult_Kates_Slate -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Ignore_Insult_Kates_Slate -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Ignore_Insult_Kates_Slate">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#KateSlateUnchanged"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Insults_on_Kate_Marshs_Slate"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Ignore_Insult_Kates_Slate">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#KateSlateUnchanged"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Insults_on_Kate_Marshs_Slate"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Insults_on_Kate_Marshs_Slate -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Insults_on_Kate_Marshs_Slate -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Insults_on_Kate_Marshs_Slate">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Kate_Marsh"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Erase_Insult_Kates_Slate"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Ignore_Insult_Kates_Slate"/>
-        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Blackwell_Academy"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Insults_on_Kate_Marshs_Slate">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event"/>
+        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Kate_Marsh"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Erase_Insult_Kates_Slate"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Ignore_Insult_Kates_Slate"/>
+        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Blackwell_Academy"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Intervened_kateAndDavid_Confrontation -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Intervened_kateAndDavid_Confrontation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Intervened_kateAndDavid_Confrontation">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#MaxGladHelpedKate"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Kate_Marshs_and_David_Madsens_Confrontation"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Intervened_kateAndDavid_Confrontation">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#MaxGladHelpedKate"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Kate_Marshs_and_David_Madsens_Confrontation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#KateSlateUnchanged -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#KateSlateUnchanged -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#KateSlateUnchanged">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode2"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Ignore_Insult_Kates_Slate"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#KateSlateUnchanged">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode2"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Ignore_Insult_Kates_Slate"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#KateSlateVandalizedAgain -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#KateSlateVandalizedAgain -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#KateSlateVandalizedAgain">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode2"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Erase_Insult_Kates_Slate"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#KateSlateVandalizedAgain">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode2"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Erase_Insult_Kates_Slate"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Kate_Marsh -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Kate_Marsh -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Kate_Marsh">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NPC"/>
-        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Insults_on_Kate_Marshs_Slate"/>
-        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Kate_Marshs_and_David_Madsens_Confrontation"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Kate_Marsh">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NPC"/>
+        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Insults_on_Kate_Marshs_Slate"/>
+        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Kate_Marshs_and_David_Madsens_Confrontation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Kate_Marshs_and_David_Madsens_Confrontation -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Kate_Marshs_and_David_Madsens_Confrontation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Kate_Marshs_and_David_Madsens_Confrontation">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#David_Madsens"/>
-        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Kate_Marsh"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Intervened_kateAndDavid_Confrontation"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#tookPhoto_kateAndDavid_Confrontation"/>
-        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Blackwell_Academy"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Kate_Marshs_and_David_Madsens_Confrontation">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event"/>
+        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#David_Madsens"/>
+        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Kate_Marsh"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Intervened_kateAndDavid_Confrontation"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#tookPhoto_kateAndDavid_Confrontation"/>
+        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Blackwell_Academy"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Lisa_will_look_healthy -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Lisa_will_look_healthy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Lisa_will_look_healthy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode2"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Watered_lisaPlant"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Lisa_will_look_healthy">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode2"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Watered_lisaPlant"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Lisa_will_look_wilted -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Lisa_will_look_wilted -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Lisa_will_look_wilted">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode2"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notWatered_lisaPlant"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Lisa_will_look_wilted">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode2"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notWatered_lisaPlant"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#LukeFeelsSatisfied -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#LukeFeelsSatisfied -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#LukeFeelsSatisfied">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#LukeFeelsSatisfied">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Main_Campus -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Main_Campus -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Main_Campus">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Place"/>
-        <untitled-ontology-11:locationHostsEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Daniel_DaCosta_Portrait"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Main_Campus">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Place"/>
+        <untitled-ontology-11:locationHostsEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Daniel_DaCosta_Portrait"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Make_fun_of_Victoria -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Make_fun_of_Victoria -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Make_fun_of_Victoria">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#VictoriaPostsPhotoOfMax"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victoria_Chase_Outside_the_Dormitory"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Make_fun_of_Victoria">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#VictoriaPostsPhotoOfMax"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Victoria_Chase_Outside_the_Dormitory"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#MaxGladHelpedKate -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#MaxGladHelpedKate -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#MaxGladHelpedKate">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Intervened_kateAndDavid_Confrontation"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#MaxGladHelpedKate">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Intervened_kateAndDavid_Confrontation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#MaxRegretsNotHelpingKate -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#MaxRegretsNotHelpingKate -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#MaxRegretsNotHelpingKate">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#tookPhoto_kateAndDavid_Confrontation"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#MaxRegretsNotHelpingKate">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#tookPhoto_kateAndDavid_Confrontation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_Caulfield -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Max_Caulfield -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_Caulfield">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Protagonist"/>
-        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#nathansGun"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Max_Caulfield">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Protagonist"/>
+        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#nathansGun"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#MichelleMentionsMax -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#MichelleMentionsMax -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#MichelleMentionsMax">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode2"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Sign_Michelle_Petition"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#MichelleMentionsMax">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode2"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Sign_Michelle_Petition"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#MichelleMentionsNot_EnoughPeople -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#MichelleMentionsNot_EnoughPeople -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#MichelleMentionsNot_EnoughPeople">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode2"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notSign_Michelle_Petition"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#MichelleMentionsNot_EnoughPeople">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode2"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notSign_Michelle_Petition"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grants -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Michelle_Grants -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grants">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NPC"/>
-        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grants_Petition"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Michelle_Grants">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NPC"/>
+        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Michelle_Grants_Petition"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grants_Petition -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Michelle_Grants_Petition -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grants_Petition">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grants"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Sign_Michelle_Petition"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notSign_Michelle_Petition"/>
-        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Blackwell_Academy"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Michelle_Grants_Petition">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event"/>
+        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Michelle_Grants"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Sign_Michelle_Petition"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notSign_Michelle_Petition"/>
+        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Blackwell_Academy"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NathanGetsAngry -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NathanGetsAngry -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NathanGetsAngry">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#reportNathan"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NathanGetsAngry">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#reportNathan"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NathanIntimidates -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NathanIntimidates -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NathanIntimidates">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <owl:sameAs rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NoPublicAnnouncement"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideTheTruth"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NathanIntimidates">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <owl:sameAs rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NoPublicAnnouncement"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#hideTheTruth"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NoPublicAnnouncement -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NoPublicAnnouncement -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NoPublicAnnouncement"/>
+    <rdf:Description rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NoPublicAnnouncement"/>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Nathan_Prescott -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Nathan_Prescott -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Nathan_Prescott">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NPC"/>
-        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#nathansGun"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Nathan_Prescott">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NPC"/>
+        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#nathansGun"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NoPublicAnnouncement -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NoPublicAnnouncement -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NoPublicAnnouncement">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideTheTruth"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NoPublicAnnouncement">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#hideTheTruth"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Parking_Lot -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Parking_Lot -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Parking_Lot">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Place"/>
-        <untitled-ontology-11:locationHostsEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#RV_at_the_parking_lot"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Parking_Lot">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Place"/>
+        <untitled-ontology-11:locationHostsEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#RV_at_the_parking_lot"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PhotoAvailableIfReorganizedAndRewound -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#PhotoAvailableIfReorganizedAndRewound -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PhotoAvailableIfReorganizedAndRewound">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notReorganise_Victoria_Photo"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#PhotoAvailableIfReorganizedAndRewound">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notReorganise_Victoria_Photo"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PhotoEnabled -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#PhotoEnabled -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PhotoEnabled">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#wrote_RV"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#PhotoEnabled">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#wrote_RV"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PhotoOptionalAvailable -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#PhotoOptionalAvailable -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PhotoOptionalAvailable">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:eventBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Reorganized_Victoria_Photo"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#PhotoOptionalAvailable">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:eventBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Reorganized_Victoria_Photo"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PhotoUnavailable -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#PhotoUnavailable -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PhotoUnavailable">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notWrote_Rv"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#PhotoUnavailable">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notWrote_Rv"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Prescott_Dormitory -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Prescott_Dormitory -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Prescott_Dormitory">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Place"/>
-        <untitled-ontology-11:locationHostsEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victoria_Chase_Outside_the_Dormitory"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Prescott_Dormitory">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Place"/>
+        <untitled-ontology-11:locationHostsEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Victoria_Chase_Outside_the_Dormitory"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PrincipalCallsNathan -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#PrincipalCallsNathan -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PrincipalCallsNathan">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#reportNathan"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#PrincipalCallsNathan">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#reportNathan"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#RV_at_the_parking_lot -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#RV_at_the_parking_lot -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#RV_at_the_parking_lot">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Max_Caulfield"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notWrote_Rv"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#wrote_RV"/>
-        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Parking_Lot"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#RV_at_the_parking_lot">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event"/>
+        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Max_Caulfield"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notWrote_Rv"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#wrote_RV"/>
+        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Parking_Lot"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Reorganized_Victoria_Photo -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Reorganized_Victoria_Photo -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Reorganized_Victoria_Photo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PhotoOptionalAvailable"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victorias_Photo_Collection"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Reorganized_Victoria_Photo">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#PhotoOptionalAvailable"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Victorias_Photo_Collection"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Sign_Michelle_Petition -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Sign_Michelle_Petition -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Sign_Michelle_Petition">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#MichelleMentionsMax"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grants_Petition"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Sign_Michelle_Petition">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#MichelleMentionsMax"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Michelle_Grants_Petition"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Touched_Dana_Pregnancy -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Touched_Dana_Pregnancy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Touched_Dana_Pregnancy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Dana_upset_ends_talk_with_Max"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Dana_Pregnancy_Test"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Touched_Dana_Pregnancy">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Dana_upset_ends_talk_with_Max"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Dana_Pregnancy_Test"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#VictoriaDeletesPhoto_PostsCampus -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#VictoriaDeletesPhoto_PostsCampus -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#VictoriaDeletesPhoto_PostsCampus">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Comfort_Victoria"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#VictoriaDeletesPhoto_PostsCampus">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Comfort_Victoria"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#VictoriaPostsPhotoOfMax -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#VictoriaPostsPhotoOfMax -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#VictoriaPostsPhotoOfMax">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Outcome"/>
-        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Make_fun_of_Victoria"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#VictoriaPostsPhotoOfMax">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Outcome"/>
+        <untitled-ontology-11:outcomeBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Make_fun_of_Victoria"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victoria_Chase -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Victoria_Chase -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victoria_Chase">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NPC"/>
-        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victoria_Chase_Outside_the_Dormitory"/>
-        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victorias_Photo_Collection"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Victoria_Chase">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NPC"/>
+        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Victoria_Chase_Outside_the_Dormitory"/>
+        <untitled-ontology-11:characterIsInvolvedinEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Victorias_Photo_Collection"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victoria_Chase_Outside_the_Dormitory -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Victoria_Chase_Outside_the_Dormitory -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victoria_Chase_Outside_the_Dormitory">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victoria_Chase"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Comfort_Victoria"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Make_fun_of_Victoria"/>
-        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Prescott_Dormitory"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Victoria_Chase_Outside_the_Dormitory">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event"/>
+        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Victoria_Chase"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Comfort_Victoria"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Make_fun_of_Victoria"/>
+        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Prescott_Dormitory"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victorias_Photo_Collection -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Victorias_Photo_Collection -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victorias_Photo_Collection">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victoria_Chase"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Reorganized_Victoria_Photo"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notReorganise_Victoria_Photo"/>
-        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victorias_Room"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Victorias_Photo_Collection">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event"/>
+        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Victoria_Chase"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Reorganized_Victoria_Photo"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notReorganise_Victoria_Photo"/>
+        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Victorias_Room"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victorias_Room -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Victorias_Room -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victorias_Room">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Place"/>
-        <untitled-ontology-11:locationHostsEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victorias_Photo_Collection"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Victorias_Room">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Place"/>
+        <untitled-ontology-11:locationHostsEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Victorias_Photo_Collection"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Water_Plant_Lisa -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Water_Plant_Lisa -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Water_Plant_Lisa">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Watered_lisaPlant"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notWatered_lisaPlant"/>
-        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Blackwell_Academy"/>
-        <untitled-ontology-11:locationHostsEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Water_Plant_Lisa"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Water_Plant_Lisa">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Watered_lisaPlant"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notWatered_lisaPlant"/>
+        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Blackwell_Academy"/>
+        <untitled-ontology-11:locationHostsEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Water_Plant_Lisa"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Watered_lisaPlant -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Watered_lisaPlant -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Watered_lisaPlant">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Lisa_will_look_healthy"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Water_Plant_Lisa"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Watered_lisaPlant">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Lisa_will_look_healthy"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Water_Plant_Lisa"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#blame_Chloe_Weed -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#blame_Chloe_Weed -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#blame_Chloe_Weed">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeUpsetRetainsPhone"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_Prices_Weed"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#blame_Chloe_Weed">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#ChloeUpsetRetainsPhone"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Chloe_Prices_Weed"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideAndRevealToDavid_Chloe_Weed -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#hideAndRevealToDavid_Chloe_Weed -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideAndRevealToDavid_Chloe_Weed">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeShowsGun_WaitsToLeave"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_Prices_Weed"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#hideAndRevealToDavid_Chloe_Weed">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#ChloeShowsGun_WaitsToLeave"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Chloe_Prices_Weed"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideTheTruth -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#hideTheTruth -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideTheTruth">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NathanIntimidates"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NoPublicAnnouncement"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#nathansGun"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#hideTheTruth">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NathanIntimidates"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NoPublicAnnouncement"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#nathansGun"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#nathansGun -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#nathansGun -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#nathansGun">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Event"/>
-        <untitled-ontology-11:eventBelongsToEpisode rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Episode1"/>
-        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Nathan_Prescott"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#hideTheTruth"/>
-        <untitled-ontology-11:eventLeadsToChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#reportNathan"/>
-        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Blackwell_Academy"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#nathansGun">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Event"/>
+        <untitled-ontology-11:eventBelongsToEpisode rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Episode1"/>
+        <untitled-ontology-11:eventInvolvesCharacter rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Nathan_Prescott"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#hideTheTruth"/>
+        <untitled-ontology-11:eventLeadsToChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#reportNathan"/>
+        <untitled-ontology-11:eventTakesPlaceInLocation rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Blackwell_Academy"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notReorganise_Victoria_Photo -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notReorganise_Victoria_Photo -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notReorganise_Victoria_Photo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PhotoAvailableIfReorganizedAndRewound"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Victorias_Photo_Collection"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notReorganise_Victoria_Photo">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#PhotoAvailableIfReorganizedAndRewound"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Victorias_Photo_Collection"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notSign_Michelle_Petition -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notSign_Michelle_Petition -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notSign_Michelle_Petition">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#MichelleMentionsNot_EnoughPeople"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Michelle_Grants_Petition"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notSign_Michelle_Petition">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#minorChoice"/>
+        <untitled-ontology-11:outcomeIsResultOfChoice rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#MichelleMentionsNot_EnoughPeople"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Michelle_Grants_Petition"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notTouch_Dana_Pregnancy -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notTouch_Dana_Pregnancy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notTouch_Dana_Pregnancy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Dana_and_Max_or_Warren_or_BW"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Dana_Pregnancy_Test"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notTouch_Dana_Pregnancy">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Dana_and_Max_or_Warren_or_BW"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Dana_Pregnancy_Test"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notWatered_lisaPlant -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notWatered_lisaPlant -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notWatered_lisaPlant">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Lisa_will_look_wilted"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Water_Plant_Lisa"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notWatered_lisaPlant">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Lisa_will_look_wilted"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Water_Plant_Lisa"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notWrote_Rv -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notWrote_Rv -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#notWrote_Rv">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PhotoUnavailable"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#RV_at_the_parking_lot"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#notWrote_Rv">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#PhotoUnavailable"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#RV_at_the_parking_lot"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#reportNathan -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#reportNathan -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#reportNathan">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#NathanGetsAngry"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PrincipalCallsNathan"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#nathansGun"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#reportNathan">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#NathanGetsAngry"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#PrincipalCallsNathan"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#nathansGun"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#stayHidden_Chloe_Weed -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#stayHidden_Chloe_Weed -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#stayHidden_Chloe_Weed">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeHidesGun_WaitsToLeave"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_Prices_Weed"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#stayHidden_Chloe_Weed">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#ChloeHidesGun_WaitsToLeave"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Chloe_Prices_Weed"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#takeBlame_Chloe_Weed -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#takeBlame_Chloe_Weed -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#takeBlame_Chloe_Weed">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#ChloeFeelsVictorious"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Chloe_Prices_Weed"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#takeBlame_Chloe_Weed">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#ChloeFeelsVictorious"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Chloe_Prices_Weed"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#tookPhoto_kateAndDavid_Confrontation -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#tookPhoto_kateAndDavid_Confrontation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#tookPhoto_kateAndDavid_Confrontation">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#majorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#MaxRegretsNotHelpingKate"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Kate_Marshs_and_David_Madsens_Confrontation"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#tookPhoto_kateAndDavid_Confrontation">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#majorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#MaxRegretsNotHelpingKate"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Kate_Marshs_and_David_Madsens_Confrontation"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#touchedAndRewound_Dana_Pregnancy -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#touchedAndRewound_Dana_Pregnancy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#touchedAndRewound_Dana_Pregnancy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Dana_admits_pregnancy_to_Max"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#Dana_Pregnancy_Test"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#touchedAndRewound_Dana_Pregnancy">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Dana_admits_pregnancy_to_Max"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#Dana_Pregnancy_Test"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#wrote_RV -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#wrote_RV -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#wrote_RV">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#minorChoice"/>
-        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#PhotoEnabled"/>
-        <untitled-ontology-11:resultOfEvent rdf:resource="http://www.semanticweb.org/cy/ontologies/2025/6/untitled-ontology-11#RV_at_the_parking_lot"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#wrote_RV">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#minorChoice"/>
+        <untitled-ontology-11:choiceResultsInOutcome rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#PhotoEnabled"/>
+        <untitled-ontology-11:resultOfEvent rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/lisontology.rdf#RV_at_the_parking_lot"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 

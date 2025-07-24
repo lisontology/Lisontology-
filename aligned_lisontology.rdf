@@ -11,6 +11,14 @@
      xmlns:creon="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf">
         <rdfs:comment>This ontology partially aligns with https://raw.githubusercontent.com/aldogangemi/CreOn/refs/heads/main/creon.ttl specifically for certain selected classes.</rdfs:comment>
+        <rdfs:comment>This ontology was developed to model the forms of creativity expressed in the gameplay experience of Life is Strange. It focuses not on the game as a creative object in itself, but on the creative role of the player as they engage with the game&apos;s mechanics, storylines, and branching choices.
+Our approach centers on the idea that creativity emerges from the player&apos;s agency, especially through choices, reactions, and interpretations shaped by their values, emotions, and motivations. 
+Events in the game are understood not as narrative elements that provoke creative responses—what matters is how the player reacts, not just what happens.
+Key concepts such as the rewind mechanic were modeled both as tools and as forms of pressure that influence decision-making and narrative flow.
+
+The conceptual framework behind this ontology draws on the Four Ps of Creativity (person, process, product, press), with a particular emphasis on the person (the player) and the process (decision-making and reflection).
+
+Some classes in this ontology are aligned with external sources (notably the CreOn ontology), but the majority of the modeling was developed independently to reflect our specific interpretation of creative gameplay.</rdfs:comment>
     </owl:Ontology>
     
 
@@ -61,251 +69,6 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#atLocation -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#atLocation">
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-14T08:35:59Z</dc:date>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#atTime -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#atTime">
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-14T08:35:53Z</dc:date>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#builtBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#builtBy">
-        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeProduct"/>
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-31T10:42:28Z</dc:date>
-        <rdfs:comment>The relation between product and producer</rdfs:comment>
-        <rdfs:label>built by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#correlatesWith -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#correlatesWith">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-31T14:05:36Z</dc:date>
-        <rdfs:comment>The correlation between functional constructs and neural or physiological states</rdfs:comment>
-        <rdfs:label>correlates with</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#exhibitedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#exhibitedBy">
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-04T15:01:13Z</dc:date>
-        <rdfs:label>exhibited by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#focusedOn -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#focusedOn">
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-31T12:40:20Z</dc:date>
-        <rdfs:comment>The relation between a creative situation, and an antity it focuses on, for example between a painting process, and its social context, or between a musical composition, and its author.</rdfs:comment>
-        <rdfs:label>focused on</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#hasPart -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#hasPart">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-06T16:55:45Z</dc:date>
-        <rdfs:label>has part</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#hasTrait -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#hasTrait">
-        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#traitOf"/>
-        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#PersonalAbility"/>
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-31T11:25:32Z</dc:date>
-        <rdfs:comment>The association between a personality trait whit a specific person</rdfs:comment>
-        <rdfs:label>has trait</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#implementedAs -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#implementedAs">
-        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeProduct"/>
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-31T12:48:20Z</dc:date>
-        <rdfs:comment>The relation between idea and product</rdfs:comment>
-        <rdfs:label>implemented as</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#induces -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#induces"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#influenced -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#influenced">
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-14T08:35:45Z</dc:date>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#influencedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#influencedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#influenced"/>
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-04T15:43:02Z</dc:date>
-        <rdfs:comment>A general influence relation between agents, processes, creative products, or ideas. Specific axioms apply to dependencies between influencing and influenced entities.</rdfs:comment>
-        <rdfs:label>influenced by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#influencer -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#influencer">
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#influenced"/>
-            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#influencedBy"/>
-        </owl:propertyChainAxiom>
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-14T08:35:38Z</dc:date>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#observedDuring -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#observedDuring">
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-06T16:31:26Z</dc:date>
-        <rdfs:label>observed during</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#observedIn -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#observedIn">
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-06T16:31:08Z</dc:date>
-        <rdfs:label>observed in</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#onTask -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#onTask">
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-06T17:14:03Z</dc:date>
-        <rdfs:label>on task</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#operatesIn -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#operatesIn">
-        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativityPress"/>
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-31T12:31:20Z</dc:date>
-        <rdfs:comment>The relation between artist and its environnment</rdfs:comment>
-        <rdfs:label>operates in</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#optimizes -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#optimizes"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#participantIn -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#participantIn">
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-31T11:19:22Z</dc:date>
-        <rdfs:comment>The relation between creative individual and its creative process</rdfs:comment>
-        <rdfs:label>participant in</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#producedIn -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#producedIn">
-        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeProduct"/>
-        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativityPress"/>
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-31T12:34:20Z</dc:date>
-        <rdfs:comment>The relation between product and environment</rdfs:comment>
-        <rdfs:label>produced in</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#resultOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#resultOf">
-        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#CreativeProduct"/>
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-31T10:43:59Z</dc:date>
-        <rdfs:comment>The relation between the creative process and the final creative product</rdfs:comment>
-        <rdfs:label>result of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#traitOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#traitOf">
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-31T11:29:02Z</dc:date>
-        <rdfs:label>trait of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#usingMethod -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#usingMethod">
-        <dc:creator>Aldo Gangemi</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-06T16:52:27Z</dc:date>
-        <rdfs:label>using method</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#culminates -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#culminates">
@@ -344,6 +107,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player"/>
+        <rdfs:comment>Connects a reflection state to the player who enters it.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -351,7 +115,6 @@
     <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#has -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#has">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#hasTrait"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerMotivation"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#PlayerValue"/>
@@ -373,21 +136,9 @@
     <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#induces -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#induces">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#induces"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState"/>
         <rdfs:comment>Links an outcome to the reflective process it triggers in the player.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#influences -->
-
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#influences">
-        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Choice"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState"/>
-        <rdfs:comment>Models the effect of an emotional response on the player’s decisions or reflection states.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -397,8 +148,9 @@
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#involves">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Character"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NPCs"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NPC"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Protagonist"/>
+        <rdfs:comment>Indicates that a character (player-controlled or NPC) participates in an event.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -408,6 +160,7 @@
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#isChoiceOf">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Choice"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player"/>
+        <rdfs:comment>Links a choice to the player who makes it.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -415,7 +168,6 @@
     <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#isContainedIn -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#isContainedIn">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode"/>
         <rdfs:comment>Connects an Event to the Episode it is part of.</rdfs:comment>
@@ -438,9 +190,9 @@
     <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#isExperiencedBy -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#isExperiencedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player"/>
+        <rdfs:comment>Connects an emotional response to the player who experiences it.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -452,6 +204,7 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Choice"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReflectionState"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#EmotionalResponse"/>
+        <rdfs:comment>Links a choice or reflection state to the emotional response that influences it.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -459,20 +212,9 @@
     <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#isInvolvedIn -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#isInvolvedIn">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#participantIn"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Player"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event"/>
         <rdfs:comment>Links an Event to multiple Characters involved in it.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#isPartOf -->
-
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#isPartOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Place"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Location"/>
     </owl:ObjectProperty>
     
 
@@ -502,6 +244,7 @@
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#reaffirmsChoice">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#AcceptChoice"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Choice"/>
+        <rdfs:comment>Links an Accept Choice to the original Choice it confirms.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -511,6 +254,7 @@
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#rejectsChoice">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#ReconsiderChoice"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Choice"/>
+        <rdfs:comment>Connects a Reconsider Choice to the original Choice it overrides.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -549,7 +293,6 @@
     <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#takesPlaceIn -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#takesPlaceIn">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#atLocation"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Location"/>
         <rdfs:comment>Specifies the Location where an Event occurs.</rdfs:comment>
@@ -806,6 +549,7 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Character">
         <rdfs:comment>Any person in the game world who can participate in Events and influence the narrative.</rdfs:comment>
+        <rdfs:label>Character</rdfs:label>
     </owl:Class>
     
 
@@ -833,6 +577,7 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Episode">
         <rdfs:comment>A major chapter in the game&amp;apos;s story that groups together related Events and Choices (e.g,“Chrysalis”).</rdfs:comment>
+        <rdfs:label>Episode</rdfs:label>
     </owl:Class>
     
 
@@ -851,6 +596,7 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Event">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#ExternalRandomEvent"/>
         <rdfs:comment>A narrative occurrence or situation in the game tied to a specific Episode and Location.</rdfs:comment>
+        <rdfs:label>Event</rdfs:label>
     </owl:Class>
     
 
@@ -879,6 +625,7 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Location">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/creativity/creon.owl#EnvironmentalCondition"/>
         <rdfs:comment>General setting in the game world that contains Places and hosts Episodes or Events (e.g, Blackwell Academy).</rdfs:comment>
+        <rdfs:label>Location</rdfs:label>
     </owl:Class>
     
 
@@ -888,6 +635,7 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MajorChoice">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Choice"/>
         <rdfs:comment>A high-impact player decision that significantly affects story progression or character development.</rdfs:comment>
+        <rdfs:label>Major Choice</rdfs:label>
     </owl:Class>
     
 
@@ -897,15 +645,17 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#MinorChoice">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Choice"/>
         <rdfs:comment>A lower-impact decision that may influence relationships or small environmental details.</rdfs:comment>
+        <rdfs:label>Minor Choice</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NPCs -->
+    <!-- https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NPC -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NPCs">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#NPC">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Character"/>
         <rdfs:comment>A non-playable Character that the player interacts with (e.g., Chloe, David), often triggering new Events.</rdfs:comment>
+        <rdfs:label>NPC</rdfs:label>
     </owl:Class>
     
 
@@ -914,6 +664,7 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Outcome">
         <rdfs:comment>The resulting state or consequence of an Event or Choice, marking a new point in the narrative.</rdfs:comment>
+        <rdfs:label>Outcome</rdfs:label>
     </owl:Class>
     
 
@@ -923,6 +674,7 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Place">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Location"/>
         <rdfs:comment>A specific, detailed area within a larger Location where Events occur (e.g, Chloe&amp;apos&apos; Garage).</rdfs:comment>
+        <rdfs:label>Place</rdfs:label>
     </owl:Class>
     
 
@@ -971,6 +723,7 @@ Kenett, Y. N., Kraemer, D. J., Alfred, K. L., Colaizzi, G. A., Cortes, R. A., &a
     <owl:Class rdf:about="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Protagonist">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/lisontology/Lisontology-/refs/heads/main/aligned_lisontology.rdf#Character"/>
         <rdfs:comment>The main player-controlled Character (Max Caulfield), whose decisions shape the unfolding story.</rdfs:comment>
+        <rdfs:label>Protagonist</rdfs:label>
     </owl:Class>
     
 
