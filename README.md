@@ -1,2 +1,4 @@
 # Lisontology-
-There was a hole here... now it's gone.
+Lisontology is a narrative ontology project built to formally represent the world mechanics of the Life is Strange video game series. Using RDF/OWL, it models the game's key elements—including characters (protagonists and NPCs), episodes, locations, choices, events, and their outcomes—and the complex relationships between them. This structured data provides a semantic framework for analyzing the game's branching narratives, character interactions, and the consequences of player decisions. This ontology also explores the creative side of this videogame. 
+
+The project was done as the final project of the Knowledge Representation and Extraction (1) (LM) course in the University of Bolgona, taught and graded by Prof. Aldo Gangemi. The project received a 30/30 with honors (con laude).
